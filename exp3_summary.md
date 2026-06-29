@@ -68,6 +68,24 @@ uses the measured **board power** (not assumed TDP). Deployed set and the empiri
 - **`theta` (total tok/s/GPU)**: empirical range **5,474 – 40,749** (min Kimi-72B/H200, max gpt-oss/H200).
 - **`P_GPU` (board W)**: empirical range **338 – 697 W**.
 
+### 2.2a Per-GPU annual energy reference (grounding `P_GPU`)
+
+A single GPU running **continuously for a year** (8,760 h) is the unit of the energy layer
+(`exp3_results/exp3_gpu_reference.csv`):
+
+| Case | Power | Board kWh/yr | Facility kWh/yr (PUE 1.56) | Energy cost ($60/MWh) |
+|---|---:|---:|---:|---:|
+| H100 / H200 nameplate **TDP** | 700 W | 6,132 | 9,566 | $574/yr |
+| A100 — Exp-2 measured mean | 378 W | 3,311 | 5,166 | $310/yr |
+| H100 — Exp-2 measured mean | 498 W | 4,362 | 6,805 | $408/yr |
+| H200 — Exp-2 measured mean | 581 W | 5,090 | 7,940 | $476/yr |
+
+So one accelerator draws **~6,100 kWh/yr at full TDP**, or **~4,400–5,100 kWh/yr at the load our coding
+workloads actually impose** (board), costing **~$300–575/yr** in electricity. The model uses the
+**measured** board power (338–697 W across cells), not nameplate TDP — our MoE/4-bit coders run below
+the 700 W ceiling, so nameplate would over-state energy by 20–45 %. Board × PUE × 8,760 reproduces the
+per-engineer energy in §4 (median ≈ 0.0057 GPU/engineer × ~520 W × 1.56 × 8,760 ≈ 36 kWh/engineer-yr).
+
 ### 2.3 Literature priors — triangular(low, central, high)
 
 | Parameter | Symbol | Low | Central | High | Distribution | Source |

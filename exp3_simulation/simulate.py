@@ -194,9 +194,36 @@ def main():
                      "energycost_pct_high": 100 * (ehi / base_ce - 1)})
     pd.DataFrame(sens).to_csv(OUT / "exp3_sensitivity.csv", index=False)
 
+    _gpu_reference(cells)
     _figures(r)
     _workflow(r, fitted)
     _report(pe)
+
+
+def _gpu_reference(cells):
+    """Sanity reference: energy/cost of running ONE GPU continuously for a year, at nameplate TDP
+    (H100/H200 SXM = 700 W) and at the Exp-2 measured saturated board power. Writes a small CSV."""
+    pue = P.PUE[1]; price = P.C_MWH[1]; H = P.HOURS_PER_YEAR
+    rows = []
+    def add(label, w):
+        board = w * H / 1000.0                 # kWh/yr
+        fac = board * pue
+        rows.append({"case": label, "power_w": w, "board_kWh_yr": round(board),
+                     "facility_kWh_yr": round(fac), "energy_cost_usd_yr": round(fac / 1000 * price)})
+    add("H100/H200 nameplate TDP", 700)
+    powers = {c[0]: [] for c in cells}
+    for gpu, _, _, w in cells:
+        powers[gpu].append(w)
+    for gpu in ("A100", "H100", "H200"):
+        if powers.get(gpu):
+            add(f"{gpu} measured mean (Exp-2)", round(np.mean(powers[gpu])))
+    df = pd.DataFrame(rows)
+    df.to_csv(OUT / "exp3_gpu_reference.csv", index=False)
+    print("=== One GPU running continuously for a year (PUE 1.56, $60/MWh) ===")
+    for _, r in df.iterrows():
+        print(f"  {r['case']:<28} {r['power_w']:>4.0f}W  board {r['board_kWh_yr']:>6,} kWh/yr  "
+              f"facility {r['facility_kWh_yr']:>6,} kWh/yr  ${r['energy_cost_usd_yr']:>4,}/yr")
+    print()
 
 
 def _figures(r):

@@ -1,0 +1,5 @@
+case,power_w,board_kWh_yr,facility_kWh_yr,energy_cost_usd_yr
+H100/H200 nameplate TDP,700,6132,9566,574
+A100 measured mean (Exp-2),378,3311,5166,310
+H100 measured mean (Exp-2),498,4362,6805,408
+H200 measured mean (Exp-2),581,5090,7940,476

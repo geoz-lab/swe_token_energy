@@ -22,6 +22,7 @@ python build_sanity.py        # -> exp3_sanity_token_parity.csv + fig7 (open-vs-
 | `exp4_cost_per_engineer.csv` | Exp-3 five-layer model **per substituted software engineer**: P10/P50/P90 of token demand, engineers-per-GPU, W, kWh/yr, energy cost, and API-equivalent cost. |
 | `exp4_scaling.csv` | Exp-3 illustrative linear scale-up of the per-engineer medians to global substitution scenarios (10/30/50/70/100 %). |
 | `exp4_sensitivity.csv` | Exp-3 one-at-a-time sensitivity of per-engineer GPU count and energy cost. |
+| `exp4_gpu_annual_energy_reference.csv` | Reference: energy + cost of running ONE GPU continuously for a year — at H100/H200 nameplate TDP (700 W) and at Exp-2 measured mean power per tier. |
 
 Model metadata (architecture, active vs total parameters) is included in the Exp-2 tables so the
 "active parameters drive throughput" finding is readable directly from the CSV.
