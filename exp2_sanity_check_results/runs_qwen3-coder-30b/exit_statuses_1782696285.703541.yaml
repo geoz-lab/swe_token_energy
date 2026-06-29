@@ -1,0 +1,12 @@
+instances_by_exit_status:
+    Submitted:
+    - astropy__astropy-14182
+    - django__django-14016
+    - django__django-14580
+    - matplotlib__matplotlib-23563
+    - psf__requests-863
+    - pytest-dev__pytest-5103
+    - scikit-learn__scikit-learn-13496
+    - sphinx-doc__sphinx-8273
+    - sympy__sympy-13895
+    - sympy__sympy-20639

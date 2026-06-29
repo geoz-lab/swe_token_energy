@@ -1,0 +1,214 @@
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/constants.py:298: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+(APIServer pid=53610) WARNING 06-25 21:30:07 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_URL
+(APIServer pid=53610) WARNING 06-25 21:30:07 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BIN
+(APIServer pid=53610) WARNING 06-25 21:30:07 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_SIF
+(APIServer pid=53610) WARNING 06-25 21:30:07 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_IMAGE_TAG
+(APIServer pid=53610) WARNING 06-25 21:30:07 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_PIPELINE
+(APIServer pid=53610) WARNING 06-25 21:30:07 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_COMMIT
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/constants.py:298: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+[W625 21:30:28.058443282 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [sh04-14n01.int]:51986 (errno: 97 - Address family not supported by protocol).
+(EngineCore pid=63132) Loading safetensors checkpoint shards:   0% Completed | 0/80 [00:00<?, ?it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:   1% Completed | 1/80 [00:02<02:42,  2.05s/it]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:   2% Completed | 2/80 [00:04<02:36,  2.00s/it]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:   4% Completed | 3/80 [00:04<01:49,  1.42s/it]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:   5% Completed | 4/80 [00:05<01:28,  1.16s/it]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:   6% Completed | 5/80 [00:06<01:17,  1.04s/it]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:   8% Completed | 6/80 [00:09<02:02,  1.65s/it]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:   9% Completed | 7/80 [00:09<01:37,  1.34s/it]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  10% Completed | 8/80 [00:10<01:20,  1.12s/it]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  11% Completed | 9/80 [00:11<01:07,  1.04it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  12% Completed | 10/80 [00:11<00:59,  1.18it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  14% Completed | 11/80 [00:12<00:53,  1.29it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  15% Completed | 12/80 [00:12<00:49,  1.38it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  16% Completed | 13/80 [00:13<00:45,  1.47it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  18% Completed | 14/80 [00:14<00:42,  1.54it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  19% Completed | 15/80 [00:14<00:40,  1.59it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  20% Completed | 16/80 [00:15<00:39,  1.62it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  21% Completed | 17/80 [00:15<00:38,  1.65it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  22% Completed | 18/80 [00:16<00:36,  1.68it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  24% Completed | 19/80 [00:17<00:36,  1.69it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  25% Completed | 20/80 [00:17<00:35,  1.67it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  26% Completed | 21/80 [00:18<00:35,  1.67it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  28% Completed | 22/80 [00:18<00:34,  1.69it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  29% Completed | 23/80 [00:19<00:33,  1.71it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  30% Completed | 24/80 [00:19<00:33,  1.69it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  31% Completed | 25/80 [00:20<00:32,  1.68it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  32% Completed | 26/80 [00:21<00:31,  1.69it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  34% Completed | 27/80 [00:21<00:31,  1.70it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  35% Completed | 28/80 [00:22<00:30,  1.72it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  36% Completed | 29/80 [00:22<00:29,  1.73it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  38% Completed | 30/80 [00:23<00:28,  1.75it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  39% Completed | 31/80 [00:24<00:28,  1.74it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  40% Completed | 32/80 [00:24<00:27,  1.75it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  41% Completed | 33/80 [00:25<00:26,  1.76it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  42% Completed | 34/80 [00:25<00:26,  1.77it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  44% Completed | 35/80 [00:26<00:25,  1.78it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  45% Completed | 36/80 [00:26<00:25,  1.76it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  46% Completed | 37/80 [00:27<00:24,  1.77it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  48% Completed | 38/80 [00:27<00:23,  1.78it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  49% Completed | 39/80 [00:28<00:23,  1.78it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  50% Completed | 40/80 [00:29<00:22,  1.79it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  51% Completed | 41/80 [00:29<00:21,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  52% Completed | 42/80 [00:30<00:20,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  54% Completed | 43/80 [00:30<00:20,  1.83it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  55% Completed | 44/80 [00:31<00:19,  1.80it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  56% Completed | 45/80 [00:31<00:19,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  57% Completed | 46/80 [00:32<00:18,  1.82it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  59% Completed | 47/80 [00:32<00:18,  1.83it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  60% Completed | 48/80 [00:33<00:17,  1.84it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  61% Completed | 49/80 [00:34<00:17,  1.80it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  62% Completed | 50/80 [00:34<00:16,  1.79it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  64% Completed | 51/80 [00:35<00:16,  1.80it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  65% Completed | 52/80 [00:35<00:15,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  66% Completed | 53/80 [00:36<00:14,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  68% Completed | 54/80 [00:36<00:14,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  69% Completed | 55/80 [00:37<00:13,  1.80it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  70% Completed | 56/80 [00:37<00:13,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  71% Completed | 57/80 [00:38<00:12,  1.82it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  72% Completed | 58/80 [00:38<00:12,  1.83it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  74% Completed | 59/80 [00:39<00:11,  1.83it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  75% Completed | 60/80 [00:40<00:10,  1.83it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  76% Completed | 61/80 [00:40<00:10,  1.80it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  78% Completed | 62/80 [00:41<00:09,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  79% Completed | 63/80 [00:41<00:09,  1.82it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  80% Completed | 64/80 [00:42<00:08,  1.82it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  81% Completed | 65/80 [00:42<00:08,  1.79it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  82% Completed | 66/80 [00:43<00:07,  1.80it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  84% Completed | 67/80 [00:43<00:07,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  85% Completed | 68/80 [00:44<00:06,  1.80it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  86% Completed | 69/80 [00:45<00:06,  1.81it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  88% Completed | 70/80 [00:45<00:05,  1.82it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  89% Completed | 71/80 [00:46<00:04,  1.83it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  90% Completed | 72/80 [00:46<00:04,  1.83it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  91% Completed | 73/80 [00:47<00:03,  1.84it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  92% Completed | 74/80 [00:47<00:03,  1.84it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  94% Completed | 75/80 [00:48<00:02,  1.84it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  95% Completed | 76/80 [00:48<00:02,  1.84it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  96% Completed | 77/80 [00:49<00:01,  1.84it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  98% Completed | 78/80 [00:49<00:01,  1.79it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards:  99% Completed | 79/80 [00:50<00:00,  1.79it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards: 100% Completed | 80/80 [00:51<00:00,  1.26it/s]
+(EngineCore pid=63132) Loading safetensors checkpoint shards: 100% Completed | 80/80 [00:51<00:00,  1.54it/s]
+(EngineCore pid=63132) 
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195] EngineCore failed to start.
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195] Traceback (most recent call last):
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1164, in run_engine_core
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]     return func(*args, **kwargs)
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 930, in __init__
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]     super().__init__(
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 132, in __init__
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]     kv_cache_config = self._initialize_kv_caches(vllm_config)
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]     return func(*args, **kwargs)
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 268, in _initialize_kv_caches
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]     kv_cache_configs = get_kv_cache_configs(
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]                        ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/core/kv_cache_utils.py", line 2052, in get_kv_cache_configs
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]     _check_enough_kv_cache_memory(
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/core/kv_cache_utils.py", line 720, in _check_enough_kv_cache_memory
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195]     raise ValueError(
+(EngineCore pid=63132) ERROR 06-25 21:32:14 [core.py:1195] ValueError: No available memory for the cache blocks. Try increasing `gpu_memory_utilization` when initializing the engine (this flag also controls CPU memory reservation on the CPU backend, despite its name). See https://docs.vllm.ai/en/latest/configuration/conserving_memory/ for more details.
+(EngineCore pid=63132) Process EngineCore:
+(EngineCore pid=63132) Traceback (most recent call last):
+(EngineCore pid=63132)   File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+(EngineCore pid=63132)     self.run()
+(EngineCore pid=63132)   File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+(EngineCore pid=63132)     self._target(*self._args, **self._kwargs)
+(EngineCore pid=63132)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1199, in run_engine_core
+(EngineCore pid=63132)     raise e
+(EngineCore pid=63132)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1164, in run_engine_core
+(EngineCore pid=63132)     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=63132)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=63132)     return func(*args, **kwargs)
+(EngineCore pid=63132)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 930, in __init__
+(EngineCore pid=63132)     super().__init__(
+(EngineCore pid=63132)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 132, in __init__
+(EngineCore pid=63132)     kv_cache_config = self._initialize_kv_caches(vllm_config)
+(EngineCore pid=63132)                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=63132)     return func(*args, **kwargs)
+(EngineCore pid=63132)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 268, in _initialize_kv_caches
+(EngineCore pid=63132)     kv_cache_configs = get_kv_cache_configs(
+(EngineCore pid=63132)                        ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=63132)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/core/kv_cache_utils.py", line 2052, in get_kv_cache_configs
+(EngineCore pid=63132)     _check_enough_kv_cache_memory(
+(EngineCore pid=63132)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/core/kv_cache_utils.py", line 720, in _check_enough_kv_cache_memory
+(EngineCore pid=63132)     raise ValueError(
+(EngineCore pid=63132) ValueError: No available memory for the cache blocks. Try increasing `gpu_memory_utilization` when initializing the engine (this flag also controls CPU memory reservation on the CPU backend, despite its name). See https://docs.vllm.ai/en/latest/configuration/conserving_memory/ for more details.
+[rank0]:[W625 21:32:15.188156504 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+(APIServer pid=53610) Traceback (most recent call last):
+(APIServer pid=53610)   File "/usr/local/bin/vllm", line 10, in <module>
+(APIServer pid=53610)     sys.exit(main())
+(APIServer pid=53610)              ^^^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/main.py", line 95, in main
+(APIServer pid=53610)     args.dispatch_function(args)
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/serve.py", line 148, in cmd
+(APIServer pid=53610)     uvloop.run(run_server(args))
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 96, in run
+(APIServer pid=53610)     return __asyncio.run(
+(APIServer pid=53610)            ^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/lib/python3.12/asyncio/runners.py", line 195, in run
+(APIServer pid=53610)     return runner.run(main)
+(APIServer pid=53610)            ^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+(APIServer pid=53610)     return self._loop.run_until_complete(task)
+(APIServer pid=53610)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=53610)     return await main
+(APIServer pid=53610)            ^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/api_server.py", line 665, in run_server
+(APIServer pid=53610)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/api_server.py", line 679, in run_server_worker
+(APIServer pid=53610)     async with build_async_engine_client(
+(APIServer pid=53610)                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=53610)     return await anext(self.gen)
+(APIServer pid=53610)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/api_server.py", line 99, in build_async_engine_client
+(APIServer pid=53610)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=53610)                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=53610)     return await anext(self.gen)
+(APIServer pid=53610)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/api_server.py", line 135, in build_async_engine_client_from_engine_args
+(APIServer pid=53610)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=53610)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 217, in from_vllm_config
+(APIServer pid=53610)     return cls(
+(APIServer pid=53610)            ^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 146, in __init__
+(APIServer pid=53610)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=53610)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=53610)     return func(*args, **kwargs)
+(APIServer pid=53610)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 131, in make_async_mp_client
+(APIServer pid=53610)     return AsyncMPClient(*client_args)
+(APIServer pid=53610)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=53610)     return func(*args, **kwargs)
+(APIServer pid=53610)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 948, in __init__
+(APIServer pid=53610)     super().__init__(
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 570, in __init__
+(APIServer pid=53610)     with launch_core_engines(
+(APIServer pid=53610)          ^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=53610)   File "/usr/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=53610)     next(self.gen)
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1190, in launch_core_engines
+(APIServer pid=53610)     wait_for_engine_startup(
+(APIServer pid=53610)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1249, in wait_for_engine_startup
+(APIServer pid=53610)     raise RuntimeError(
+(APIServer pid=53610) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}

@@ -1,0 +1,29 @@
+experiment,metric,value,unit
+Exp-1 demand,median tokens/task · SWE-Lancer · Opus 4.8,524151.0,tokens
+Exp-1 demand,median tokens/task · SWE-Lancer · Gemini 3.1 Pro,1490305.0,tokens
+Exp-1 demand,median tokens/task · SWE-Lancer · GPT-5.4,189944.0,tokens
+Exp-1 demand,median tokens/task · SWE-bench · Opus 4.8,33505.0,tokens
+Exp-1 demand,median tokens/task · SWE-bench · Gemini 3.1 Pro,305676.0,tokens
+Exp-1 demand,median tokens/task · SWE-bench · GPT-5.4,28232.0,tokens
+Exp-2 supply,θ_GPU saturated · Qwen3-Coder-30B-A3B · A100,794.0,tok/s/GPU
+Exp-2 supply,energy · Qwen3-Coder-30B-A3B · A100,0.1394,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · Qwen3-Coder-30B-A3B · H100,1484.0,tok/s/GPU
+Exp-2 supply,energy · Qwen3-Coder-30B-A3B · H100,0.101,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · Qwen3-Coder-30B-A3B · H200,2653.0,tok/s/GPU
+Exp-2 supply,energy · Qwen3-Coder-30B-A3B · H200,0.0694,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · Qwen3-Coder-Next · H200,2416.0,tok/s/GPU
+Exp-2 supply,energy · Qwen3-Coder-Next · H200,0.0733,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · gpt-oss-20b · A100,1828.0,tok/s/GPU
+Exp-2 supply,energy · gpt-oss-20b · A100,0.0574,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · gpt-oss-20b · H100,4150.0,tok/s/GPU
+Exp-2 supply,energy · gpt-oss-20b · H100,0.0396,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · gpt-oss-20b · H200,4528.0,tok/s/GPU
+Exp-2 supply,energy · gpt-oss-20b · H200,0.0378,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · Qwen3-32B · A100,140.0,tok/s/GPU
+Exp-2 supply,energy · Qwen3-32B · A100,0.6986,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · Qwen3-32B · H100,249.0,tok/s/GPU
+Exp-2 supply,energy · Qwen3-32B · H100,0.5329,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · Qwen3-32B · H200,951.0,tok/s/GPU
+Exp-2 supply,energy · Qwen3-32B · H200,0.1928,kWh/1M gen-tok
+Exp-2 supply,θ_GPU saturated · Kimi-Dev-72B · H200,608.0,tok/s/GPU
+Exp-2 supply,energy · Kimi-Dev-72B · H200,0.2918,kWh/1M gen-tok

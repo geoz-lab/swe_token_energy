@@ -1,0 +1,32 @@
+# Experiment 1 conda env for Sherlock (CPU). conda-forge provides prebuilt binaries for the
+# heavy C/C++ packages (pyarrow, datasets) so nothing compiles from source.
+#
+#   module load anaconda            # or miniconda — see `module avail anaconda`
+#   conda env create -f exp1_token_consumption/environment-sherlock.yml
+#   conda activate token-energy-exp1
+#
+# (If $HOME quota is tight, install into group space instead:
+#   conda env create --prefix /home/groups/kovscek/$USER/conda_envs/token-energy-exp1 \
+#                    -f exp1_token_consumption/environment-sherlock.yml )
+name: token-energy-exp1
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip>=24                 # recent pip so the pip: section gets WHEELS (not source builds)
+  # --- binary-heavy: install from conda-forge so pip never builds them from source ---
+  - pyarrow
+  - datasets
+  - tiktoken                # Rust ext; conda binary avoids needing a Rust compiler
+  - pydantic                # Rust core (pydantic-core); conda binary
+  - pip:
+      # --- agent scaffold + grading (pure-python wheels, fast) ---
+      - mini-swe-agent        # pulls litellm (used for the actual model calls)
+      - sb-cli                # cloud grading (no Docker)
+      - python-dotenv
+      # --- native SDKs that smoke_test.py imports directly ---
+      - anthropic
+      - openai
+      - google-generativeai
+      # --- optional: ONLY for LOCAL grading instead of sb-cli (heavy) ---
+      # - swebench

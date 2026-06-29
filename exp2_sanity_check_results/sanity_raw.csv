@@ -1,0 +1,11 @@
+model,instance_id,api_calls,T_input,T_output,T_tool,total_tokens,cost_usd,n_failed_tests,retry_frac,raw_input_est,raw_output_est,raw_cost_est,anchor_factor,resolved
+qwen3-coder-30b,astropy__astropy-14182,37,71756,978,219379,292113,0.0,3,0.76,291135,978,,1.0,
+qwen3-coder-30b,django__django-14016,31,62851,1431,141125,205407,0.0,3,0.925,203976,1431,,1.0,
+qwen3-coder-30b,django__django-14580,67,194538,2965,574144,771647,0.0,11,0.977,768682,2965,,1.0,
+qwen3-coder-30b,matplotlib__matplotlib-23563,43,131324,1252,203503,336079,0.0,8,0.811,334827,1252,,1.0,
+qwen3-coder-30b,psf__requests-863,50,101223,1452,203079,305754,0.0,6,0.736,304302,1452,,1.0,
+qwen3-coder-30b,pytest-dev__pytest-5103,75,196915,2047,716271,915233,0.0,14,0.953,913186,2047,,1.0,
+qwen3-coder-30b,scikit-learn__scikit-learn-13496,73,144210,1491,631056,776757,0.0,5,0.933,775266,1491,,1.0,
+qwen3-coder-30b,sphinx-doc__sphinx-8273,42,73362,1229,324660,399251,0.0,7,0.839,398022,1229,,1.0,
+qwen3-coder-30b,sympy__sympy-13895,47,140839,4086,421872,566797,0.0,4,0.992,562711,4086,,1.0,
+qwen3-coder-30b,sympy__sympy-20639,69,174076,2443,313810,490329,0.0,10,0.952,487886,2443,,1.0,

@@ -1,0 +1,401 @@
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/constants.py:298: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+(APIServer pid=31287) WARNING 06-25 21:11:11 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_URL
+(APIServer pid=31287) WARNING 06-25 21:11:11 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BIN
+(APIServer pid=31287) WARNING 06-25 21:11:11 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_SIF
+(APIServer pid=31287) WARNING 06-25 21:11:11 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_IMAGE_TAG
+(APIServer pid=31287) WARNING 06-25 21:11:11 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_PIPELINE
+(APIServer pid=31287) WARNING 06-25 21:11:11 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_COMMIT
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/constants.py:298: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+[W625 21:11:33.200654744 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [sh04-10n09.int]:50965 (errno: 97 - Address family not supported by protocol).
+(EngineCore pid=40597) Loading safetensors checkpoint shards:   0% Completed | 0/80 [00:00<?, ?it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:   1% Completed | 1/80 [00:02<03:43,  2.83s/it]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:   2% Completed | 2/80 [00:03<02:19,  1.79s/it]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:   4% Completed | 3/80 [00:05<01:54,  1.49s/it]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:   5% Completed | 4/80 [00:06<01:47,  1.41s/it]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:   6% Completed | 5/80 [00:07<01:40,  1.34s/it]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:   8% Completed | 6/80 [00:08<01:29,  1.21s/it]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:   9% Completed | 7/80 [00:10<01:38,  1.35s/it]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  10% Completed | 8/80 [00:11<01:28,  1.22s/it]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  11% Completed | 9/80 [00:11<01:16,  1.07s/it]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  12% Completed | 10/80 [00:12<01:05,  1.07it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  14% Completed | 11/80 [00:13<00:57,  1.21it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  15% Completed | 12/80 [00:13<00:51,  1.31it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  16% Completed | 13/80 [00:14<00:47,  1.41it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  18% Completed | 14/80 [00:14<00:44,  1.49it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  19% Completed | 15/80 [00:15<00:41,  1.55it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  20% Completed | 16/80 [00:16<00:40,  1.57it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  21% Completed | 17/80 [00:16<00:38,  1.62it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  22% Completed | 18/80 [00:17<00:38,  1.63it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  24% Completed | 19/80 [00:17<00:36,  1.67it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  25% Completed | 20/80 [00:18<00:35,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  26% Completed | 21/80 [00:18<00:35,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  28% Completed | 22/80 [00:19<00:34,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  29% Completed | 23/80 [00:20<00:33,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  30% Completed | 24/80 [00:20<00:33,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  31% Completed | 25/80 [00:21<00:32,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  32% Completed | 26/80 [00:21<00:31,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  34% Completed | 27/80 [00:22<00:30,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  35% Completed | 28/80 [00:23<00:30,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  36% Completed | 29/80 [00:23<00:29,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  38% Completed | 30/80 [00:24<00:29,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  39% Completed | 31/80 [00:24<00:28,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  40% Completed | 32/80 [00:25<00:28,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  41% Completed | 33/80 [00:25<00:27,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  42% Completed | 34/80 [00:26<00:27,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  44% Completed | 35/80 [00:27<00:26,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  45% Completed | 36/80 [00:27<00:26,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  46% Completed | 37/80 [00:28<00:25,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  48% Completed | 38/80 [00:28<00:24,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  49% Completed | 39/80 [00:29<00:23,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  50% Completed | 40/80 [00:30<00:23,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  51% Completed | 41/80 [00:30<00:22,  1.74it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  52% Completed | 42/80 [00:31<00:21,  1.76it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  54% Completed | 43/80 [00:31<00:20,  1.76it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  55% Completed | 44/80 [00:32<00:20,  1.77it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  56% Completed | 45/80 [00:32<00:20,  1.75it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  57% Completed | 46/80 [00:33<00:19,  1.74it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  59% Completed | 47/80 [00:34<00:19,  1.74it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  60% Completed | 48/80 [00:34<00:18,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  61% Completed | 49/80 [00:35<00:18,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  62% Completed | 50/80 [00:35<00:17,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  64% Completed | 51/80 [00:36<00:16,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  65% Completed | 52/80 [00:36<00:16,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  66% Completed | 53/80 [00:37<00:15,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  68% Completed | 54/80 [00:38<00:15,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  69% Completed | 55/80 [00:38<00:14,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  70% Completed | 56/80 [00:39<00:14,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  71% Completed | 57/80 [00:39<00:13,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  72% Completed | 58/80 [00:40<00:12,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  74% Completed | 59/80 [00:41<00:12,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  75% Completed | 60/80 [00:41<00:11,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  76% Completed | 61/80 [00:42<00:11,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  78% Completed | 62/80 [00:42<00:10,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  79% Completed | 63/80 [00:43<00:09,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  80% Completed | 64/80 [00:43<00:09,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  81% Completed | 65/80 [00:44<00:08,  1.72it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  82% Completed | 66/80 [00:45<00:08,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  84% Completed | 67/80 [00:45<00:07,  1.71it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  85% Completed | 68/80 [00:46<00:07,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  86% Completed | 69/80 [00:46<00:06,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  88% Completed | 70/80 [00:47<00:05,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  89% Completed | 71/80 [00:48<00:05,  1.70it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  90% Completed | 72/80 [00:48<00:04,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  91% Completed | 73/80 [00:49<00:04,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  92% Completed | 74/80 [00:49<00:03,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  94% Completed | 75/80 [00:50<00:02,  1.68it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  95% Completed | 76/80 [00:51<00:02,  1.67it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  96% Completed | 77/80 [00:51<00:01,  1.69it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  98% Completed | 78/80 [00:52<00:01,  1.66it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards:  99% Completed | 79/80 [00:52<00:00,  1.68it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards: 100% Completed | 80/80 [00:54<00:00,  1.22it/s]
+(EngineCore pid=40597) Loading safetensors checkpoint shards: 100% Completed | 80/80 [00:54<00:00,  1.47it/s]
+(EngineCore pid=40597) 
+(EngineCore pid=40597) 2026-06-25 21:13:25,294 - INFO - autotuner.py:622 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
+(EngineCore pid=40597) 2026-06-25 21:13:25,311 - INFO - autotuner.py:641 - flashinfer.jit: [Autotuner]: Autotuning process ends
+(EngineCore pid=40597) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   2%|▏         | 1/51 [00:00<00:05,  9.48it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   6%|▌         | 3/51 [00:00<00:04, 10.56it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  10%|▉         | 5/51 [00:00<00:04, 10.33it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  14%|█▎        | 7/51 [00:00<00:04,  9.82it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  16%|█▌        | 8/51 [00:00<00:04,  9.55it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  18%|█▊        | 9/51 [00:00<00:04,  9.41it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  20%|█▉        | 10/51 [00:01<00:04,  9.24it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  22%|██▏       | 11/51 [00:01<00:04,  9.05it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  24%|██▎       | 12/51 [00:01<00:04,  9.08it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  25%|██▌       | 13/51 [00:01<00:04,  8.90it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  27%|██▋       | 14/51 [00:01<00:04,  8.66it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  29%|██▉       | 15/51 [00:01<00:04,  8.52it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  31%|███▏      | 16/51 [00:01<00:04,  8.40it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  35%|███▌      | 18/51 [00:01<00:03, 10.29it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  39%|███▉      | 20/51 [00:02<00:02, 11.42it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  43%|████▎     | 22/51 [00:02<00:02, 12.14it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  47%|████▋     | 24/51 [00:02<00:02, 12.40it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  51%|█████     | 26/51 [00:02<00:01, 12.53it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  55%|█████▍    | 28/51 [00:02<00:01, 12.45it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  59%|█████▉    | 30/51 [00:02<00:01, 12.27it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  63%|██████▎   | 32/51 [00:03<00:01, 12.07it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  67%|██████▋   | 34/51 [00:03<00:01, 12.76it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  71%|███████   | 36/51 [00:03<00:01, 13.38it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  75%|███████▍  | 38/51 [00:03<00:00, 13.70it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  78%|███████▊  | 40/51 [00:03<00:00, 13.61it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  82%|████████▏ | 42/51 [00:03<00:00, 14.02it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  86%|████████▋ | 44/51 [00:03<00:00, 14.19it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  90%|█████████ | 46/51 [00:03<00:00, 14.21it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  94%|█████████▍| 48/51 [00:04<00:00, 14.54it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  98%|█████████▊| 50/51 [00:04<00:00, 14.84it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 51/51 [00:04<00:00, 11.87it/s]
+(EngineCore pid=40597) Capturing CUDA graphs (decode, FULL):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):   4%|▍         | 2/51 [00:00<00:04, 10.22it/s]Capturing CUDA graphs (decode, FULL):   8%|▊         | 4/51 [00:00<00:04, 10.12it/s]Capturing CUDA graphs (decode, FULL):  12%|█▏        | 6/51 [00:00<00:04,  9.54it/s]Capturing CUDA graphs (decode, FULL):  14%|█▎        | 7/51 [00:00<00:04,  9.43it/s]Capturing CUDA graphs (decode, FULL):  16%|█▌        | 8/51 [00:00<00:04,  9.25it/s]Capturing CUDA graphs (decode, FULL):  18%|█▊        | 9/51 [00:00<00:04,  9.24it/s]Capturing CUDA graphs (decode, FULL):  20%|█▉        | 10/51 [00:01<00:04,  9.21it/s]Capturing CUDA graphs (decode, FULL):  22%|██▏       | 11/51 [00:01<00:04,  9.13it/s]Capturing CUDA graphs (decode, FULL):  24%|██▎       | 12/51 [00:01<00:04,  9.16it/s]Capturing CUDA graphs (decode, FULL):  25%|██▌       | 13/51 [00:01<00:04,  9.03it/s]Capturing CUDA graphs (decode, FULL):  27%|██▋       | 14/51 [00:01<00:04,  8.97it/s]Capturing CUDA graphs (decode, FULL):  29%|██▉       | 15/51 [00:01<00:04,  8.83it/s]Capturing CUDA graphs (decode, FULL):  31%|███▏      | 16/51 [00:01<00:04,  8.68it/s]Capturing CUDA graphs (decode, FULL):  35%|███▌      | 18/51 [00:01<00:03, 10.86it/s]Capturing CUDA graphs (decode, FULL):  39%|███▉      | 20/51 [00:02<00:02, 12.11it/s]Capturing CUDA graphs (decode, FULL):  43%|████▎     | 22/51 [00:02<00:02, 13.02it/s]Capturing CUDA graphs (decode, FULL):  47%|████▋     | 24/51 [00:02<00:02, 13.43it/s]Capturing CUDA graphs (decode, FULL):  51%|█████     | 26/51 [00:02<00:01, 13.70it/s]Capturing CUDA graphs (decode, FULL):  55%|█████▍    | 28/51 [00:02<00:01, 13.82it/s]Capturing CUDA graphs (decode, FULL):  59%|█████▉    | 30/51 [00:02<00:01, 13.78it/s]Capturing CUDA graphs (decode, FULL):  63%|██████▎   | 32/51 [00:02<00:01, 13.67it/s]Capturing CUDA graphs (decode, FULL):  67%|██████▋   | 34/51 [00:02<00:01, 14.90it/s]Capturing CUDA graphs (decode, FULL):  71%|███████   | 36/51 [00:03<00:00, 15.98it/s]Capturing CUDA graphs (decode, FULL):  75%|███████▍  | 38/51 [00:03<00:00, 16.75it/s]Capturing CUDA graphs (decode, FULL):  78%|███████▊  | 40/51 [00:03<00:00, 17.23it/s]Capturing CUDA graphs (decode, FULL):  84%|████████▍ | 43/51 [00:03<00:00, 18.28it/s]Capturing CUDA graphs (decode, FULL):  88%|████████▊ | 45/51 [00:03<00:00, 18.45it/s]Capturing CUDA graphs (decode, FULL):  92%|█████████▏| 47/51 [00:03<00:00, 18.14it/s]Capturing CUDA graphs (decode, FULL):  98%|█████████▊| 50/51 [00:03<00:00, 18.49it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 51/51 [00:03<00:00, 13.21it/s]
+(APIServer pid=31287) INFO:     Started server process [31287]
+(APIServer pid=31287) INFO:     Waiting for application startup.
+(APIServer pid=31287) INFO:     Application startup complete.
+(APIServer pid=31287) INFO:     127.0.0.1:41978 - "GET /health HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "GET /metrics HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(EngineCore pid=40597) WARNING 06-25 21:14:02 [jit_monitor.py:103] Triton kernel JIT compilation during inference: _compute_slot_mapping_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42008 - "GET /metrics HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42868 - "GET /metrics HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42868 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42870 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42872 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42874 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42876 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42878 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42880 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42882 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42884 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42886 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42888 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42890 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42892 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42894 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42896 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42898 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42900 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42902 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42904 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42906 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42908 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42910 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42912 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42914 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42916 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42918 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42920 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42922 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42924 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42926 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42928 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42930 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42932 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42934 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42936 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42938 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42940 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42942 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42944 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42946 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42948 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42950 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42952 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42954 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42956 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42958 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42960 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42962 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42964 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42966 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42968 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42970 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42972 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42974 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42976 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42978 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42980 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42982 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42984 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42986 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42988 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42990 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42992 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42994 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42868 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42872 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42870 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42876 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42878 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42874 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42882 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42884 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42880 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42888 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42890 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42886 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42896 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42894 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42892 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42902 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42900 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42898 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42904 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42908 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42906 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42910 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42912 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42914 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42920 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42918 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42916 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42924 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42926 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42922 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42932 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42928 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42930 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42938 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42936 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42934 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42944 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42942 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42940 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42950 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42948 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42946 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42952 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42954 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42956 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42958 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42960 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42962 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42964 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42966 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42968 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42970 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42972 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42974 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42976 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42978 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42980 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42982 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42984 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42990 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42988 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42986 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42992 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42868 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42994 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42876 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42872 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42870 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42882 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42878 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42874 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42888 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42884 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42880 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42890 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42896 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42886 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42894 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42892 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42902 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42900 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42898 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42904 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42908 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42906 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42910 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42912 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42914 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42920 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42918 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42916 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42926 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42924 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42922 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42930 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42932 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42928 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42938 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42936 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42934 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42944 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42942 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42940 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42950 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42948 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42954 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42952 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42946 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42960 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42958 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42956 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42966 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42964 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42962 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42972 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42970 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42968 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42978 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42976 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42974 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42984 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42982 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42980 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42990 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42988 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42986 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42992 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42868 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42994 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42876 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42872 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42870 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42882 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42878 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42874 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42888 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42884 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42880 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42890 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42896 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42886 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42902 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42894 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42892 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42900 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42898 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42904 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42908 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42906 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42910 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42912 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42914 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42920 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42918 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42916 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42926 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42930 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42924 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42922 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42938 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42932 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42928 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42944 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42936 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42934 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42950 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42942 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42940 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42954 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42948 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42952 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42946 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42960 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42966 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42958 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42956 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42972 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42964 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42962 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42978 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42970 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42968 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42984 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42976 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42974 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42990 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42982 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42980 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42992 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42988 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42986 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42876 - "POST /v1/completions HTTP/1.1" 200 OK
+(APIServer pid=31287) INFO:     127.0.0.1:42980 - "GET /metrics HTTP/1.1" 200 OK
+(APIServer pid=31287) WARNING 06-25 21:34:11 [utils.py:607] [shutdown] Process manager: force killing remaining processes count=1
+(APIServer pid=31287) INFO:     Shutting down
+(APIServer pid=31287) INFO:     Waiting for application shutdown.
+(APIServer pid=31287) INFO:     Application shutdown complete.
+/usr/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
+  warnings.warn('resource_tracker: There appear to be %d '

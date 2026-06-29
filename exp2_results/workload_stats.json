@@ -1,0 +1,136 @@
+{
+  "swe-bench": {
+    "input_tokens_per_request": {
+      "n": 210,
+      "median": 3864.097278611273,
+      "mu": 8.259483370639543,
+      "sigma": 0.442361612549504,
+      "gsd": 1.5563784446648885,
+      "mean": 4261.281726471465,
+      "p10": 2099.3945054945057,
+      "p50": 4156.25,
+      "p90": 6479.091025641026,
+      "p99": 9109.248226600981
+    },
+    "output_tokens_per_request": {
+      "n": 210,
+      "median": 7.803596293398017,
+      "mu": 2.0545846906946985,
+      "sigma": 1.4904900224172362,
+      "gsd": 4.439270328084477,
+      "mean": 23.697390679236765,
+      "p10": 1.0,
+      "p50": 13.454361054766734,
+      "p90": 38.28214285714286,
+      "p99": 56.669642857142854
+    },
+    "api_calls_per_task": {
+      "median": 15.0,
+      "mean": 27.228571428571428,
+      "p90": 59.0
+    },
+    "prefix_reuse_fraction": {
+      "mean": 0.6440750084791305,
+      "median": 0.6812070057130455
+    }
+  },
+  "overall": {
+    "input_tokens_per_request": {
+      "n": 270,
+      "median": 5182.023388842713,
+      "mu": 8.552950874589815,
+      "sigma": 0.6981245621821367,
+      "gsd": 2.009979578727155,
+      "mean": 6611.989207967863,
+      "p10": 2248.0833333333335,
+      "p50": 5075.276887871853,
+      "p90": 15924.960623174293,
+      "p99": 24946.915034482765
+    },
+    "output_tokens_per_request": {
+      "n": 270,
+      "median": 8.638546083075545,
+      "mu": 2.1562342912339183,
+      "sigma": 1.6475520321861747,
+      "gsd": 5.194248896966933,
+      "mean": 33.563801187809126,
+      "p10": 1.0,
+      "p50": 15.8986013986014,
+      "p90": 55.26571428571428,
+      "p99": 103.31764795918367
+    },
+    "api_calls_per_task": {
+      "median": 19.5,
+      "mean": 31.581481481481482,
+      "p90": 68.19999999999999
+    },
+    "prefix_reuse_fraction": {
+      "mean": 0.665215738782541,
+      "median": 0.707167629008564
+    }
+  },
+  "swe-lancer": {
+    "input_tokens_per_request": {
+      "n": 60,
+      "median": 14473.6804608801,
+      "mu": 9.580087138415768,
+      "sigma": 0.38664882773041953,
+      "gsd": 1.4720394610566603,
+      "mean": 15597.030092203868,
+      "p10": 8173.028116710875,
+      "p50": 15174.515151515152,
+      "p90": 23421.803764705885,
+      "p99": 28069.50242857142
+    },
+    "output_tokens_per_request": {
+      "n": 60,
+      "median": 12.32966186603757,
+      "mu": 2.5120078931211878,
+      "sigma": 2.0834723257606282,
+      "gsd": 8.03231134893434,
+      "mean": 108.032959295248,
+      "p10": 1.0,
+      "p50": 50.75833333333333,
+      "p90": 87.04707692307693,
+      "p99": 125.23923273657284
+    },
+    "api_calls_per_task": {
+      "median": 38.0,
+      "mean": 46.81666666666667,
+      "p90": 93.2
+    },
+    "prefix_reuse_fraction": {
+      "mean": 0.7392082948444785,
+      "median": 0.7722712363337854
+    }
+  },
+  "_grid": {
+    "controlled_grid": {
+      "input_len": [
+        4096,
+        16384,
+        32768
+      ],
+      "output_len": 1024,
+      "max_concurrency": [
+        1,
+        4,
+        16
+      ],
+      "note": "vllm bench serve --dataset-name random; prefix via --random-prefix-len"
+    },
+    "representative_cell": {
+      "input_len_median": 5182,
+      "input_gsd": 2.01,
+      "prefix_frac": 0.665,
+      "fixed_output_len": 1024,
+      "note": "input drawn from empirical log-normal (bench_empirical.py)"
+    }
+  },
+  "_meta": {
+    "csv": "/Users/geozhang/Library/CloudStorage/OneDrive-Stanford/2024-Autumn/Research/Projects/token_energy_paper/Experiment/exp1_results/exp1_raw.csv",
+    "n_per_type": 512,
+    "seed": 0,
+    "fixed_output": 1024
+  }
+}

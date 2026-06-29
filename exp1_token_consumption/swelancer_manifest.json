@@ -1,0 +1,176 @@
+{
+  "seed": 42,
+  "n_sampled": 20,
+  "allocation": {
+    "ic_swe:high": 5,
+    "ic_swe:mid": 6,
+    "ic_swe:low": 9
+  },
+  "strata_sizes": {
+    "ic_swe:high": 20,
+    "ic_swe:mid": 27,
+    "ic_swe:low": 37
+  },
+  "tasks": [
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "14127",
+      "stratum": "ic_swe:high",
+      "variant": "ic_swe",
+      "price": 8000,
+      "image": "docker://swelancer/swelancer_x86_14127:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "14223_1",
+      "stratum": "ic_swe:high",
+      "variant": "ic_swe",
+      "price": 4000,
+      "image": "docker://swelancer/swelancer_x86_14223_1:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "14958",
+      "stratum": "ic_swe:high",
+      "variant": "ic_swe",
+      "price": 8000,
+      "image": "docker://swelancer/swelancer_x86_14958:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "20079",
+      "stratum": "ic_swe:high",
+      "variant": "ic_swe",
+      "price": 2000,
+      "image": "docker://swelancer/swelancer_x86_20079:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "13066_1",
+      "stratum": "ic_swe:high",
+      "variant": "ic_swe",
+      "price": 2000,
+      "image": "docker://swelancer/swelancer_x86_13066_1:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "28059_803",
+      "stratum": "ic_swe:low",
+      "variant": "ic_swe",
+      "price": 500,
+      "image": "docker://swelancer/swelancer_x86_28059_803:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "27156_665",
+      "stratum": "ic_swe:low",
+      "variant": "ic_swe",
+      "price": 500,
+      "image": "docker://swelancer/swelancer_x86_27156_665:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "28565_1001",
+      "stratum": "ic_swe:low",
+      "variant": "ic_swe",
+      "price": 500,
+      "image": "docker://swelancer/swelancer_x86_28565_1001:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "28093_799",
+      "stratum": "ic_swe:low",
+      "variant": "ic_swe",
+      "price": 500,
+      "image": "docker://swelancer/swelancer_x86_28093_799:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "27029_876",
+      "stratum": "ic_swe:low",
+      "variant": "ic_swe",
+      "price": 500,
+      "image": "docker://swelancer/swelancer_x86_27029_876:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "28087_800",
+      "stratum": "ic_swe:low",
+      "variant": "ic_swe",
+      "price": 500,
+      "image": "docker://swelancer/swelancer_x86_28087_800:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "29598_896",
+      "stratum": "ic_swe:low",
+      "variant": "ic_swe",
+      "price": 500,
+      "image": "docker://swelancer/swelancer_x86_29598_896:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "28153_817",
+      "stratum": "ic_swe:low",
+      "variant": "ic_swe",
+      "price": 500,
+      "image": "docker://swelancer/swelancer_x86_28153_817:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "29163_589",
+      "stratum": "ic_swe:low",
+      "variant": "ic_swe",
+      "price": 500,
+      "image": "docker://swelancer/swelancer_x86_29163_589:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "18909_734",
+      "stratum": "ic_swe:mid",
+      "variant": "ic_swe",
+      "price": 1000,
+      "image": "docker://swelancer/swelancer_x86_18909_734:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "19135_873",
+      "stratum": "ic_swe:mid",
+      "variant": "ic_swe",
+      "price": 1000,
+      "image": "docker://swelancer/swelancer_x86_19135_873:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "18157_893",
+      "stratum": "ic_swe:mid",
+      "variant": "ic_swe",
+      "price": 1000,
+      "image": "docker://swelancer/swelancer_x86_18157_893:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "19362_850",
+      "stratum": "ic_swe:mid",
+      "variant": "ic_swe",
+      "price": 1000,
+      "image": "docker://swelancer/swelancer_x86_19362_850:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "25570_780",
+      "stratum": "ic_swe:mid",
+      "variant": "ic_swe",
+      "price": 1000,
+      "image": "docker://swelancer/swelancer_x86_25570_780:releasev1"
+    },
+    {
+      "benchmark": "swe_lancer",
+      "instance_id": "19023_868",
+      "stratum": "ic_swe:mid",
+      "variant": "ic_swe",
+      "price": 1000,
+      "image": "docker://swelancer/swelancer_x86_19023_868:releasev1"
+    }
+  ]
+}

@@ -1,0 +1,26 @@
+# Experiment-2 host-side environment for Sherlock (owners partition: A100/H100/H200).
+#
+# IMPORTANT: Sherlock is glibc-2.17 (CentOS 7), so modern torch/vLLM wheels CANNOT be pip-installed
+# here. vLLM therefore runs from the official Apptainer image (see vllm_apptainer.sh + pull it with
+# pull_vllm_image.sh). This conda env holds only the lightweight HOST-side Python glue:
+# model download, power logging (nvidia-smi/NVML on the host), and result parsing — all of which
+# have glibc-2.17 wheels and install cleanly.
+#
+#   conda env create -f environment-sherlock-gpu.yml
+#   conda activate token-energy-exp2
+#   # IMPORTANT on Sherlock: activation must source conda first (see slurm/run_exp2.sbatch)
+name: token-energy-exp2
+channels:
+  - conda-forge
+dependencies:
+  - python=3.12
+  - pip>=24
+  # analysis / plotting (CPU side)
+  - numpy
+  - pandas
+  - matplotlib
+  - scipy
+  - pip:
+      - huggingface_hub[hf_transfer]>=0.34   # download_models.sh
+      - aiohttp>=3.10                        # (reserved) async client
+      - pynvml>=11.5                         # power_logger.py (NVML; falls back to nvidia-smi)

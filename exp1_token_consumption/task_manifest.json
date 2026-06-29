@@ -1,0 +1,692 @@
+{
+  "created": "2026-06-24T00:53:55+00:00",
+  "seed": 42,
+  "benchmarks": {
+    "swe_bench_lite": {
+      "source": "princeton-nlp/SWE-bench_Lite",
+      "split": "test",
+      "stratify_by": "repo",
+      "n_requested": 30,
+      "n_sampled": 30,
+      "strata_sizes": {
+        "astropy/astropy": 6,
+        "django/django": 114,
+        "matplotlib/matplotlib": 23,
+        "mwaskom/seaborn": 4,
+        "pallets/flask": 3,
+        "psf/requests": 6,
+        "pydata/xarray": 5,
+        "pylint-dev/pylint": 6,
+        "pytest-dev/pytest": 17,
+        "scikit-learn/scikit-learn": 23,
+        "sphinx-doc/sphinx": 16,
+        "sympy/sympy": 77
+      },
+      "allocation": {
+        "astropy/astropy": 1,
+        "django/django": 11,
+        "matplotlib/matplotlib": 2,
+        "mwaskom/seaborn": 0,
+        "pallets/flask": 0,
+        "psf/requests": 1,
+        "pydata/xarray": 0,
+        "pylint-dev/pylint": 1,
+        "pytest-dev/pytest": 2,
+        "scikit-learn/scikit-learn": 2,
+        "sphinx-doc/sphinx": 2,
+        "sympy/sympy": 8
+      }
+    },
+    "swe_bench_verified": {
+      "source": "princeton-nlp/SWE-bench_Verified",
+      "split": "test",
+      "stratify_by": "difficulty",
+      "n_requested": 40,
+      "n_sampled": 40,
+      "strata_sizes": {
+        "15 min - 1 hour": 261,
+        "1-4 hours": 42,
+        "<15 min fix": 194,
+        ">4 hours": 3
+      },
+      "allocation": {
+        "15 min - 1 hour": 21,
+        "1-4 hours": 3,
+        "<15 min fix": 16,
+        ">4 hours": 0
+      }
+    }
+  },
+  "tasks": [
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "astropy__astropy-14182",
+      "stratum": "astropy/astropy",
+      "meta": {
+        "repo": "astropy/astropy",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-14580",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-17087",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-14016",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-14855",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-13551",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-15061",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-13321",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-13448",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-11910",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-11001",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "django__django-15789",
+      "stratum": "django/django",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "matplotlib__matplotlib-23563",
+      "stratum": "matplotlib/matplotlib",
+      "meta": {
+        "repo": "matplotlib/matplotlib",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "matplotlib__matplotlib-23964",
+      "stratum": "matplotlib/matplotlib",
+      "meta": {
+        "repo": "matplotlib/matplotlib",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "psf__requests-863",
+      "stratum": "psf/requests",
+      "meta": {
+        "repo": "psf/requests",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "pylint-dev__pylint-7228",
+      "stratum": "pylint-dev/pylint",
+      "meta": {
+        "repo": "pylint-dev/pylint",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "pytest-dev__pytest-6116",
+      "stratum": "pytest-dev/pytest",
+      "meta": {
+        "repo": "pytest-dev/pytest",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "pytest-dev__pytest-5103",
+      "stratum": "pytest-dev/pytest",
+      "meta": {
+        "repo": "pytest-dev/pytest",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "scikit-learn__scikit-learn-25747",
+      "stratum": "scikit-learn/scikit-learn",
+      "meta": {
+        "repo": "scikit-learn/scikit-learn",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "scikit-learn__scikit-learn-13496",
+      "stratum": "scikit-learn/scikit-learn",
+      "meta": {
+        "repo": "scikit-learn/scikit-learn",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sphinx-doc__sphinx-8273",
+      "stratum": "sphinx-doc/sphinx",
+      "meta": {
+        "repo": "sphinx-doc/sphinx",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sphinx-doc__sphinx-10451",
+      "stratum": "sphinx-doc/sphinx",
+      "meta": {
+        "repo": "sphinx-doc/sphinx",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sympy__sympy-20639",
+      "stratum": "sympy/sympy",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sympy__sympy-18189",
+      "stratum": "sympy/sympy",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sympy__sympy-23262",
+      "stratum": "sympy/sympy",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sympy__sympy-16988",
+      "stratum": "sympy/sympy",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sympy__sympy-13895",
+      "stratum": "sympy/sympy",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sympy__sympy-12419",
+      "stratum": "sympy/sympy",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sympy__sympy-14308",
+      "stratum": "sympy/sympy",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_lite",
+      "instance_id": "sympy__sympy-13031",
+      "stratum": "sympy/sympy",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": null
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "pylint-dev__pylint-8898",
+      "stratum": "1-4 hours",
+      "meta": {
+        "repo": "pylint-dev/pylint",
+        "difficulty": "1-4 hours"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-14011",
+      "stratum": "1-4 hours",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "1-4 hours"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-15268",
+      "stratum": "1-4 hours",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "1-4 hours"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-14725",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "matplotlib__matplotlib-25960",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "matplotlib/matplotlib",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "astropy__astropy-13033",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "astropy/astropy",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-13028",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "sympy__sympy-18211",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-16877",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-16938",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "sympy__sympy-13757",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-16315",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "scikit-learn__scikit-learn-10844",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "scikit-learn/scikit-learn",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-10973",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "scikit-learn__scikit-learn-11578",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "scikit-learn/scikit-learn",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-11276",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "matplotlib__matplotlib-23299",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "matplotlib/matplotlib",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-15103",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-15022",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-12050",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "matplotlib__matplotlib-24026",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "matplotlib/matplotlib",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "matplotlib__matplotlib-21568",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "matplotlib/matplotlib",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "scikit-learn__scikit-learn-25747",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "scikit-learn/scikit-learn",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "sympy__sympy-13647",
+      "stratum": "15 min - 1 hour",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": "15 min - 1 hour"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-15104",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "pytest-dev__pytest-7521",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "pytest-dev/pytest",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "sphinx-doc__sphinx-8459",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "sphinx-doc/sphinx",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "sympy__sympy-16766",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "matplotlib__matplotlib-13989",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "matplotlib/matplotlib",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "sphinx-doc__sphinx-10449",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "sphinx-doc/sphinx",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-16139",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-12125",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-15569",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "sympy__sympy-17655",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "sympy/sympy",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "astropy__astropy-7166",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "astropy/astropy",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-11133",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "matplotlib__matplotlib-24570",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "matplotlib/matplotlib",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "django__django-16642",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "django/django",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "sphinx-doc__sphinx-9698",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "sphinx-doc/sphinx",
+        "difficulty": "<15 min fix"
+      }
+    },
+    {
+      "benchmark": "swe_bench_verified",
+      "instance_id": "sphinx-doc__sphinx-8269",
+      "stratum": "<15 min fix",
+      "meta": {
+        "repo": "sphinx-doc/sphinx",
+        "difficulty": "<15 min fix"
+      }
+    }
+  ]
+}

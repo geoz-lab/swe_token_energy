@@ -1,0 +1,13 @@
+# Experiment 1 on Sherlock (CPU). Fast install (avoids pip's slow resolver):
+#   python -m venv .venv && source .venv/bin/activate
+#   pip install uv && uv pip install -r requirements-sherlock.txt
+#
+# --- core (needed to RUN the agent) ---
+mini-swe-agent      # agent scaffold (pulls litellm)
+datasets            # SWE-bench dataset loading (used by mini-swe-agent)
+sb-cli              # cloud grading (no Docker) — recommended on Sherlock
+python-dotenv       # .env loading
+pyarrow             # local parquet sampling (optional; only for sample_tasks.py --local-dir)
+#
+# --- optional: ONLY needed for LOCAL grading instead of sb-cli (heavy; skip on Sherlock) ---
+# swebench

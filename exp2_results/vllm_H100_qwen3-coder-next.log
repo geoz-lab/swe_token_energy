@@ -1,0 +1,230 @@
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/constants.py:298: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+(APIServer pid=64512) WARNING 06-25 21:32:42 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_URL
+(APIServer pid=64512) WARNING 06-25 21:32:42 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BIN
+(APIServer pid=64512) WARNING 06-25 21:32:42 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_SIF
+(APIServer pid=64512) WARNING 06-25 21:32:42 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_IMAGE_TAG
+(APIServer pid=64512) WARNING 06-25 21:32:42 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_PIPELINE
+(APIServer pid=64512) WARNING 06-25 21:32:42 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_COMMIT
+/usr/local/lib/python3.12/dist-packages/huggingface_hub/constants.py:298: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
+  warnings.warn(
+[W625 21:33:03.182679554 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [sh04-14n01.int]:36618 (errno: 97 - Address family not supported by protocol).
+(EngineCore pid=9131) WARNING 06-25 21:33:04 [qwen_gdn_linear_attn.py:235] FlashInfer GDN prefill is JIT-compiled; first run may take a while. Set --gdn-prefill-backend triton to skip JIT.
+(EngineCore pid=9131) Loading safetensors checkpoint shards:   0% Completed | 0/40 [00:00<?, ?it/s]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:   2% Completed | 1/40 [00:03<01:57,  3.01s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:   5% Completed | 2/40 [00:05<01:42,  2.69s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:   8% Completed | 3/40 [00:07<01:34,  2.55s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  10% Completed | 4/40 [00:09<01:19,  2.20s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  12% Completed | 5/40 [00:10<01:06,  1.89s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  15% Completed | 6/40 [00:13<01:10,  2.08s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  18% Completed | 7/40 [00:14<01:01,  1.86s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  20% Completed | 8/40 [00:16<00:54,  1.72s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  22% Completed | 9/40 [00:17<00:49,  1.60s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  25% Completed | 10/40 [00:18<00:45,  1.52s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  28% Completed | 11/40 [00:21<00:51,  1.78s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  30% Completed | 12/40 [00:22<00:46,  1.65s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  32% Completed | 13/40 [00:23<00:42,  1.56s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  35% Completed | 14/40 [00:25<00:38,  1.49s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  38% Completed | 15/40 [00:27<00:44,  1.77s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  40% Completed | 16/40 [00:28<00:39,  1.64s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  42% Completed | 17/40 [00:30<00:35,  1.55s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  45% Completed | 18/40 [00:31<00:32,  1.49s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  48% Completed | 19/40 [00:33<00:30,  1.45s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  50% Completed | 20/40 [00:35<00:34,  1.74s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  52% Completed | 21/40 [00:36<00:30,  1.62s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  55% Completed | 22/40 [00:38<00:27,  1.55s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  57% Completed | 23/40 [00:39<00:25,  1.50s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  60% Completed | 24/40 [00:40<00:23,  1.45s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  62% Completed | 25/40 [00:43<00:27,  1.83s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  65% Completed | 26/40 [00:44<00:23,  1.67s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  68% Completed | 27/40 [00:46<00:20,  1.58s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  70% Completed | 28/40 [00:47<00:18,  1.50s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  72% Completed | 29/40 [00:49<00:19,  1.76s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  75% Completed | 30/40 [00:51<00:16,  1.63s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  78% Completed | 31/40 [00:52<00:13,  1.55s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  80% Completed | 32/40 [00:53<00:11,  1.49s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  82% Completed | 33/40 [00:55<00:10,  1.43s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  85% Completed | 34/40 [00:57<00:10,  1.72s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  88% Completed | 35/40 [00:58<00:07,  1.60s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  90% Completed | 36/40 [01:00<00:06,  1.54s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  92% Completed | 37/40 [01:01<00:04,  1.48s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  95% Completed | 38/40 [01:03<00:02,  1.44s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards:  98% Completed | 39/40 [01:05<00:01,  1.71s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards: 100% Completed | 40/40 [01:06<00:00,  1.62s/it]
+(EngineCore pid=9131) Loading safetensors checkpoint shards: 100% Completed | 40/40 [01:06<00:00,  1.67s/it]
+(EngineCore pid=9131) 
+(EngineCore pid=9131) WARNING 06-25 21:35:15 [fused_moe.py:1071] Using default MoE config. Performance might be sub-optimal! Config file not found at /usr/local/lib/python3.12/dist-packages/vllm/model_executor/layers/fused_moe/configs/E=512,N=512,device_name=NVIDIA_H100_80GB_HBM3,dtype=fp8_w8a8.json
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195] EngineCore failed to start.
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195] Traceback (most recent call last):
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1164, in run_engine_core
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     return func(*args, **kwargs)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 930, in __init__
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     super().__init__(
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 132, in __init__
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     kv_cache_config = self._initialize_kv_caches(vllm_config)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     return func(*args, **kwargs)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 257, in _initialize_kv_caches
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     available_gpu_memory = self.model_executor.determine_available_memory()
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/abstract.py", line 147, in determine_available_memory
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     return self.collective_rpc("determine_available_memory")
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/uniproc_executor.py", line 92, in collective_rpc
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     result = run_method(self.driver_worker, method, args, kwargs)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/serial_utils.py", line 510, in run_method
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     return func(*args, **kwargs)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     return func(*args, **kwargs)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_worker.py", line 425, in determine_available_memory
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     cudagraph_memory_estimate = self.model_runner.profile_cudagraph_memory()
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     return func(*args, **kwargs)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 6378, in profile_cudagraph_memory
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     self._init_minimal_kv_cache_for_profiling()
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 6262, in _init_minimal_kv_cache_for_profiling
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     self.initialize_kv_cache(minimal_config, is_profiling=True)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 7319, in initialize_kv_cache
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     kv_caches = self.initialize_kv_cache_tensors(
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 7233, in initialize_kv_cache_tensors
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     kv_cache_raw_tensors = self._allocate_kv_cache_tensors(kv_cache_config)
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 7014, in _allocate_kv_cache_tensors
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]     tensor = torch.zeros(
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195]              ^^^^^^^^^^^^
+(EngineCore pid=9131) ERROR 06-25 21:35:27 [core.py:1195] torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 544.00 MiB. GPU 0 has a total capacity of 79.10 GiB of which 221.75 MiB is free. Including non-PyTorch memory, this process has 78.87 GiB memory in use. Of the allocated memory 77.37 GiB is allocated by PyTorch, and 788.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+(EngineCore pid=9131) Process EngineCore:
+(EngineCore pid=9131) Traceback (most recent call last):
+(EngineCore pid=9131)   File "/usr/lib/python3.12/multiprocessing/process.py", line 314, in _bootstrap
+(EngineCore pid=9131)     self.run()
+(EngineCore pid=9131)   File "/usr/lib/python3.12/multiprocessing/process.py", line 108, in run
+(EngineCore pid=9131)     self._target(*self._args, **self._kwargs)
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1199, in run_engine_core
+(EngineCore pid=9131)     raise e
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 1164, in run_engine_core
+(EngineCore pid=9131)     engine_core = EngineCoreProc(*args, engine_index=dp_rank, **kwargs)
+(EngineCore pid=9131)                   ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=9131)     return func(*args, **kwargs)
+(EngineCore pid=9131)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 930, in __init__
+(EngineCore pid=9131)     super().__init__(
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 132, in __init__
+(EngineCore pid=9131)     kv_cache_config = self._initialize_kv_caches(vllm_config)
+(EngineCore pid=9131)                       ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(EngineCore pid=9131)     return func(*args, **kwargs)
+(EngineCore pid=9131)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core.py", line 257, in _initialize_kv_caches
+(EngineCore pid=9131)     available_gpu_memory = self.model_executor.determine_available_memory()
+(EngineCore pid=9131)                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/abstract.py", line 147, in determine_available_memory
+(EngineCore pid=9131)     return self.collective_rpc("determine_available_memory")
+(EngineCore pid=9131)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/executor/uniproc_executor.py", line 92, in collective_rpc
+(EngineCore pid=9131)     result = run_method(self.driver_worker, method, args, kwargs)
+(EngineCore pid=9131)              ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/serial_utils.py", line 510, in run_method
+(EngineCore pid=9131)     return func(*args, **kwargs)
+(EngineCore pid=9131)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=9131)     return func(*args, **kwargs)
+(EngineCore pid=9131)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_worker.py", line 425, in determine_available_memory
+(EngineCore pid=9131)     cudagraph_memory_estimate = self.model_runner.profile_cudagraph_memory()
+(EngineCore pid=9131)                                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/torch/utils/_contextlib.py", line 124, in decorate_context
+(EngineCore pid=9131)     return func(*args, **kwargs)
+(EngineCore pid=9131)            ^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 6378, in profile_cudagraph_memory
+(EngineCore pid=9131)     self._init_minimal_kv_cache_for_profiling()
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 6262, in _init_minimal_kv_cache_for_profiling
+(EngineCore pid=9131)     self.initialize_kv_cache(minimal_config, is_profiling=True)
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 7319, in initialize_kv_cache
+(EngineCore pid=9131)     kv_caches = self.initialize_kv_cache_tensors(
+(EngineCore pid=9131)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 7233, in initialize_kv_cache_tensors
+(EngineCore pid=9131)     kv_cache_raw_tensors = self._allocate_kv_cache_tensors(kv_cache_config)
+(EngineCore pid=9131)                            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(EngineCore pid=9131)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/worker/gpu_model_runner.py", line 7014, in _allocate_kv_cache_tensors
+(EngineCore pid=9131)     tensor = torch.zeros(
+(EngineCore pid=9131)              ^^^^^^^^^^^^
+(EngineCore pid=9131) torch.OutOfMemoryError: CUDA out of memory. Tried to allocate 544.00 MiB. GPU 0 has a total capacity of 79.10 GiB of which 221.75 MiB is free. Including non-PyTorch memory, this process has 78.87 GiB memory in use. Of the allocated memory 77.37 GiB is allocated by PyTorch, and 788.02 MiB is reserved by PyTorch but unallocated. If reserved but unallocated memory is large try setting PYTORCH_CUDA_ALLOC_CONF=expandable_segments:True to avoid fragmentation.  See documentation for Memory Management  (https://docs.pytorch.org/docs/stable/notes/cuda.html#optimizing-memory-usage-with-pytorch-cuda-alloc-conf)
+[rank0]:[W625 21:35:28.695772725 ProcessGroupNCCL.cpp:1575] Warning: WARNING: destroy_process_group() was not called before program exit, which can leak resources. For more info, please see https://pytorch.org/docs/stable/distributed.html#shutdown (function operator())
+(APIServer pid=64512) Traceback (most recent call last):
+(APIServer pid=64512)   File "/usr/local/bin/vllm", line 10, in <module>
+(APIServer pid=64512)     sys.exit(main())
+(APIServer pid=64512)              ^^^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/main.py", line 95, in main
+(APIServer pid=64512)     args.dispatch_function(args)
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/cli/serve.py", line 148, in cmd
+(APIServer pid=64512)     uvloop.run(run_server(args))
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 96, in run
+(APIServer pid=64512)     return __asyncio.run(
+(APIServer pid=64512)            ^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/lib/python3.12/asyncio/runners.py", line 195, in run
+(APIServer pid=64512)     return runner.run(main)
+(APIServer pid=64512)            ^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/lib/python3.12/asyncio/runners.py", line 118, in run
+(APIServer pid=64512)     return self._loop.run_until_complete(task)
+(APIServer pid=64512)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "uvloop/loop.pyx", line 1518, in uvloop.loop.Loop.run_until_complete
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/uvloop/__init__.py", line 48, in wrapper
+(APIServer pid=64512)     return await main
+(APIServer pid=64512)            ^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/api_server.py", line 665, in run_server
+(APIServer pid=64512)     await run_server_worker(listen_address, sock, args, **uvicorn_kwargs)
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/api_server.py", line 679, in run_server_worker
+(APIServer pid=64512)     async with build_async_engine_client(
+(APIServer pid=64512)                ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=64512)     return await anext(self.gen)
+(APIServer pid=64512)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/api_server.py", line 99, in build_async_engine_client
+(APIServer pid=64512)     async with build_async_engine_client_from_engine_args(
+(APIServer pid=64512)                ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/lib/python3.12/contextlib.py", line 210, in __aenter__
+(APIServer pid=64512)     return await anext(self.gen)
+(APIServer pid=64512)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/entrypoints/openai/api_server.py", line 135, in build_async_engine_client_from_engine_args
+(APIServer pid=64512)     async_llm = AsyncLLM.from_vllm_config(
+(APIServer pid=64512)                 ^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 217, in from_vllm_config
+(APIServer pid=64512)     return cls(
+(APIServer pid=64512)            ^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/async_llm.py", line 146, in __init__
+(APIServer pid=64512)     self.engine_core = EngineCoreClient.make_async_mp_client(
+(APIServer pid=64512)                        ^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=64512)     return func(*args, **kwargs)
+(APIServer pid=64512)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 131, in make_async_mp_client
+(APIServer pid=64512)     return AsyncMPClient(*client_args)
+(APIServer pid=64512)            ^^^^^^^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/tracing/otel.py", line 178, in sync_wrapper
+(APIServer pid=64512)     return func(*args, **kwargs)
+(APIServer pid=64512)            ^^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 948, in __init__
+(APIServer pid=64512)     super().__init__(
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/core_client.py", line 570, in __init__
+(APIServer pid=64512)     with launch_core_engines(
+(APIServer pid=64512)          ^^^^^^^^^^^^^^^^^^^^
+(APIServer pid=64512)   File "/usr/lib/python3.12/contextlib.py", line 144, in __exit__
+(APIServer pid=64512)     next(self.gen)
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1190, in launch_core_engines
+(APIServer pid=64512)     wait_for_engine_startup(
+(APIServer pid=64512)   File "/usr/local/lib/python3.12/dist-packages/vllm/v1/engine/utils.py", line 1249, in wait_for_engine_startup
+(APIServer pid=64512)     raise RuntimeError(
+(APIServer pid=64512) RuntimeError: Engine core initialization failed. See root cause above. Failed core proc(s): {}
