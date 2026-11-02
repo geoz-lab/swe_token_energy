@@ -1,0 +1,35 @@
+cff-version: 1.2.0
+message: "Please cite the archived Stanford Digital Repository version when its DOI is available; until then, cite this GitHub repository."
+title: "What Should We Count? Token Accounting for the Carbon Footprint of Agentic AI"
+type: software
+authors:
+  - given-names: Ge
+    family-names: Zhang
+    affiliation: Stanford University
+  - given-names: Jingru
+    family-names: Cheng
+    affiliation: Stanford University
+  - given-names: Zitong
+    family-names: Huang
+    affiliation: Stanford University
+  - given-names: Zhibo
+    family-names: Dai
+    affiliation: Stanford University
+  - given-names: Anthony R.
+    family-names: Kovscek
+    affiliation: Stanford University
+abstract: >-
+  Research software, source tables, and AGU 2026 poster materials for a
+  seven-stage accounting model linking attempted agentic software-engineering
+  work to token demand, benchmark-equivalent GPU service, facility electricity,
+  U.S. electricity-source factors, and life-cycle emissions. Results are
+  conditional scenarios, not observed labor displacement or commercial-provider
+  energy measurements.
+keywords:
+  - agentic AI
+  - software engineering
+  - token accounting
+  - GPU energy
+  - data centers
+  - carbon footprint
+repository-code: "https://github.com/geoz-lab/swe_token_energy"

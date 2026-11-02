@@ -70,3 +70,9 @@ The run scripts regenerate the large per-draw CSV files locally. Those determini
 ## Status
 
 This is an unfinished AGU 2026 research project and poster draft. The present results are suitable for inspecting the accounting method and sensitivities; a measured labor-substitution footprint requires accepted-task outcomes and provider or instrumented serving data on the same workload.
+
+## License, citation, and archival deposit
+
+Project-authored source code is released under the [MIT License](LICENSE). Original research datasets, scientific text, and figure/poster content are released under [CC BY 4.0](LICENSE-DATA.md), with third-party material and marks excluded as described there. Citation metadata are in [CITATION.cff](CITATION.cff); no DOI has been assigned yet.
+
+The [Stanford Digital Repository deposit plan](SDR_DEPOSIT.md) contains draft metadata and the sequence for archiving a future GitHub release with a DOI. The repository is still a working draft, so an archival release has not been created.
