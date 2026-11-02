@@ -1,7 +1,0 @@
-benchmark,model,n_tasks,median_total_tokens,mean_total_tokens,p10_total_tokens,p90_total_tokens,median_input_tokens,median_output_tokens,median_tool_tokens,median_api_calls
-SWE-Lancer,Opus 4.8,20,524151,555893,154076,948725,151463,2993,362345,38
-SWE-Lancer,Gemini 3.1 Pro,20,1490305,1698751,863463,2832162,231280,79,1252419,79
-SWE-Lancer,GPT-5.4,20,189944,250166,129662,402588,43083,608,147462,14
-SWE-bench,Opus 4.8,70,33505,73235,14472,154196,18479,176,17074,15
-SWE-bench,Gemini 3.1 Pro,70,305676,333669,157097,540796,61556,39,253110,50
-SWE-bench,GPT-5.4,70,28232,30977,17318,49055,7513,236,19686,7

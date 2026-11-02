@@ -1,4 +1,0 @@
-cached_input,cost_usd,input_uncached,model,output,provider,seconds
-0,0.00182,64,claude-opus-4-8,60,anthropic,1.95
-0,0.0006175,43,gpt-5.4,34,openai,2.84
-0,0.000212,40,gemini-3.1-pro-preview,11,google,4.16

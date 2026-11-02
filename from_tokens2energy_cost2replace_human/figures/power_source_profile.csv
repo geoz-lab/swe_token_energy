@@ -1,9 +1,0 @@
-source,cost_low_USD_per_MWh,cost_high_USD_per_MWh,gCO2_per_kWh_low,gCO2_per_kWh_high,capacity_factor_pct_low,capacity_factor_pct_high,firm_24_7,notes,source_quality
-Natural gas (CCGT),40,80,450,550,85,90,Yes,">40% of US data center electricity mix (IEA 2024); dispatchable",PRIMARY
-Solar PV (utility),35,60,20,50,15,25,No,"Daytime only; requires battery storage for round-the-clock operation; storage adds $30-50/MWh",SECONDARY
-Solar PV + 4h storage,55,80,20,50,15,25,No,"Effective capacity factor with storage; still insufficient for 24/7 AI loads",SECONDARY
-Wind (onshore),40,65,7,15,30,40,No,"Better overnight availability; variable by geography; storage required for firm supply",SECONDARY
-Wind + storage,60,85,7,15,30,40,No,"Storage-firmed wind; higher cost than nuclear for 24/7 requirement",SECONDARY
-Nuclear (existing fleet PPA),60,112,12,12,90,95,Yes,"Microsoft TMI-1: ~$100-112/MWh analyst est.; Amazon-Talen Susquehanna; 20-year PPAs",SECONDARY
-Nuclear (new SMR),80,130,12,12,90,95,Yes,"Amazon Energy Northwest 320-960 MW; delivery ~2030+; cost uncertainty high",PRIMARY
-Hydropower (geography-dependent),30,60,4,30,40,70,Regional,"Constrained by site; not scalable in most US markets; strong in PNW",SECONDARY

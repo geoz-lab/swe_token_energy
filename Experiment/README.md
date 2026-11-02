@@ -1,50 +1,15 @@
-# From Tokens to Energy — the token/energy/cost economics of AI software-engineering agents
+# Experiment data used by the poster model
 
-> **Scope note:** this empirical experiment uses selected task traces, open-model GPU tests, and modeled economic scenarios. Its results are separate from the AGU poster's high-load agent-session scenario and do not establish accepted task completion or net FTE replacement. See the [current project summary](../README.md).
+This directory contains the empirical inputs and acquisition methods used by the seven-stage poster model. It is a curated subset of the larger exploratory project.
 
-Empirical study linking software-engineering **labor** → **token demand** → **GPU compute** →
-**energy and cost**, in three experiments plus a unifying stochastic model.
+| Input | Contents | Poster use |
+|---|---|---|
+| [Agent-task records](exp1_results/exp1_raw.csv) | 270 task attempts across three commercial models and two benchmark families | Local token-demand evidence; `resolved` was not measured |
+| [Experiment 1 methods](exp1_summary.md) and [code](exp1_token_consumption/) | Task sampling, agent scaffold, and reconstructed-token methodology | Interpretation of task-token records |
+| [GPU cell summary](exp2_results/exp2_raw.csv) | Open-model throughput, board power, and benchmark settings | Hardware evidence |
+| [Per-cell GPU measurements](exp2_results/) and [measurement code](exp2_token_gen/) | Benchmark JSON and power time series for A100, H100, and H200 | Audit and reproduction of measured cells |
+| [Poster hardware input](final_results/exp2_supply_all_cells.csv) | Consolidated table consumed by the figure generator | Stage 4 figure data |
 
-| | Experiment | Question | Writeup |
-|---|---|---|---|
-| **Exp-1** | Agentic token **demand** | How many tokens does an agent consume per SWE task, across frontier commercial models? | [`exp1_summary.md`](exp1_summary.md) |
-| **Exp-2** | Inference **supply** | What throughput (θ_GPU) and energy intensity do open-weight coders achieve on A100/H100/H200? | [`exp2_summary.md`](exp2_summary.md) |
-| — | Sanity check | Do open models consume a comparable per-task token budget to commercial ones? | [`exp2_summary.md`](exp2_summary.md) §10 |
-| **Exp-3** | **Cost model** | Cost/energy/GPUs per substituted software engineer (5-layer Monte-Carlo fitting Exp-1 + Exp-2) | [`exp3_summary.md`](exp3_summary.md) |
+The numerical model reads `exp1_results/exp1_raw.csv` and `final_results/exp2_supply_all_cells.csv` directly. The benchmark uses an 8,192-token prompt and 1,024-token output at concurrency 1 or 64 with prefix caching. The poster's main scenario uses one measured H100/Qwen3-Coder-30B-A3B cell as a **benchmark-equivalent conversion**, not a measurement of commercial-agent serving hardware. Aggregate task records do not include the original full trajectories; rerunning acquisition needs the documented cluster, model access, and external benchmark datasets.
 
-## Headline results
-
-- **Demand (Exp-1):** agentic SWE tasks cost 10⁴–10⁶ tokens; model choice drives an ~11× spread; ≤1% of tokens are generated (the rest is re-sent, cacheable context).
-- **Supply (Exp-2):** **active** parameters (not total size) drive throughput — a 3B-active MoE coder delivers ~6× the θ_GPU and energy efficiency of a same-size 32B-active dense model.
-- **Cost (Exp-3 modeled case):** the selected workload and serving assumptions yield **~175 engineers per GPU** and **~36 kWh of modeled electricity per engineer-year**. These are scenario outputs, not measured production capacity or a complete carbon-footprint estimate.
-
-## Layout
-
-```
-exp1_token_consumption/   Exp-1 code (mini-swe-agent on SWE-bench / SWE-Lancer)
-exp1_results/             Exp-1 outputs (raw CSV + figures)
-exp2_token_gen/           Exp-2 code (vLLM throughput/energy on Sherlock GPUs)
-exp2_results/             Exp-2 outputs (per-cell JSON, power CSVs, exp2_raw.csv, figures)
-exp2_sanity_check/        open-vs-commercial token-parity check
-exp3_simulation/          Exp-3 five-layer Monte-Carlo (params.py, simulate.py)
-exp3_results/             Exp-3 outputs (per-engineer CSVs, sensitivity, figures)
-final_results/            consolidated clean CSVs + publication figures (pubstyle.py)
-exp{1,2,3}_summary.md      scientific writeups
-PLAN.md                   overall plan
-```
-
-## Reproducing
-
-Each experiment folder has its own README and environment file. Exp-1/Exp-2 run on the Stanford
-**Sherlock** cluster (SLURM + Apptainer); Exp-3 and all figures run locally:
-
-```bash
-python exp3_simulation/simulate.py     # five-layer model
-python final_results/build_tables.py   # consolidated CSVs
-python final_results/make_pub_figures.py
-```
-
-## Configuration
-
-Copy `.env.example` → `.env` and add API keys for the Exp-1 commercial-model runs. **`.env` is
-git-ignored** — never commit live credentials.
+Historical cost simulations, unrelated drafts, duplicate graphics, and cluster logs are omitted from this public release. See the [numerical methods](../AGU_Token/numerical/README.md) and [source audit](../AGU_Token/numerical/SOURCE_AUDIT.md) for the model assumptions and limitations.

@@ -1,582 +1,0 @@
-/usr/local/lib/python3.12/dist-packages/huggingface_hub/constants.py:298: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
-  warnings.warn(
-(APIServer pid=33549) WARNING 06-28 18:22:50 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_URL
-(APIServer pid=33549) WARNING 06-28 18:22:50 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BIN
-(APIServer pid=33549) WARNING 06-28 18:22:50 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_SIF
-(APIServer pid=33549) WARNING 06-28 18:22:50 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_IMAGE_TAG
-(APIServer pid=33549) WARNING 06-28 18:22:50 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_PIPELINE
-(APIServer pid=33549) WARNING 06-28 18:22:50 [envs.py:2088] Unknown vLLM environment variable detected: VLLM_BUILD_COMMIT
-/usr/local/lib/python3.12/dist-packages/huggingface_hub/constants.py:298: FutureWarning: The `HF_HUB_ENABLE_HF_TRANSFER` environment variable is deprecated as 'hf_transfer' is not used anymore. Please use `HF_XET_HIGH_PERFORMANCE` instead to enable high performance transfer with Xet. Visit https://huggingface.co/docs/huggingface_hub/package_reference/environment_variables#hfxethighperformance for more details.
-  warnings.warn(
-[W628 18:23:18.699905206 socket.cpp:764] [c10d] The client socket cannot be initialized to connect to [sh04-13n05.int]:56649 (errno: 97 - Address family not supported by protocol).
-(EngineCore pid=42906) Loading safetensors checkpoint shards:   0% Completed | 0/16 [00:00<?, ?it/s]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:   6% Completed | 1/16 [00:02<00:33,  2.22s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  12% Completed | 2/16 [00:03<00:25,  1.84s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  19% Completed | 3/16 [00:05<00:21,  1.63s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  25% Completed | 4/16 [00:06<00:18,  1.53s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  31% Completed | 5/16 [00:07<00:16,  1.47s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  38% Completed | 6/16 [00:09<00:14,  1.44s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  44% Completed | 7/16 [00:10<00:12,  1.42s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  50% Completed | 8/16 [00:12<00:11,  1.42s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  56% Completed | 9/16 [00:13<00:09,  1.40s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  62% Completed | 10/16 [00:14<00:08,  1.40s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  69% Completed | 11/16 [00:16<00:06,  1.38s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  75% Completed | 12/16 [00:17<00:05,  1.38s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  81% Completed | 13/16 [00:18<00:04,  1.38s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  88% Completed | 14/16 [00:20<00:02,  1.38s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards:  94% Completed | 15/16 [00:21<00:01,  1.36s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards: 100% Completed | 16/16 [00:22<00:00,  1.08s/it]
-(EngineCore pid=42906) Loading safetensors checkpoint shards: 100% Completed | 16/16 [00:22<00:00,  1.38s/it]
-(EngineCore pid=42906) 
-(EngineCore pid=42906) 2026-06-28 18:24:16,605 - INFO - autotuner.py:622 - flashinfer.jit: [Autotuner]: Autotuning process starts ...
-(EngineCore pid=42906) 2026-06-28 18:24:16,635 - INFO - autotuner.py:641 - flashinfer.jit: [Autotuner]: Autotuning process ends
-(EngineCore pid=42906) Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   4%|▍         | 2/51 [00:00<00:03, 15.13it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):   8%|▊         | 4/51 [00:00<00:03, 14.98it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  12%|█▏        | 6/51 [00:00<00:03, 14.71it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  16%|█▌        | 8/51 [00:00<00:02, 14.80it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  20%|█▉        | 10/51 [00:01<00:09,  4.39it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  24%|██▎       | 12/51 [00:01<00:06,  5.78it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  27%|██▋       | 14/51 [00:01<00:05,  7.20it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  31%|███▏      | 16/51 [00:01<00:04,  8.57it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  35%|███▌      | 18/51 [00:02<00:03,  9.78it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  39%|███▉      | 20/51 [00:02<00:02, 10.83it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  43%|████▎     | 22/51 [00:02<00:02, 11.69it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  47%|████▋     | 24/51 [00:02<00:02, 12.47it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  51%|█████     | 26/51 [00:03<00:03,  6.83it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  55%|█████▍    | 28/51 [00:03<00:02,  8.08it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  59%|█████▉    | 30/51 [00:03<00:02,  9.23it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  63%|██████▎   | 32/51 [00:03<00:01, 10.27it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  67%|██████▋   | 34/51 [00:03<00:01, 11.09it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  71%|███████   | 36/51 [00:03<00:01, 11.58it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  75%|███████▍  | 38/51 [00:04<00:01, 12.14it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  78%|███████▊  | 40/51 [00:04<00:01,  6.75it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  82%|████████▏ | 42/51 [00:05<00:01,  5.06it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  86%|████████▋ | 44/51 [00:05<00:01,  4.66it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  90%|█████████ | 46/51 [00:06<00:01,  4.31it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  92%|█████████▏| 47/51 [00:06<00:01,  3.48it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  94%|█████████▍| 48/51 [00:07<00:00,  3.10it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  96%|█████████▌| 49/51 [00:08<00:00,  2.33it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE):  98%|█████████▊| 50/51 [00:08<00:00,  2.38it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 51/51 [00:08<00:00,  2.39it/s]Capturing CUDA graphs (mixed prefill-decode, PIECEWISE): 100%|██████████| 51/51 [00:08<00:00,  5.73it/s]
-(EngineCore pid=42906) Capturing CUDA graphs (decode, FULL):   0%|          | 0/51 [00:00<?, ?it/s]Capturing CUDA graphs (decode, FULL):   4%|▍         | 2/51 [00:00<00:02, 16.35it/s]Capturing CUDA graphs (decode, FULL):   8%|▊         | 4/51 [00:00<00:02, 16.62it/s]Capturing CUDA graphs (decode, FULL):  12%|█▏        | 6/51 [00:00<00:02, 16.63it/s]Capturing CUDA graphs (decode, FULL):  16%|█▌        | 8/51 [00:00<00:02, 16.70it/s]Capturing CUDA graphs (decode, FULL):  20%|█▉        | 10/51 [00:00<00:02, 16.82it/s]Capturing CUDA graphs (decode, FULL):  24%|██▎       | 12/51 [00:00<00:02, 16.81it/s]Capturing CUDA graphs (decode, FULL):  27%|██▋       | 14/51 [00:00<00:02, 16.88it/s]Capturing CUDA graphs (decode, FULL):  31%|███▏      | 16/51 [00:00<00:02, 16.89it/s]Capturing CUDA graphs (decode, FULL):  35%|███▌      | 18/51 [00:01<00:01, 16.89it/s]Capturing CUDA graphs (decode, FULL):  39%|███▉      | 20/51 [00:01<00:01, 16.85it/s]Capturing CUDA graphs (decode, FULL):  43%|████▎     | 22/51 [00:01<00:01, 16.86it/s]Capturing CUDA graphs (decode, FULL):  47%|████▋     | 24/51 [00:01<00:01, 16.84it/s]Capturing CUDA graphs (decode, FULL):  51%|█████     | 26/51 [00:01<00:01, 16.85it/s]Capturing CUDA graphs (decode, FULL):  55%|█████▍    | 28/51 [00:01<00:01, 16.90it/s]Capturing CUDA graphs (decode, FULL):  59%|█████▉    | 30/51 [00:01<00:01, 16.88it/s]Capturing CUDA graphs (decode, FULL):  63%|██████▎   | 32/51 [00:01<00:01, 16.91it/s]Capturing CUDA graphs (decode, FULL):  67%|██████▋   | 34/51 [00:02<00:01, 16.86it/s]Capturing CUDA graphs (decode, FULL):  71%|███████   | 36/51 [00:02<00:00, 16.87it/s]Capturing CUDA graphs (decode, FULL):  75%|███████▍  | 38/51 [00:02<00:00, 16.87it/s]Capturing CUDA graphs (decode, FULL):  78%|███████▊  | 40/51 [00:02<00:00, 16.88it/s]Capturing CUDA graphs (decode, FULL):  82%|████████▏ | 42/51 [00:02<00:00, 16.82it/s]Capturing CUDA graphs (decode, FULL):  86%|████████▋ | 44/51 [00:02<00:00, 16.83it/s]Capturing CUDA graphs (decode, FULL):  90%|█████████ | 46/51 [00:02<00:00, 16.82it/s]Capturing CUDA graphs (decode, FULL):  94%|█████████▍| 48/51 [00:02<00:00, 16.87it/s]Capturing CUDA graphs (decode, FULL):  98%|█████████▊| 50/51 [00:02<00:00, 17.07it/s]Capturing CUDA graphs (decode, FULL): 100%|██████████| 51/51 [00:03<00:00, 16.88it/s]
-(APIServer pid=33549) WARNING 06-28 18:24:30 [model.py:1502] Default vLLM sampling parameters have been overridden by the model's `generation_config.json`: `{'repetition_penalty': 1.05, 'temperature': 0.7, 'top_k': 20, 'top_p': 0.8}`. If this is not intended, please relaunch vLLM instance with `--generation-config vllm`.
-(APIServer pid=33549) INFO:     Started server process [33549]
-(APIServer pid=33549) INFO:     Waiting for application startup.
-(APIServer pid=33549) INFO:     Application startup complete.
-(APIServer pid=33549) INFO:     127.0.0.1:59012 - "GET /health HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59014 - "GET /v1/models HTTP/1.1" 200 OK
-(EngineCore pid=42906) WARNING 06-28 18:25:13 [jit_monitor.py:103] Triton kernel JIT compilation during inference: _compute_slot_mapping_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
-(EngineCore pid=42906) WARNING 06-28 18:25:14 [jit_monitor.py:103] Triton kernel JIT compilation during inference: fused_moe_kernel. This causes a latency spike; consider extending warmup to cover this shape/config.
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59106 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59202 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:59308 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60120 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60234 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:60344 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32902 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:32978 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33144 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33254 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33348 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) INFO:     127.0.0.1:33474 - "POST /v1/chat/completions HTTP/1.1" 200 OK
-(APIServer pid=33549) WARNING 06-28 18:56:22 [utils.py:607] [shutdown] Process manager: force killing remaining processes count=1
-(APIServer pid=33549) INFO:     Shutting down
-(APIServer pid=33549) INFO:     Waiting for application shutdown.
-(APIServer pid=33549) INFO:     Application shutdown complete.
-/usr/lib/python3.12/multiprocessing/resource_tracker.py:279: UserWarning: resource_tracker: There appear to be 1 leaked semaphore objects to clean up at shutdown
-  warnings.warn('resource_tracker: There appear to be %d '

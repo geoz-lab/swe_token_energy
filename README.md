@@ -42,18 +42,15 @@ The main grid scenario uses [Guidi et al.'s U.S. hyperscale data-center electric
 
 The project contains local agent-token traces and open-model GPU measurements, published source tables, and analyst assumptions. The [source audit](AGU_Token/numerical/SOURCE_AUDIT.md), [reference register](AGU_Token/numerical/REFERENCES.md), and [high-load reassessment](AGU_Token/numerical/HIGH_LOAD_REASSESSMENT_2026-11-01.md) distinguish these evidence levels. The present model does **not** establish completed task counts, acceptance rates, human review time saved, net FTE replacement, closed-model serving hardware, idle fleet allocation, or marginal grid impact. Hardware manufacture, data-center construction, and model training are outside the poster's primary system boundary.
 
-The empirical experiment explores another denominator: selected software-engineering tasks and open-model serving cells. Its historical energy/cost scenarios should not be interpreted as validation of the poster's high-load session mapping. See [Experiment](Experiment/README.md) and its [consolidated results](Experiment/final_results/README.md). The older cost-model draft is retained in [`from_tokens2energy_cost2replace_human/`](from_tokens2energy_cost2replace_human/README.md) for provenance; **its substitution claims are not current poster findings**.
+The [empirical experiment](Experiment/README.md) supplies selected agent-token traces and A100/H100/H200 serving measurements. These measurements characterize the chosen tasks, models, and serving settings; they do not validate the poster's assumed one-session-per-delegated-unit mapping.
 
 ## Repository guide
 
 | Path | Contents |
 |---|---|
-| [`AGU_Token/`](AGU_Token/) | Current poster, abstract, work plan, and numerical study. |
+| [`AGU_Token/`](AGU_Token/) | Current editable poster, PDF, preview, and numerical study. |
 | [`AGU_Token/numerical/`](AGU_Token/numerical/) | Seven-stage equations, input and source CSVs, Monte Carlo code, summaries, and poster figures. |
-| [`Experiment/`](Experiment/) | Original task-token traces, A100/H100/H200 measurements, simulation, and publication tables. Its earlier Git history is preserved in this repository. |
-| [`Overleaf/`](Overleaf/) | Manuscript source and figures. |
-| [`from_tokens2energy_cost2replace_human/`](from_tokens2energy_cost2replace_human/) | Earlier exploratory economics draft, kept separate from the current model. |
-| [`supporting_data/`](supporting_data/) | Supplementary externality workbook and sourced marginal-emission workbooks; these do not drive the poster's central attributional grid factor. |
+| [`Experiment/`](Experiment/) | Relevant task-token and GPU measurements, methods, and source code used to support the poster model. |
 
 ## Reproduce the poster calculations
 
@@ -68,7 +65,7 @@ python3 AGU_Token/numerical/make_poster_figures.py
 python3 AGU_Token/numerical/make_high_load_figure.py
 ```
 
-The run scripts regenerate the large per-draw CSV files locally. Those deterministic intermediate files, virtual environments, credentials, and presentation build caches are excluded from the public repository. The compact summary CSVs, source ledgers, final figures, and editable poster are included. The experiment has separate setup instructions for its cluster and API-dependent runs.
+The run scripts regenerate the large per-draw CSV files locally. Those deterministic intermediate files, virtual environments, credentials, and presentation build caches are excluded from the public repository. The compact summary CSVs, source ledgers, final figures, and editable poster are included. The original experiment requires cluster or API access to rerun; its relevant aggregated data, per-cell GPU measurements, and acquisition code are included.
 
 ## Status
 

@@ -1,8 +1,0 @@
-.env
-__pycache__/
-*.pyc
-*.aux
-*.log
-*.out
-*.pdf
-*.synctex.gz

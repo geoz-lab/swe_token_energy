@@ -1,5 +1,0 @@
-scenario,substitution_rate_pct,facility_power_MW,annual_energy_TWh,pct_of_2024_global_dc_load_415TWh,pct_of_2030_iea_base_945TWh,pct_of_2030_iea_gw_1079GW
-Conservative (10%),10,36.8,0.322,0.078,0.034,0.034
-Central (30%),30,110.0,0.964,0.232,0.102,0.102
-McKinsey (57%),57,209.2,1.832,0.441,0.194,0.194
-Aggressive (80%),80,293.8,2.573,0.620,0.272,0.272

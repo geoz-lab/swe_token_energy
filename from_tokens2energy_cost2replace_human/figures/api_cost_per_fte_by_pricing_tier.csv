@@ -1,8 +1,0 @@
-deployment_mode,model_tier,tokens_per_day,workdays_per_year,annual_tokens_MTok,price_per_MTok_USD,annual_cost_per_fte_USD,vs_us_median_salary_pct,note
-Copilot,Optimized (Sonnet/GPT-4.1),120000,250,30,5.00,150,0.11,Illustrative; actual usage varies widely
-Copilot,Frontier (Opus),120000,250,30,9.00,270,0.20,Illustrative; actual usage varies widely
-Agentic low (1M/task x2),Optimized,2000000,250,500,5.00,2500,1.88,SWE-bench low estimate
-Agentic mid (2.25M/task x2),Optimized,4000000,250,1000,5.00,5000,3.76,Central estimate - optimized pricing
-Agentic mid (2.25M/task x2),Frontier,4000000,250,1000,9.00,9000,6.77,Central estimate - frontier pricing
-Agentic mid + 50% batch discount,Frontier (batch),4000000,250,1000,4.50,4500,3.38,Batch API discount applied
-Agentic high (3.5M/task x2),Frontier,7000000,250,1750,9.00,15750,11.84,SWE-bench high estimate

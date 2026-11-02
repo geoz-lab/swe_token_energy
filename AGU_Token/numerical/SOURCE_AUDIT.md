@@ -73,7 +73,7 @@ The local board-power readings are genuine for the tested cells. The [DOE/FEMP d
 
 GPU board joules during a benchmark are not the same as marginal facility electricity. Shared server idle draw, GPU idle time, and utilization allocation need a defined accounting policy. A company fleet estimate must size the fleet for demand peaks and latency, then account for energy during idle and active periods. Multiplying per-request busy-time energy by request count omits that standing energy.
 
-The existing `Experiment/exp2_summary.md` describes facility power once as `GPUs × board power / PUE`. That operation is dimensionally and conceptually wrong: facility power is `IT power × PUE`. The numerical script multiplies by PUE; the manuscript and experiment prose should be corrected before publication.
+For clarity, facility power is `IT power × PUE`; dividing board power by PUE would be dimensionally and conceptually wrong. The numerical script multiplies by PUE. This remains a scenario assumption until host and facility power are measured for the same serving workload.
 
 **Decision:** call the present energy figure a throughput-and-board-power demonstration. Do not use it as a lower confidence bound; the serving workload and overhead are mismatched.
 

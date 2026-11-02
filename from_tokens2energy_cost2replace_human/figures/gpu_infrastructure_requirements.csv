@@ -1,5 +1,0 @@
-scenario,substitution_rate_pct,ftes_replaced_M,tokens_per_day_T,required_throughput_Mtoks_per_s,h100_count,h100_racks_aircooled,gpu_power_MW,facility_power_PUE156_MW,annual_energy_TWh,construction_capex_15M_per_MW_B,b200_equiv_count,gb200_nvl72_racks
-conservative,10,2.4,9.6,111,33700,1053,23.6,36.8,0.32,0.552,1542,21
-central,30,7.2,28.8,333,101000,3156,70.7,110.0,0.96,1.65,5550,77
-mckinsey,57,13.7,54.8,634,191600,5988,134.1,209.2,1.83,3.14,10567,147
-aggressive,80,19.2,76.8,889,269000,8406,188.3,293.8,2.57,4.40,14817,206
