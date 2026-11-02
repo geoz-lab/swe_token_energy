@@ -1,0 +1,165 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="3080" height="560" viewBox="0 0 3080 560" role="img" aria-label="Seven high-load stage cards for the AGU poster">
+<title>Seven high-load stage cards for the AGU poster</title>
+<rect width="3080" height="560" fill="#ffffff"/>
+<g transform="translate(0,0)">
+<rect width="440" height="560" fill="#ffffff"/>
+<rect x="1.00" y="1.00" width="438.00" height="558.00" rx="12" fill="#ffffff" stroke="#d7e3e7" stroke-width="2"/>
+<rect x="1.00" y="1.00" width="438.00" height="13.00" rx="7" fill="#3979ad" stroke="none" stroke-width="1"/>
+<circle cx="48.00" cy="58.00" r="27.00" fill="#3979ad"/>
+<text x="48.00" y="59.00" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">1</text>
+<text x="91.00" y="58.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">Work</text>
+<text x="30.00" y="113.00" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">40 UNITS/DAY · q = 0.50</text>
+<text x="30.00" y="199.00" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="700" fill="#3979ad" text-anchor="start" dominant-baseline="middle">0.50</text>
+<text x="33.00" y="256.00" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">attempted FTE/day</text>
+<line x1="29.00" y1="286.00" x2="411.00" y2="286.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="30.00" y="319.00" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">P10–P90 AT q = 0.50</text>
+<text x="30.00" y="366.00" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">0.40–0.60</text>
+<line x1="29.00" y1="401.00" x2="411.00" y2="401.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="79.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#74a1c6" text-anchor="middle" dominant-baseline="middle">q = 0.30</text>
+<text x="79.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#74a1c6" text-anchor="middle" dominant-baseline="middle">0.30</text>
+<text x="220.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#3979ad" text-anchor="middle" dominant-baseline="middle">q = 0.50</text>
+<text x="220.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#3979ad" text-anchor="middle" dominant-baseline="middle">0.50</text>
+<text x="361.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#2f638e" text-anchor="middle" dominant-baseline="middle">q = 0.70</text>
+<text x="361.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#2f638e" text-anchor="middle" dominant-baseline="middle">0.70</text>
+<rect x="17.00" y="514.00" width="406.00" height="36.00" rx="6" fill="#f1f6f9" stroke="none" stroke-width="1"/>
+<text x="220.00" y="533.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#536b77" text-anchor="middle" dominant-baseline="middle">N / 40; allocation assumption</text>
+</g>
+<g transform="translate(440,0)">
+<rect width="440" height="560" fill="#ffffff"/>
+<rect x="1.00" y="1.00" width="438.00" height="558.00" rx="12" fill="#ffffff" stroke="#d7e3e7" stroke-width="2"/>
+<rect x="1.00" y="1.00" width="438.00" height="13.00" rx="7" fill="#248c99" stroke="none" stroke-width="1"/>
+<circle cx="48.00" cy="58.00" r="27.00" fill="#248c99"/>
+<text x="48.00" y="59.00" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">2</text>
+<text x="91.00" y="58.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">Agent sessions</text>
+<text x="30.00" y="113.00" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">40 UNITS/DAY · q = 0.50</text>
+<text x="30.00" y="199.00" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="700" fill="#248c99" text-anchor="start" dominant-baseline="middle">20</text>
+<text x="33.00" y="256.00" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">sessions/day</text>
+<line x1="29.00" y1="286.00" x2="411.00" y2="286.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="30.00" y="319.00" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">P10–P90 AT q = 0.50</text>
+<text x="30.00" y="366.00" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">16–24</text>
+<line x1="29.00" y1="401.00" x2="411.00" y2="401.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="79.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#66aeb8" text-anchor="middle" dominant-baseline="middle">q = 0.30</text>
+<text x="79.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#66aeb8" text-anchor="middle" dominant-baseline="middle">12</text>
+<text x="220.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#248c99" text-anchor="middle" dominant-baseline="middle">q = 0.50</text>
+<text x="220.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#248c99" text-anchor="middle" dominant-baseline="middle">20</text>
+<text x="361.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#1e737d" text-anchor="middle" dominant-baseline="middle">q = 0.70</text>
+<text x="361.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#1e737d" text-anchor="middle" dominant-baseline="middle">28</text>
+<rect x="17.00" y="514.00" width="406.00" height="36.00" rx="6" fill="#f0f7f8" stroke="none" stroke-width="1"/>
+<text x="220.00" y="533.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#536b77" text-anchor="middle" dominant-baseline="middle">N ~ Binomial(40, q)</text>
+</g>
+<g transform="translate(880,0)">
+<rect width="440" height="560" fill="#ffffff"/>
+<rect x="1.00" y="1.00" width="438.00" height="558.00" rx="12" fill="#ffffff" stroke="#d7e3e7" stroke-width="2"/>
+<rect x="1.00" y="1.00" width="438.00" height="13.00" rx="7" fill="#638e48" stroke="none" stroke-width="1"/>
+<circle cx="48.00" cy="58.00" r="27.00" fill="#638e48"/>
+<text x="48.00" y="59.00" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">3</text>
+<text x="91.00" y="58.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">Tokens</text>
+<text x="30.00" y="113.00" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">40 UNITS/DAY · q = 0.50</text>
+<text x="30.00" y="199.00" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="700" fill="#638e48" text-anchor="start" dominant-baseline="middle">35.1</text>
+<text x="33.00" y="256.00" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">million tokens/day</text>
+<line x1="29.00" y1="286.00" x2="411.00" y2="286.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="30.00" y="319.00" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">P10–P90 AT q = 0.50</text>
+<text x="30.00" y="366.00" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">25.3–46.9</text>
+<line x1="29.00" y1="401.00" x2="411.00" y2="401.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="79.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#92b07f" text-anchor="middle" dominant-baseline="middle">q = 0.30</text>
+<text x="79.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#92b07f" text-anchor="middle" dominant-baseline="middle">20.9</text>
+<text x="220.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#638e48" text-anchor="middle" dominant-baseline="middle">q = 0.50</text>
+<text x="220.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#638e48" text-anchor="middle" dominant-baseline="middle">35.1</text>
+<text x="361.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#51743b" text-anchor="middle" dominant-baseline="middle">q = 0.70</text>
+<text x="361.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#51743b" text-anchor="middle" dominant-baseline="middle">49.5</text>
+<rect x="17.00" y="514.00" width="406.00" height="36.00" rx="6" fill="#f4f7f2" stroke="none" stroke-width="1"/>
+<text x="220.00" y="533.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#536b77" text-anchor="middle" dominant-baseline="middle">1.4M median per session</text>
+</g>
+<g transform="translate(1320,0)">
+<rect width="440" height="560" fill="#ffffff"/>
+<rect x="1.00" y="1.00" width="438.00" height="558.00" rx="12" fill="#ffffff" stroke="#d7e3e7" stroke-width="2"/>
+<rect x="1.00" y="1.00" width="438.00" height="13.00" rx="7" fill="#8065a5" stroke="none" stroke-width="1"/>
+<circle cx="48.00" cy="58.00" r="27.00" fill="#8065a5"/>
+<text x="48.00" y="59.00" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">4</text>
+<text x="91.00" y="58.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">GPU time</text>
+<text x="30.00" y="113.00" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">40 UNITS/DAY · q = 0.50</text>
+<text x="30.00" y="199.00" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="700" fill="#8065a5" text-anchor="start" dominant-baseline="middle">5.94</text>
+<text x="33.00" y="256.00" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">H100 GPU-hours/day</text>
+<line x1="29.00" y1="286.00" x2="411.00" y2="286.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="30.00" y="319.00" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">P10–P90 AT q = 0.50</text>
+<text x="30.00" y="366.00" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">4.28–7.93</text>
+<line x1="29.00" y1="401.00" x2="411.00" y2="401.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="79.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#a693c0" text-anchor="middle" dominant-baseline="middle">q = 0.30</text>
+<text x="79.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#a693c0" text-anchor="middle" dominant-baseline="middle">3.54</text>
+<text x="220.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#8065a5" text-anchor="middle" dominant-baseline="middle">q = 0.50</text>
+<text x="220.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#8065a5" text-anchor="middle" dominant-baseline="middle">5.94</text>
+<text x="361.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#695387" text-anchor="middle" dominant-baseline="middle">q = 0.70</text>
+<text x="361.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#695387" text-anchor="middle" dominant-baseline="middle">8.37</text>
+<rect x="17.00" y="514.00" width="406.00" height="36.00" rx="6" fill="#f6f4f9" stroke="none" stroke-width="1"/>
+<text x="220.00" y="533.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#536b77" text-anchor="middle" dominant-baseline="middle">tokens / 1,642 per second</text>
+</g>
+<g transform="translate(1760,0)">
+<rect width="440" height="560" fill="#ffffff"/>
+<rect x="1.00" y="1.00" width="438.00" height="558.00" rx="12" fill="#ffffff" stroke="#d7e3e7" stroke-width="2"/>
+<rect x="1.00" y="1.00" width="438.00" height="13.00" rx="7" fill="#c48335" stroke="none" stroke-width="1"/>
+<circle cx="48.00" cy="58.00" r="27.00" fill="#c48335"/>
+<text x="48.00" y="59.00" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">5</text>
+<text x="91.00" y="58.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">Electricity</text>
+<text x="30.00" y="113.00" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">40 UNITS/DAY · q = 0.50</text>
+<text x="30.00" y="199.00" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="700" fill="#c48335" text-anchor="start" dominant-baseline="middle">3.25</text>
+<text x="33.00" y="256.00" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">facility kWh/day</text>
+<line x1="29.00" y1="286.00" x2="411.00" y2="286.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="30.00" y="319.00" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">P10–P90 AT q = 0.50</text>
+<text x="30.00" y="366.00" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">2.29–4.44</text>
+<line x1="29.00" y1="401.00" x2="411.00" y2="401.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="79.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#d6a872" text-anchor="middle" dominant-baseline="middle">q = 0.30</text>
+<text x="79.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#d6a872" text-anchor="middle" dominant-baseline="middle">1.93</text>
+<text x="220.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#c48335" text-anchor="middle" dominant-baseline="middle">q = 0.50</text>
+<text x="220.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#c48335" text-anchor="middle" dominant-baseline="middle">3.25</text>
+<text x="361.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#a16b2b" text-anchor="middle" dominant-baseline="middle">q = 0.70</text>
+<text x="361.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#a16b2b" text-anchor="middle" dominant-baseline="middle">4.56</text>
+<rect x="17.00" y="514.00" width="406.00" height="36.00" rx="6" fill="#fbf6f1" stroke="none" stroke-width="1"/>
+<text x="220.00" y="533.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#536b77" text-anchor="middle" dominant-baseline="middle">326 W board × host × PUE</text>
+</g>
+<g transform="translate(2200,0)">
+<rect width="440" height="560" fill="#ffffff"/>
+<rect x="1.00" y="1.00" width="438.00" height="558.00" rx="12" fill="#ffffff" stroke="#d7e3e7" stroke-width="2"/>
+<rect x="1.00" y="1.00" width="438.00" height="13.00" rx="7" fill="#5b7484" stroke="none" stroke-width="1"/>
+<circle cx="48.00" cy="58.00" r="27.00" fill="#5b7484"/>
+<text x="48.00" y="59.00" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">6</text>
+<text x="91.00" y="58.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">Grid factor</text>
+<text x="30.00" y="113.00" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">40 UNITS/DAY · q = 0.50</text>
+<text x="30.00" y="199.00" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="700" fill="#5b7484" text-anchor="start" dominant-baseline="middle">0.325</text>
+<text x="33.00" y="256.00" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">kg CO2e/kWh (LCA)</text>
+<line x1="29.00" y1="286.00" x2="411.00" y2="286.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="30.00" y="319.00" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">P10–P90 AT q = 0.50</text>
+<text x="30.00" y="366.00" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">0.286–0.363</text>
+<line x1="29.00" y1="401.00" x2="411.00" y2="401.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="79.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#8c9ea9" text-anchor="middle" dominant-baseline="middle">q = 0.30</text>
+<text x="79.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#8c9ea9" text-anchor="middle" dominant-baseline="middle">0.324</text>
+<text x="220.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#5b7484" text-anchor="middle" dominant-baseline="middle">q = 0.50</text>
+<text x="220.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#5b7484" text-anchor="middle" dominant-baseline="middle">0.325</text>
+<text x="361.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#4b5f6c" text-anchor="middle" dominant-baseline="middle">q = 0.70</text>
+<text x="361.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#4b5f6c" text-anchor="middle" dominant-baseline="middle">0.325</text>
+<rect x="17.00" y="514.00" width="406.00" height="36.00" rx="6" fill="#f4f5f6" stroke="none" stroke-width="1"/>
+<text x="220.00" y="533.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#536b77" text-anchor="middle" dominant-baseline="middle">U.S. mix × IPCC factors</text>
+</g>
+<g transform="translate(2640,0)">
+<rect width="440" height="560" fill="#ffffff"/>
+<rect x="1.00" y="1.00" width="438.00" height="558.00" rx="12" fill="#ffffff" stroke="#d7e3e7" stroke-width="2"/>
+<rect x="1.00" y="1.00" width="438.00" height="13.00" rx="7" fill="#c05b58" stroke="none" stroke-width="1"/>
+<circle cx="48.00" cy="58.00" r="27.00" fill="#c05b58"/>
+<text x="48.00" y="59.00" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">7</text>
+<text x="91.00" y="58.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">Emissions</text>
+<text x="30.00" y="113.00" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">40 UNITS/DAY · q = 0.50</text>
+<text x="30.00" y="199.00" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="700" fill="#c05b58" text-anchor="start" dominant-baseline="middle">1.05</text>
+<text x="33.00" y="256.00" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">kg CO2e/day (LCA)</text>
+<line x1="29.00" y1="286.00" x2="411.00" y2="286.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="30.00" y="319.00" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">P10–P90 AT q = 0.50</text>
+<text x="30.00" y="366.00" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">0.72–1.46</text>
+<line x1="29.00" y1="401.00" x2="411.00" y2="401.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="79.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#d38c8a" text-anchor="middle" dominant-baseline="middle">q = 0.30</text>
+<text x="79.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#d38c8a" text-anchor="middle" dominant-baseline="middle">0.62</text>
+<text x="220.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#c05b58" text-anchor="middle" dominant-baseline="middle">q = 0.50</text>
+<text x="220.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#c05b58" text-anchor="middle" dominant-baseline="middle">1.05</text>
+<text x="361.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#9d4b48" text-anchor="middle" dominant-baseline="middle">q = 0.70</text>
+<text x="361.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#9d4b48" text-anchor="middle" dominant-baseline="middle">1.48</text>
+<rect x="17.00" y="514.00" width="406.00" height="36.00" rx="6" fill="#fbf4f3" stroke="none" stroke-width="1"/>
+<text x="220.00" y="533.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#536b77" text-anchor="middle" dominant-baseline="middle">electricity × grid factor</text>
+</g>
+</svg>

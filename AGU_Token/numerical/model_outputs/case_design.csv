@@ -1,0 +1,10 @@
+case,delegated_share,tracked_hours_per_day,token_source,gpu,concurrency,grid,mix_model,token_energy_match
+survey30_gpt_h100,0.3,2.48,gpt-5.4,H100,1,US_eGRID2023,Guidi403_EIArenew_IPCC_LCA_Dirichlet_kappa100,unvalidated_open_model_proxy
+survey50_gpt_h100,0.5,2.48,gpt-5.4,H100,1,US_eGRID2023,Guidi403_EIArenew_IPCC_LCA_Dirichlet_kappa100,unvalidated_open_model_proxy
+survey70_gpt_h100,0.7,2.48,gpt-5.4,H100,1,US_eGRID2023,Guidi403_EIArenew_IPCC_LCA_Dirichlet_kappa100,unvalidated_open_model_proxy
+survey50_claude_h100,0.5,2.48,claude-opus-4-8,H100,1,US_eGRID2023,Guidi403_EIArenew_IPCC_LCA_Dirichlet_kappa100,unvalidated_open_model_proxy
+survey50_gemini_h100,0.5,2.48,gemini-3.1-pro-preview,H100,1,US_eGRID2023,Guidi403_EIArenew_IPCC_LCA_Dirichlet_kappa100,unvalidated_open_model_proxy
+survey50_session_h100,0.5,2.48,session_proxy,H100,1,US_eGRID2023,Guidi403_EIArenew_IPCC_LCA_Dirichlet_kappa100,unvalidated_open_model_proxy
+fourhour50_gpt_h100,0.5,4.0,gpt-5.4,H100,1,US_eGRID2023,Guidi403_EIArenew_IPCC_LCA_Dirichlet_kappa100,unvalidated_open_model_proxy
+survey50_gpt_h200,0.5,2.48,gpt-5.4,H200,1,US_eGRID2023,Guidi403_EIArenew_IPCC_LCA_Dirichlet_kappa100,unvalidated_open_model_proxy
+survey50_gpt_h100_c64,0.5,2.48,gpt-5.4,H100,64,US_eGRID2023,Guidi403_EIArenew_IPCC_LCA_Dirichlet_kappa100,unvalidated_open_model_proxy

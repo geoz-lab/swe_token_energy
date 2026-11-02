@@ -1,0 +1,55 @@
+run_timestamp,provider,task_tier,task_description,model_id,model_label,run_index,input_tokens,output_tokens,total_tokens,stop_reason,duration_ms
+2026-05-17T17:54:17.828726,anthropic,simple_bug_fix,Fix a simple off-by-one error in a Python function,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),1,633,169,802,end_turn,3783
+2026-05-17T17:54:17.828726,anthropic,simple_bug_fix,Fix a simple off-by-one error in a Python function,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),2,633,189,822,end_turn,4849
+2026-05-17T17:54:17.828726,anthropic,simple_bug_fix,Fix a simple off-by-one error in a Python function,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),3,633,159,792,end_turn,4309
+2026-05-17T17:54:17.828726,anthropic,feature_implementation,Add a new REST endpoint to an existing Flask application,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),1,1209,7527,8736,end_turn,86843
+2026-05-17T17:54:17.828726,anthropic,feature_implementation,Add a new REST endpoint to an existing Flask application,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),2,1209,7674,8883,end_turn,77518
+2026-05-17T17:54:17.828726,anthropic,feature_implementation,Add a new REST endpoint to an existing Flask application,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),3,1209,8192,9401,max_tokens,100848
+2026-05-17T17:54:17.828726,anthropic,architectural_refactor,Decompose a monolithic class into services with dependency injection,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),1,1667,8192,9859,max_tokens,93213
+2026-05-17T17:54:17.828726,anthropic,architectural_refactor,Decompose a monolithic class into services with dependency injection,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),2,1667,8192,9859,max_tokens,92724
+2026-05-17T17:54:17.828726,anthropic,architectural_refactor,Decompose a monolithic class into services with dependency injection,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),3,1667,8192,9859,max_tokens,94433
+2026-05-17T17:54:17.828726,anthropic,simple_bug_fix,Fix a simple off-by-one error in a Python function,claude-opus-4-7,Claude Opus 4.7 (frontier),1,745,187,932,end_turn,3144
+2026-05-17T17:54:17.828726,anthropic,simple_bug_fix,Fix a simple off-by-one error in a Python function,claude-opus-4-7,Claude Opus 4.7 (frontier),2,745,177,922,end_turn,3690
+2026-05-17T17:54:17.828726,anthropic,simple_bug_fix,Fix a simple off-by-one error in a Python function,claude-opus-4-7,Claude Opus 4.7 (frontier),3,745,185,930,end_turn,3319
+2026-05-17T17:54:17.828726,anthropic,feature_implementation,Add a new REST endpoint to an existing Flask application,claude-opus-4-7,Claude Opus 4.7 (frontier),1,1522,4691,6213,end_turn,45867
+2026-05-17T17:54:17.828726,anthropic,feature_implementation,Add a new REST endpoint to an existing Flask application,claude-opus-4-7,Claude Opus 4.7 (frontier),2,1522,5082,6604,end_turn,49667
+2026-05-17T17:54:17.828726,anthropic,feature_implementation,Add a new REST endpoint to an existing Flask application,claude-opus-4-7,Claude Opus 4.7 (frontier),3,1522,4203,5725,end_turn,44198
+2026-05-17T17:54:17.828726,anthropic,architectural_refactor,Decompose a monolithic class into services with dependency injection,claude-opus-4-7,Claude Opus 4.7 (frontier),1,2306,8191,10497,max_tokens,77745
+2026-05-17T17:54:17.828726,anthropic,architectural_refactor,Decompose a monolithic class into services with dependency injection,claude-opus-4-7,Claude Opus 4.7 (frontier),2,2306,8192,10498,max_tokens,80533
+2026-05-17T17:54:17.828726,anthropic,architectural_refactor,Decompose a monolithic class into services with dependency injection,claude-opus-4-7,Claude Opus 4.7 (frontier),3,2306,8192,10498,max_tokens,80565
+2026-05-17T17:54:17.828726,openai,simple_bug_fix,Fix a simple off-by-one error in a Python function,gpt-4o,GPT-4o (frontier),1,506,114,620,stop,2762
+2026-05-17T17:54:17.828726,openai,simple_bug_fix,Fix a simple off-by-one error in a Python function,gpt-4o,GPT-4o (frontier),2,506,103,609,stop,1293
+2026-05-17T17:54:17.828726,openai,simple_bug_fix,Fix a simple off-by-one error in a Python function,gpt-4o,GPT-4o (frontier),3,506,98,604,stop,1205
+2026-05-17T17:54:17.828726,openai,feature_implementation,Add a new REST endpoint to an existing Flask application,gpt-4o,GPT-4o (frontier),1,919,1642,2561,stop,10943
+2026-05-17T17:54:17.828726,openai,feature_implementation,Add a new REST endpoint to an existing Flask application,gpt-4o,GPT-4o (frontier),2,919,935,1854,stop,6898
+2026-05-17T17:54:17.828726,openai,feature_implementation,Add a new REST endpoint to an existing Flask application,gpt-4o,GPT-4o (frontier),3,919,1545,2464,stop,12001
+2026-05-17T17:54:17.828726,openai,architectural_refactor,Decompose a monolithic class into services with dependency injection,gpt-4o,GPT-4o (frontier),1,1342,2556,3898,stop,20926
+2026-05-17T17:54:17.828726,openai,architectural_refactor,Decompose a monolithic class into services with dependency injection,gpt-4o,GPT-4o (frontier),2,1342,2438,3780,stop,17073
+2026-05-17T17:54:17.828726,openai,architectural_refactor,Decompose a monolithic class into services with dependency injection,gpt-4o,GPT-4o (frontier),3,1342,2311,3653,stop,14069
+2026-05-17T17:54:17.828726,openai,simple_bug_fix,Fix a simple off-by-one error in a Python function,gpt-4.1,GPT-4.1 (mid-tier),1,506,121,627,stop,1120
+2026-05-17T17:54:17.828726,openai,simple_bug_fix,Fix a simple off-by-one error in a Python function,gpt-4.1,GPT-4.1 (mid-tier),2,506,104,610,stop,1104
+2026-05-17T17:54:17.828726,openai,simple_bug_fix,Fix a simple off-by-one error in a Python function,gpt-4.1,GPT-4.1 (mid-tier),3,506,110,616,stop,1170
+2026-05-17T17:54:17.828726,openai,feature_implementation,Add a new REST endpoint to an existing Flask application,gpt-4.1,GPT-4.1 (mid-tier),1,919,1558,2477,stop,16727
+2026-05-17T17:54:17.828726,openai,feature_implementation,Add a new REST endpoint to an existing Flask application,gpt-4.1,GPT-4.1 (mid-tier),2,919,1985,2904,stop,17453
+2026-05-17T17:54:17.828726,openai,feature_implementation,Add a new REST endpoint to an existing Flask application,gpt-4.1,GPT-4.1 (mid-tier),3,919,1552,2471,stop,11362
+2026-05-17T17:54:17.828726,openai,architectural_refactor,Decompose a monolithic class into services with dependency injection,gpt-4.1,GPT-4.1 (mid-tier),1,1342,3451,4793,stop,23023
+2026-05-17T17:54:17.828726,openai,architectural_refactor,Decompose a monolithic class into services with dependency injection,gpt-4.1,GPT-4.1 (mid-tier),2,1342,3264,4606,stop,17783
+2026-05-17T17:54:17.828726,openai,architectural_refactor,Decompose a monolithic class into services with dependency injection,gpt-4.1,GPT-4.1 (mid-tier),3,1342,2875,4217,stop,15467
+2026-05-17T17:54:17.828726,google,simple_bug_fix,Fix a simple off-by-one error in a Python function,gemini-2.5-flash-preview-05-20,Gemini 2.5 Flash (fast),1,,,,ERROR,226
+2026-05-17T17:54:17.828726,google,simple_bug_fix,Fix a simple off-by-one error in a Python function,gemini-2.5-flash-preview-05-20,Gemini 2.5 Flash (fast),2,,,,ERROR,120
+2026-05-17T17:54:17.828726,google,simple_bug_fix,Fix a simple off-by-one error in a Python function,gemini-2.5-flash-preview-05-20,Gemini 2.5 Flash (fast),3,,,,ERROR,108
+2026-05-17T17:54:17.828726,google,feature_implementation,Add a new REST endpoint to an existing Flask application,gemini-2.5-flash-preview-05-20,Gemini 2.5 Flash (fast),1,,,,ERROR,109
+2026-05-17T17:54:17.828726,google,feature_implementation,Add a new REST endpoint to an existing Flask application,gemini-2.5-flash-preview-05-20,Gemini 2.5 Flash (fast),2,,,,ERROR,102
+2026-05-17T17:54:17.828726,google,feature_implementation,Add a new REST endpoint to an existing Flask application,gemini-2.5-flash-preview-05-20,Gemini 2.5 Flash (fast),3,,,,ERROR,94
+2026-05-17T17:54:17.828726,google,architectural_refactor,Decompose a monolithic class into services with dependency injection,gemini-2.5-flash-preview-05-20,Gemini 2.5 Flash (fast),1,,,,ERROR,110
+2026-05-17T17:54:17.828726,google,architectural_refactor,Decompose a monolithic class into services with dependency injection,gemini-2.5-flash-preview-05-20,Gemini 2.5 Flash (fast),2,,,,ERROR,105
+2026-05-17T17:54:17.828726,google,architectural_refactor,Decompose a monolithic class into services with dependency injection,gemini-2.5-flash-preview-05-20,Gemini 2.5 Flash (fast),3,,,,ERROR,110
+2026-05-17T17:54:17.828726,google,simple_bug_fix,Fix a simple off-by-one error in a Python function,gemini-2.5-pro-preview-05-06,Gemini 2.5 Pro (frontier),1,,,,ERROR,98
+2026-05-17T17:54:17.828726,google,simple_bug_fix,Fix a simple off-by-one error in a Python function,gemini-2.5-pro-preview-05-06,Gemini 2.5 Pro (frontier),2,,,,ERROR,123
+2026-05-17T17:54:17.828726,google,simple_bug_fix,Fix a simple off-by-one error in a Python function,gemini-2.5-pro-preview-05-06,Gemini 2.5 Pro (frontier),3,,,,ERROR,94
+2026-05-17T17:54:17.828726,google,feature_implementation,Add a new REST endpoint to an existing Flask application,gemini-2.5-pro-preview-05-06,Gemini 2.5 Pro (frontier),1,,,,ERROR,115
+2026-05-17T17:54:17.828726,google,feature_implementation,Add a new REST endpoint to an existing Flask application,gemini-2.5-pro-preview-05-06,Gemini 2.5 Pro (frontier),2,,,,ERROR,104
+2026-05-17T17:54:17.828726,google,feature_implementation,Add a new REST endpoint to an existing Flask application,gemini-2.5-pro-preview-05-06,Gemini 2.5 Pro (frontier),3,,,,ERROR,117
+2026-05-17T17:54:17.828726,google,architectural_refactor,Decompose a monolithic class into services with dependency injection,gemini-2.5-pro-preview-05-06,Gemini 2.5 Pro (frontier),1,,,,ERROR,95
+2026-05-17T17:54:17.828726,google,architectural_refactor,Decompose a monolithic class into services with dependency injection,gemini-2.5-pro-preview-05-06,Gemini 2.5 Pro (frontier),2,,,,ERROR,89
+2026-05-17T17:54:17.828726,google,architectural_refactor,Decompose a monolithic class into services with dependency injection,gemini-2.5-pro-preview-05-06,Gemini 2.5 Pro (frontier),3,,,,ERROR,107

@@ -1,0 +1,7 @@
+activity,microsoft_share_percent,assumed_paid_hours_per_day,implied_hours_per_day,assumed_human_hours_per_task,illustrative_tasks_per_day,evidence_status,source_url,note
+communication_and_meetings,12,8,0.96,,,observed_share_scaled_to_assumed_day,https://arxiv.org/html/2502.15287,Approximate self-reported share; not AI-replaceable by default
+coding_new_features,11,8,0.88,8,0.11,share_observed_duration_assumed,https://arxiv.org/html/2502.15287,One eight-hour feature task is illustrative only
+debugging,9,8,0.72,2,0.36,share_observed_duration_assumed,https://arxiv.org/html/2502.15287,Two-hour task assumption is consistent with but not established by the cross-category METR mean
+architecting_and_design,6,8,0.48,20,0.024,share_observed_duration_assumed,https://arxiv.org/html/2502.15287,Twenty-hour task is illustrative and especially uncertain
+PR_and_code_review,5,8,0.40,2,0.20,share_observed_duration_assumed,https://arxiv.org/html/2502.15287,Review task boundary is illustrative; JetBrains reports three hours per week in a different sample
+other_11_activities,57,8,4.56,,,residual_of_approximate_reported_shares,https://arxiv.org/html/2502.15287,Contains technical and nontechnical work; do not interpret as idle or fully automatable

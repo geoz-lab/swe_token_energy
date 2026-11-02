@@ -1,0 +1,5 @@
+grid_scenario,intensity_gCO2_per_kWh,conservative_10pct_tCO2_yr,central_30pct_tCO2_yr,aggressive_80pct_tCO2_yr,source_note
+Gas-heavy (current US avg mix),500,160000,480000,1285000,IEA energy mix data
+Blended US average,350,112000,336000,899500,IEA/EIA blend
+Renewable-dominant,100,32000,96000,257000,Illustrative
+Nuclear/renewables-first,50,16000,48000,128500,Illustrative

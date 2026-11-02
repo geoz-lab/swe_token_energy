@@ -1,0 +1,9 @@
+scenario,mode,ftes_replaced_M,tokens_per_day,h100_count,facility_power_MW,construction_capex_B,ai_cost_per_fte_yr_USD,annual_energy_cost_M,annual_labor_savings_B
+Conservative,Agentic,2.4,9.6T,33700,36.8,0.552,9020,19,170
+Central,Agentic,7.2,28.8T,101000,110.0,1.65,9020,58,511
+McKinsey,Agentic,13.7,54.8T,191600,209.2,3.14,9020,110,971
+Aggressive,Agentic,19.2,76.8T,269000,293.8,4.40,9020,154,1363
+Conservative,Copilot,2.4,288B,9600,12.3,0.184,120,5,170
+Central,Copilot,7.2,864B,28800,36.7,0.551,120,16,511
+McKinsey,Copilot,13.7,1.64T,54800,69.8,1.05,120,30,971
+Aggressive,Copilot,19.2,2.30T,76800,97.9,1.47,120,42,1363

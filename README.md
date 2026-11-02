@@ -1,48 +1,75 @@
-# From Tokens to Energy — the token/energy/cost economics of AI software-engineering agents
+![AGU 2026 poster preview](AGU_Token/AGU26_Token_GeoZhang.png)
 
-Empirical study linking software-engineering **labor** → **token demand** → **GPU compute** →
-**energy and cost**, in three experiments plus a unifying stochastic model.
+# What Should We Count? Token Accounting for the Carbon Footprint of Agentic AI
 
-| | Experiment | Question | Writeup |
-|---|---|---|---|
-| **Exp-1** | Agentic token **demand** | How many tokens does an agent consume per SWE task, across frontier commercial models? | [`exp1_summary.md`](exp1_summary.md) |
-| **Exp-2** | Inference **supply** | What throughput (θ_GPU) and energy intensity do open-weight coders achieve on A100/H100/H200? | [`exp2_summary.md`](exp2_summary.md) |
-| — | Sanity check | Do open models consume a comparable per-task token budget to commercial ones? | [`exp2_summary.md`](exp2_summary.md) §10 |
-| **Exp-3** | **Cost model** | Cost/energy/GPUs per substituted software engineer (5-layer Monte-Carlo fitting Exp-1 + Exp-2) | [`exp3_summary.md`](exp3_summary.md) |
+[Editable AGU 2026 poster](AGU_Token/AGU26_Token_GeoZhang.pptx) · [Poster PDF](AGU_Token/AGU26_Token_GeoZhang.pdf) · [Numerical methods and source ledger](AGU_Token/numerical/README.md)
 
-## Headline results
+## Project summary
 
-- **Demand (Exp-1):** agentic SWE tasks cost 10⁴–10⁶ tokens; model choice drives an ~11× spread; ≤1% of tokens are generated (the rest is re-sent, cacheable context).
-- **Supply (Exp-2):** **active** parameters (not total size) drive throughput — a 3B-active MoE coder delivers ~6× the θ_GPU and energy efficiency of a same-size 32B-active dense model.
-- **Cost (Exp-3):** under fully-agentic production, **one GPU serves ~175 engineers**; **~36 kWh and ~$2.35 electricity per engineer-year** — roughly **1,300× below** the API-priced equivalent (~$3,095). Energy is negligible; price is set by capital and margin.
+This research connects software-engineering work assigned to AI agents with token demand, measured open-model GPU service, facility electricity, and electricity-supply emissions. The poster shows a **conditional high-load scenario**, with Monte Carlo variation at each stage. Its starting quantity is *attempted work allocation*, not observed labor replacement. The GPU and emissions results are **benchmark-equivalent estimates**, not measurements of a commercial agent provider's data center.
 
-## Layout
+The central poster case assumes one engineer-day contains 40 equal-human-effort candidate work units. A target allocation of `q = 0.50` means an agent attempts about half of that work. Each delegated unit is assumed to launch one full agent session; that mapping is a deliberately demanding scenario, not an observed task-to-session ratio. We use a published median of 1.4 million total tokens per session and a measured local H100 serving cell for the hardware conversion. Each of the 13 high-load scenarios has 10,000 Monte Carlo draws with a fixed seed.
 
+| Stage | Central case per engineer-day | Conditional P10–P90 | Basis |
+|---|---:|---:|---|
+| Attempted work | 0.50 FTE/day | 0.40–0.60 | `N ~ Binomial(40, 0.50)`; equal effort per unit assumed |
+| Agent sessions | 20/day | 16–24 | One session per delegated unit assumed |
+| Total tokens | 35.1 million/day | 25.3–46.9 million | [Standard Compute](https://standardcompute.com/agent-burn-index) session median; spread assumed |
+| H100 service | 5.94 GPU-hours/day | 4.28–7.93 | Local Qwen3-Coder-30B-A3B benchmark: 1,642 total tokens/s |
+| Facility electricity | 3.25 kWh/day | 2.29–4.44 | 326 W measured board power; host factor and PUE assumed |
+| U.S. supply factor | 0.325 kg CO₂e/kWh | 0.286–0.363 | Data-center source weights and IPCC life-cycle factors |
+| Electricity emissions | 1.05 kg CO₂e/day | 0.72–1.46 | Facility kWh × source-weighted factor |
+
+These P10–P90 ranges describe variation **within the chosen model and assumptions**. They are not confidence intervals for real-world engineering substitution or provider emissions. The poster's 7.665 Mt CO₂e/year global arithmetic illustration additionally assumes 20 million developers all use agents on every one of 365 days; it is **not a forecast**.
+
+### Accounting chain
+
+For candidate-unit count `A`, attempted share `q`, agent-session tokens `T_s`, measured throughput `R`, board power `P`, host multiplier `u`, power usage effectiveness `PUE`, electricity-source shares `p_s`, and source life-cycle factors `EF_s`:
+
+```text
+N             ~ Binomial(A, q)             attempted agent sessions/day
+F_attempted   = N / A                      attempted FTE/day, if units have equal human effort
+T             = Σ_session T_s              total tokens/day
+GPU_hours     = T / R / 3,600              benchmark GPU-hours/day
+E_facility    = (T / R) × P × u × PUE / 3,600,000    kWh/day
+I_grid        = Σ_source p_s × EF_s         kg CO₂e/kWh
+C_electricity = E_facility × I_grid         kg CO₂e/day
 ```
-exp1_token_consumption/   Exp-1 code (mini-swe-agent on SWE-bench / SWE-Lancer)
-exp1_results/             Exp-1 outputs (raw CSV + figures)
-exp2_token_gen/           Exp-2 code (vLLM throughput/energy on Sherlock GPUs)
-exp2_results/             Exp-2 outputs (per-cell JSON, power CSVs, exp2_raw.csv, figures)
-exp2_sanity_check/        open-vs-commercial token-parity check
-exp3_simulation/          Exp-3 five-layer Monte-Carlo (params.py, simulate.py)
-exp3_results/             Exp-3 outputs (per-engineer CSVs, sensitivity, figures)
-final_results/            consolidated clean CSVs + publication figures (pubstyle.py)
-exp{1,2,3}_summary.md      scientific writeups
-PLAN.md                   overall plan
-```
 
-## Reproducing
+The main grid scenario uses [Guidi et al.'s U.S. hyperscale data-center electricity attribution](https://arxiv.org/html/2606.05420v1), an explicitly labeled [EIA 2024 renewable submix proxy](https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html), and [IPCC source-specific life-cycle factors](https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf). [EPA eGRID](https://www.epa.gov/egrid/summary-data) is a **separate operational-emissions comparison**. Life-cycle and operational factors must not be added together. Marginal emissions are a different question and are not inferred from the annual source mix.
 
-Each experiment folder has its own README and environment file. Exp-1/Exp-2 run on the Stanford
-**Sherlock** cluster (SLURM + Apptainer); Exp-3 and all figures run locally:
+## Evidence and limits
+
+The project contains local agent-token traces and open-model GPU measurements, published source tables, and analyst assumptions. The [source audit](AGU_Token/numerical/SOURCE_AUDIT.md), [reference register](AGU_Token/numerical/REFERENCES.md), and [high-load reassessment](AGU_Token/numerical/HIGH_LOAD_REASSESSMENT_2026-11-01.md) distinguish these evidence levels. The present model does **not** establish completed task counts, acceptance rates, human review time saved, net FTE replacement, closed-model serving hardware, idle fleet allocation, or marginal grid impact. Hardware manufacture, data-center construction, and model training are outside the poster's primary system boundary.
+
+The empirical experiment explores another denominator: selected software-engineering tasks and open-model serving cells. Its historical energy/cost scenarios should not be interpreted as validation of the poster's high-load session mapping. See [Experiment](Experiment/README.md) and its [consolidated results](Experiment/final_results/README.md). The older cost-model draft is retained in [`from_tokens2energy_cost2replace_human/`](from_tokens2energy_cost2replace_human/README.md) for provenance; **its substitution claims are not current poster findings**.
+
+## Repository guide
+
+| Path | Contents |
+|---|---|
+| [`AGU_Token/`](AGU_Token/) | Current poster, abstract, work plan, and numerical study. |
+| [`AGU_Token/numerical/`](AGU_Token/numerical/) | Seven-stage equations, input and source CSVs, Monte Carlo code, summaries, and poster figures. |
+| [`Experiment/`](Experiment/) | Original task-token traces, A100/H100/H200 measurements, simulation, and publication tables. Its earlier Git history is preserved in this repository. |
+| [`Overleaf/`](Overleaf/) | Manuscript source and figures. |
+| [`from_tokens2energy_cost2replace_human/`](from_tokens2energy_cost2replace_human/) | Earlier exploratory economics draft, kept separate from the current model. |
+| [`supporting_data/`](supporting_data/) | Supplementary externality workbook and sourced marginal-emission workbooks; these do not drive the poster's central attributional grid factor. |
+
+## Reproduce the poster calculations
+
+Run from the repository root with Python 3. The numerical model uses the standard library. Figure PNG conversion uses PyMuPDF when installed.
 
 ```bash
-python exp3_simulation/simulate.py     # five-layer model
-python final_results/build_tables.py   # consolidated CSVs
-python final_results/make_pub_figures.py
+python3 AGU_Token/numerical/run_seven_stage.py
+python3 AGU_Token/numerical/run_high_load_sensitivity.py
+python3 AGU_Token/numerical/run_grid_sensitivity.py
+python3 AGU_Token/numerical/validate_seven_stage.py
+python3 AGU_Token/numerical/make_poster_figures.py
+python3 AGU_Token/numerical/make_high_load_figure.py
 ```
 
-## Configuration
+The run scripts regenerate the large per-draw CSV files locally. Those deterministic intermediate files, virtual environments, credentials, and presentation build caches are excluded from the public repository. The compact summary CSVs, source ledgers, final figures, and editable poster are included. The experiment has separate setup instructions for its cluster and API-dependent runs.
 
-Copy `.env.example` → `.env` and add API keys for the Exp-1 commercial-model runs. **`.env` is
-git-ignored** — never commit live credentials.
+## Status
+
+This is an unfinished AGU 2026 research project and poster draft. The present results are suitable for inspecting the accounting method and sensitivities; a measured labor-substitution footprint requires accepted-task outcomes and provider or instrumented serving data on the same workload.

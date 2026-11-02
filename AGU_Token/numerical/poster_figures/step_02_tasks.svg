@@ -1,0 +1,24 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="440" height="560" viewBox="0 0 440 560" role="img" aria-label="Stage 2: Agent sessions, high-load poster card">
+<title>Stage 2: Agent sessions, high-load poster card</title>
+<rect width="440" height="560" fill="#ffffff"/>
+<rect x="1.00" y="1.00" width="438.00" height="558.00" rx="12" fill="#ffffff" stroke="#d7e3e7" stroke-width="2"/>
+<rect x="1.00" y="1.00" width="438.00" height="13.00" rx="7" fill="#248c99" stroke="none" stroke-width="1"/>
+<circle cx="48.00" cy="58.00" r="27.00" fill="#248c99"/>
+<text x="48.00" y="59.00" font-family="Arial,Helvetica,sans-serif" font-size="29" font-weight="700" fill="#ffffff" text-anchor="middle" dominant-baseline="middle">2</text>
+<text x="91.00" y="58.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">Agent sessions</text>
+<text x="30.00" y="113.00" font-family="Arial,Helvetica,sans-serif" font-size="25" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">40 UNITS/DAY · q = 0.50</text>
+<text x="30.00" y="199.00" font-family="Arial,Helvetica,sans-serif" font-size="90" font-weight="700" fill="#248c99" text-anchor="start" dominant-baseline="middle">20</text>
+<text x="33.00" y="256.00" font-family="Arial,Helvetica,sans-serif" font-size="28" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">sessions/day</text>
+<line x1="29.00" y1="286.00" x2="411.00" y2="286.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="30.00" y="319.00" font-family="Arial,Helvetica,sans-serif" font-size="23" font-weight="700" fill="#536b77" text-anchor="start" dominant-baseline="middle">P10–P90 AT q = 0.50</text>
+<text x="30.00" y="366.00" font-family="Arial,Helvetica,sans-serif" font-size="42" font-weight="700" fill="#172f3b" text-anchor="start" dominant-baseline="middle">16–24</text>
+<line x1="29.00" y1="401.00" x2="411.00" y2="401.00" stroke="#d7e3e7" stroke-width="2"/>
+<text x="79.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#66aeb8" text-anchor="middle" dominant-baseline="middle">q = 0.30</text>
+<text x="79.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#66aeb8" text-anchor="middle" dominant-baseline="middle">12</text>
+<text x="220.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#248c99" text-anchor="middle" dominant-baseline="middle">q = 0.50</text>
+<text x="220.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#248c99" text-anchor="middle" dominant-baseline="middle">20</text>
+<text x="361.00" y="434.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#1e737d" text-anchor="middle" dominant-baseline="middle">q = 0.70</text>
+<text x="361.00" y="479.00" font-family="Arial,Helvetica,sans-serif" font-size="33" font-weight="700" fill="#1e737d" text-anchor="middle" dominant-baseline="middle">28</text>
+<rect x="17.00" y="514.00" width="406.00" height="36.00" rx="6" fill="#f0f7f8" stroke="none" stroke-width="1"/>
+<text x="220.00" y="533.00" font-family="Arial,Helvetica,sans-serif" font-size="21" font-weight="700" fill="#536b77" text-anchor="middle" dominant-baseline="middle">N ~ Binomial(40, q)</text>
+</svg>

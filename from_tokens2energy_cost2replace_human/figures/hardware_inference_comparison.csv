@@ -1,0 +1,7 @@
+hardware,vendor,model_class,tokens_per_s_batch,tdp_W,wh_per_MTok,energy_cost_per_MTok_USD_at_60MWh,relative_efficiency_vs_H100,source_quality,notes
+A100 SXM4,NVIDIA,70B FP16,1148,400,96.9,0.00581,0.35x,SECONDARY,Previous generation baseline; still widely deployed
+H100 SXM5,NVIDIA,70B FP16,3311,700,58.9,0.00353,1.0x (reference),SECONDARY,Current production standard; Hyperstack benchmark
+B200,NVIDIA,70B FP16,60000,700,3.2,0.000193,18.4x,PRIMARY (NVIDIA self-reported),Blackwell generation; pending independent verification
+MI300X,AMD,70B FP16,2800,750,74.4,0.00446,0.79x,SECONDARY,AMD competitor; growing deployment in cloud
+Intel Gaudi 3,Intel,70B FP16,1500,600,111.1,0.00667,0.53x,SECONDARY,Intel entrant; strong cost position for inference
+Apple M4 Ultra (edge),Apple,7B FP16,350,120,95.2,0.00571,0.06x (edge),SECONDARY,Edge NPU; low absolute throughput but efficient per-watt; not viable for fleet-scale

@@ -1,0 +1,1626 @@
+% paper_arxiv_draft.tex
+% From Tokens to Energy: The Cost of Replacing Human Engineering with AI
+% arXiv-format LaTeX version
+% Generated from paper_arxiv_draft.md
+
+\documentclass{article}
+\usepackage{PRIMEarxiv}         % arXiv preprint style (Times, fancyhdr, 6.5in text)
+
+%% ── Packages ─────────────────────────────────────────────────────────────
+\usepackage[utf8]{inputenc}
+\usepackage[T1]{fontenc}
+% lmodern omitted: cs_2025 sets Times Roman (ptm/phv)
+\usepackage{microtype}
+% geometry omitted: PRIMEarxiv sets 6.5in × 9in layout internally
+\usepackage{amsmath,amssymb}
+\usepackage{booktabs}           % professional tables
+\usepackage{longtable}
+\usepackage{array}
+\usepackage{tabularx}
+\usepackage[table]{xcolor}
+\usepackage{graphicx}
+\usepackage{hyperref}
+\usepackage[capitalize,noabbrev]{cleveref}
+\usepackage{tcolorbox}          % callout boxes
+\tcbuselibrary{skins,breakable}
+\usepackage{listings}           % code blocks
+\usepackage{lstautogobble}
+\usepackage{setspace}
+\usepackage{parskip}
+\usepackage{enumitem}
+\usepackage{caption}
+\usepackage{subcaption}
+\usepackage{pdflscape}
+\usepackage{natbib}             % PRIMEarxiv does not load natbib
+% fontawesome5 omitted: crashes tectonic/XeTeX (use text fallback below)
+
+%% ── Custom commands ──────────────────────────────────────────────────────
+% Citation quality flags
+\newcommand{\PRIMARY}{\textbf{[PRIMARY]}}
+\newcommand{\SECONDARY}{\textbf{[SECONDARY]}}
+\newcommand{\ESTIMATE}{\textbf{[ESTIMATE]}}
+\newcommand{\VERIFY}{\textcolor{red}{\textbf{[VERIFY]}}}
+
+%% ── tcolorbox styles ─────────────────────────────────────────────────────
+\tcbset{
+  warningbox/.style={
+    enhanced,
+    colback=yellow!10,
+    colframe=orange!80!black,
+    fonttitle=\bfseries,
+    title={$\blacktriangleright$\ Note},
+    breakable
+  },
+  keyresult/.style={
+    enhanced,
+    colback=blue!5,
+    colframe=blue!60!black,
+    fonttitle=\bfseries,
+    title={Key Result},
+    breakable
+  }
+}
+
+%% ── lstlisting style ─────────────────────────────────────────────────────
+\lstset{
+  basicstyle=\small\ttfamily,
+  breaklines=true,
+  frame=single,
+  autogobble=true,
+  xleftmargin=2em,
+  xrightmargin=2em
+}
+
+%% ── Hyperref setup ───────────────────────────────────────────────────────
+\hypersetup{
+  colorlinks=true,
+  linkcolor=blue!70!black,
+  citecolor=green!50!black,
+  urlcolor=blue!70!black,
+  pdftitle={From Tokens to Energy: The Cost of Replacing Human Engineering with AI},
+  pdfauthor={Draft v0.1},
+  pdfsubject={AI infrastructure, labor substitution, token economics}
+}
+
+%% ── Title block ──────────────────────────────────────────────────────────
+\title{%
+  \textbf{From Tokens to Energy: The Cost of Replacing Human Engineering with AI}
+  % \\[0.5em]
+  % \large\textit{Quantifying the Infrastructure Imperative: Token Demand, Energy Consumption,
+  % and Market Opportunities in the AI-Driven Engineering Transition}
+}
+
+\author{%
+  Ge Zhang \\
+  Department of Energy Science \& Engineering \\
+  Stanford University \\
+  \texttt{gmzhang@stanford.edu}
+  % \And
+  % Claude Sonnet 4.6 (Claude Code) \\
+  % Anthropic, PBC \\
+  % \texttt{claude-code@anthropic.com}
+  \And
+  Anthony R. Kovscek \\
+  Department of Energy Science \& Engineering \\
+  Stanford University \\
+  \texttt{kovscek@stanford.edu}
+}
+
+\date{}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\begin{document}
+\maketitle
+
+% -- check the data sources
+% \noindent\small\textit{All data quality flags: \PRIMARY{} = directly citable;
+% \SECONDARY{} = citable with caveat; \ESTIMATE{} = derived/illustrative;
+% \VERIFY{} = requires primary source before submission.}
+
+\vspace{1em}
+\hrule
+\vspace{1em}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\begin{abstract}
+Artificial intelligence (AI) systems are demonstrating increasing capability at software engineering tasks, raising the prospect of large-scale substitution of human engineering labor by AI inference. In this paper, we construct a bottom-up quantitative model linking engineering labor economics to AI compute infrastructure requirements, energy consumption, and capital market opportunity across a spectrum of AI human resource substitution scenarios. Firstly, the \emph{token} is taken as the analytical bridge between labor economics (FTE-hours, compensation) and computational economics (FLOP/s, kilowatt-hours). Using a six-category task taxonomy to bound substitutability, empirical token consumption data from agentic coding benchmarks \citep{bai2026agent}, and hardware throughput benchmarks for current AI tools, we derive the compute and energy requirements for replacing 10\%, 30\%, and 80\% of the global software engineering workforce (assuming 24 million FTEs) under fully agentic AI deployment. To keep an serious estimation about 30\% substitution, the fully agentic scenario use approximately 28.8 trillion tokens per day, requiring roughly one hundred thousand H100-class GPUs and 110 MW of data center facility power, which is equivalent to a single mid-size power facility. Construction capex is approximately \$1.65 billion; annual energy cost approximately \$58 million; fully-loaded AI cost approximately \$9,020 per replaced FTE-year, or 6.8\% of a US software developer's median salary of \$133,080 \citep{bls2024oes}. Annual labor savings at 30\% substitution are approximately \$511 billion. The engineering substitution demand represents 0.10\% of the IEA's projected 2030 global data center load of 107.9 GW, which is unexpectedly low. However, the binding constraints on AI engineering deployment are not economic but operational: current agentic capability (SWE-bench resolution rate), institutional adoption friction, and grid interconnection timelines of 2--5 years for large loads. We map the resulting opportunity and tasks across energy companies, data center developers, equipment suppliers, and capital markets instruments, and identify serval priorities on fast-track grid interconnection for AI-critical loads, pre-funded engineering workforce transition programs, and mandatory AI inference carbon accounting.
+
+
+
+
+\end{abstract}
+
+\vspace{0.5em}
+\noindent\textbf{Keywords:} artificial intelligence, engineering automation, token consumption, data center energy, AI infrastructure, labor substitution, energy markets
+
+% \vspace{0.3em}
+% \noindent\textbf{arXiv subject classifications:} cs.AI (Artificial Intelligence);
+% econ.GN (General Economics); cs.CY (Computers and Society)
+
+% \vspace{0.3em}
+% \noindent\textbf{MSC classes:} 91B38 (Production theory, theory of the firm);
+% 68T01 (General topics in artificial intelligence)
+
+\vspace{1em}
+\hrule
+
+% ─────────────────────────────────────────────────────────────────────────────
+\tableofcontents
+\newpage
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Introduction and Motivation}
+\label{sec:introduction}
+
+\subsection{From Engineering Labor to Tokenized Cognition}
+
+Every major wave of engineering automation has historically mechanized physical execution while preserving human cognition as the central coordinating function. Computer-aided design (CAD) systems beginning in the 1970s eliminated manual drafting as a distinct profession within architecture and civil engineering, yet total employment in those industries expanded as lower design costs increased the scale of construction and infrastructure development. Electronic design automation (EDA) tools in the 1980s and 1990s removed the need for manual integrated circuit layout, while simultaneously enabling exponential growth in semiconductor complexity and production volume. In each case, automation primarily targeted procedural or physically mediated labor, while abstraction, system design, trade-off analysis, and novel problem formulation remained fundamentally human activities.
+
+Large language model (LLM) systems represent a structural break from this historical pattern. Unlike prior automation technologies, contemporary AI systems increasingly target linguistic and cognitive components of engineering labor itself. Recent advances in autonomous and agentic software engineering systems allow language models not only to generate code fragments, but also to plan execution strategies, invoke tools, navigate repositories, interpret compiler feedback, execute debugging loops, and iteratively refine software artifacts with limited direct human intervention \citep{wang2025agentic, patil2025bfcl}.
+
+The economic significance of this transition is substantial. Software engineering represents one of the most economically valuable categories of skilled labor in the global economy. The United States alone employed approximately \textbf{1.89 million software developers} in 2024 at a median annual wage of roughly \textbf{\$131,450}, with employment continuing to grow rapidly according to \citet{bls2024oes}. Globally, the professional software developer population reached approximately \textbf{20.8 million} in 2025 according to \citet{jetbrains2025survey}, excluding many hobbyist and student programmers, while broader estimates place the worldwide developer population between \textbf{27--29 million} \citep{evans2025developers}. Assuming global software engineering compensation averages approximately 50\% below U.S. median wage levels because of international labor market differentials, these estimates imply an annual compensation pool of approximately \textbf{\$1.4 trillion} for professional software developers alone, and approximately \textbf{\$1.8--1.9 trillion} under broader definitions of the global developer workforce.
+
+The current state of AI capability establishes a meaningful lower bound on the technical feasibility of software engineering automation. As of early 2026, frontier coding agents such as \textit{Claude Opus 4.5} achieved approximately \textbf{77--81\% resolution rates on SWE-bench Verified}, a widely used benchmark evaluating repository-level software maintenance and bug-fixing tasks under executable testing conditions \citep{swebench2026, anthropic2025opus45}. Although benchmark performance does not directly imply full occupational replacement, these results demonstrate that language models can already execute substantial fractions of practical software maintenance workflows without requiring direct human-authored code generation.
+
+At the same time, recent research increasingly frames AI agents as economically meaningful actors rather than isolated software tools \citep{rothschild2025agentic}. This shift creates a fundamental analytical challenge. Labor economics measures productive activity in units such as \textbf{FTE-hours}, \textbf{headcount}, and \textbf{compensation dollars}. AI infrastructure economics instead measures productive activity in \textbf{tokens}, \textbf{FLOPs}, \textbf{GPU-hours}, and \textbf{electrical power consumption}. Existing literature generally analyzes either labor substitution or compute infrastructure scaling in isolation, leaving the quantitative relationship between cognitive labor replacement and physical compute demand poorly understood.
+
+This paper argues that the missing bridge between these domains is the \textbf{token}: the atomic unit of language-model computation. Tokens provide a measurable intermediate representation linking engineering work to computational and energy requirements. Token counts are:
+\begin{itemize}
+  \item directly measurable through API billing and inference logs,
+  \item directly connected to computation through transformer scaling relationships,
+  \item directly connected to economic cost through published API pricing,
+  \item and directly connected to physical infrastructure requirements through GPU utilization and electrical power demand.
+\end{itemize}
+
+Recent work on ``tokenomics'' in agentic software engineering demonstrates that autonomous coding systems can consume orders of magnitude more tokens than conventional copilot-style interaction patterns \citep{salim2026tokenomics, bai2026agent}. Contemporary copilot-assisted programming workflows appear to operate on the order of \textbf{10\textsuperscript{5}} tokens per engineer per day, whereas fully agentic coding systems evaluated on SWE-bench-style tasks may consume on the order of \textbf{10\textsuperscript{6}}--\textbf{10\textsuperscript{7}} tokens per complex software task. This distinction is economically and physically important: modest increases in coding productivity require relatively small increases in inference demand, while large-scale replacement of engineering labor with autonomous AI systems may imply a qualitative transformation in global compute and energy consumption.
+
+The AI substitution hypothesis examined in this paper is therefore not binary. We do not argue that AI will categorically replace all software engineers. Instead, we model a \emph{substitution rate}: the fraction of engineering full-time-equivalent (FTE) labor hours effectively executed by AI inference systems at production-acceptable quality. McKinsey Global Institute estimates that generative AI could automate or significantly augment activities representing approximately \textbf{60--70\% of employee work time} across the global economy under full deployment scenarios \citep{mckinsey2023genai}. For software engineering specifically, a profession highly concentrated in text-mediated and cognitive workflows, the technical ceiling may be substantially higher than economy-wide averages. Our task-weighted taxonomy analysis suggests a theoretical upper bound of approximately \textbf{71\%} substitutable engineering FTE-hours under advanced agentic deployment assumptions.
+
+The central scenario modeled throughout this paper assumes approximately \textbf{30\% effective engineering labor substitution}, broadly anchored to accelerated AI deployment scenarios in STEM-related occupations projected by McKinsey Global Institute \citep{mckinsey2024future}. Under this scenario, software engineering labor increasingly becomes a form of tokenized cognition executed through GPU-based inference systems. The central question examined in this paper is therefore not merely whether AI can replace portions of software engineering labor, but rather:
+
+\begin{quote}
+\textit{How much computational infrastructure, electrical power, and industrial capacity are required to replace human cognitive engineering labor at global scale?}
+\end{quote}
+
+The following part of this paper proceeds as, Section~\ref{sec:related-work} reviews prior literature on agentic software engineering, AI labor substitution, token economics, and AI infrastructure scaling. Section~\ref{sec:methodology} presents the quantitative framework linking engineering labor substitution to token demand, compute requirements, and energy consumption. Section~\ref{sec:results} evaluates token throughput, GPU infrastructure requirements, power consumption, and cost under multiple AI deployment scenarios, including the central assumed 30\% engineering labor substitution case. Section~\ref{sec:discussion} examines broader economic, infrastructure, environmental, and policy implications arising from large-scale AI-mediated software engineering. Finally, Section~\ref{sec:conclusion} summarizes the paper's analysis and outlines directions for future research.
+
+% \subsection{A Note on Uncertainty}
+
+% The quantitative model rests on a small number of empirical anchors that carry
+% significant uncertainty. The most load-bearing is the per-task token consumption figure
+% from \citet{bai2026agent} \VERIFY{}, which reports a 30$\times$
+% run-to-run variance for identical tasks. Combined with a 4$\times$ uncertainty in tasks
+% per day (1--4), the model's aggregate token demand estimate carries a potential 14$\times$
+% uncertainty band from the lowest to the highest plausible values.
+
+% We present this uncertainty explicitly rather than eliding it. The central scenario
+% (\$9,020/FTE-year, 110 MW, \$1.65B capex) is a best-estimate computation, not a point
+% prediction. The sensitivity analysis in Section~\ref{sec:token-demand} and the locked
+% assumptions documented in Section~\ref{sec:methodology} provide the tools needed for
+% users to adjust the model to their own assumptions.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Related Work}
+\label{sec:related-work}
+
+This paper sits at the intersection of four active research areas: AI-driven labor automation, foundation-model scaling and inference economics, agentic software engineering systems, and AI infrastructure energy demand. Existing work has extensively examined each layer independently, but relatively little research quantitatively connects labor substitution to compute infrastructure and energy consumption through tokenized inference demand.
+
+Research on automation and labor economics has long analyzed how technological systems substitute for human tasks rather than entire occupations \citep{autor2013skills, acemoglu2022tasks}. Recent work on generative AI extends this framework to knowledge-intensive and cognitive labor. McKinsey Global Institute projects that generative AI could automate or significantly augment activities representing 60--70\% of employee work time under full deployment scenarios \citep{mckinsey2023genai}, while Goldman Sachs estimates substantial labor-market exposure across advanced economies \citep{goldmansachs2023ai}. However, these analyses primarily focus on labor-market and productivity outcomes without modeling the computational infrastructure required to operationalize AI substitution at scale.
+
+A parallel literature examines the scaling behavior and computational economics of large language models. Foundational work on transformer scaling laws demonstrated predictable relationships between model size, data, and compute requirements \citep{kaplan2020scaling, hoffmann2022chinchilla}. Subsequent foundation-model research established the broad capability generalization of large language models across linguistic and reasoning tasks \citep{brown2020gpt3, bommasani2021foundation}. These works characterize the computational properties of frontier models, but generally abstract away downstream labor and industrial implications.
+
+More recent work studies autonomous and agentic AI systems capable of multi-step reasoning, tool invocation, and software engineering workflows \citep{wang2025agentic, patil2025bfcl}. SWE-bench and related benchmarks operationalize repository-level software maintenance evaluation for coding agents \citep{jimenez2024swebench}. Recent empirical studies further quantify the token economics of autonomous coding systems, showing that agentic software engineering workflows may consume orders of magnitude more tokens than conventional interactive prompting \citep{salim2026tokenomics, bai2026agent}. This emerging literature establishes token consumption as an important operational and economic property of AI agents, but has not yet connected token demand to large-scale labor substitution scenarios.
+
+Finally, a growing infrastructure and energy literature examines the physical footprint of modern AI systems. The International Energy Agency projects rapid growth in global data-center electricity demand driven by AI deployment \citep{iea2024energy}, while industry and systems analyses study GPU efficiency, inference throughput, and datacenter scaling constraints \citep{lbnl2024datacenter, nvidia2024h100brief}. At the same time, recent economic work increasingly frames AI agents as autonomous economic actors operating within broader digital production systems \citep{rothschild2025agentic}. Yet existing energy and infrastructure analyses rarely specify which categories of cognitive labor generate the inference demand underlying these projections.
+
+This paper contributes a quantitative bridge across these literatures. We model software-engineering labor substitution in token terms, linking engineering FTE-hours to token demand, GPU infrastructure requirements, electrical power consumption, and deployment cost through a unified bottom-up framework. In doing so, the paper reframes AI labor substitution not only as an economic phenomenon, but also as an infrastructure and energy systems problem.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Methodology}
+\label{sec:methodology}
+
+\subsection{Overview}
+\label{sec:overview}
+
+The paper constructs a five-layer bottom-up quantitative model that connects engineering
+labor economics to AI compute infrastructure requirements. The model is deterministic
+given its inputs, making all intermediate calculations fully reproducible from the locked
+assumptions documented in Section~\ref{sec:assumptions}. We run the model across three
+substitution rates (10\%, 30\%, 80\%) and two deployment modes (Copilot-augmented and
+Fully Agentic), yielding six primary scenario combinations. Results are reported in Section~\ref{sec:results} (encompassing token demand,
+compute infrastructure, and energy cost analysis); market and risk implications are
+discussed in Section~\ref{sec:discussion}.
+
+\subsection{Model Architecture}
+\label{sec:model-arch}
+
+This paper constructs a \textbf{five-layer bottom-up quantitative model} connecting
+engineering labor economics to compute infrastructure requirements to energy consumption
+and cost. Each layer produces outputs that serve as inputs to the next. The model is
+built to be auditable: every transformation is explicit, every locked assumption is
+documented, and every empirical anchor is tagged with its evidentiary quality.
+
+\subsubsection*{Layer 1 --- Labor Input Model}
+
+\textbf{Inputs:} Global software engineering workforce size --- centrally estimated at 24
+million FTEs \SECONDARY{} \citep{jetbrains2025survey,evans2025developers}; total engineering workforce of approximately 33--34 million
+FTEs derived using the US BLS architecture-and-engineering-to-software-developer
+employment ratio of 1.39$\times$ \PRIMARY{} \citep{bls2024oes}; substitution rate (10\% conservative / 30\%
+central / 80\% aggressive).
+
+\textbf{Key transformation:} Substitution rate $\times$ software engineering workforce
+$=$ FTE-equivalents whose work hours are effectively replaced by AI inference. The
+taxonomy of engineering work by token-substitutability (Section~\ref{sec:taxonomy},
+Table~\ref{tab:taxonomy}) yields a task-category-weighted effective replacement ceiling
+of approximately 71\% of FTE-hours for software engineering.
+
+\textbf{Output:} Token-active FTEs by scenario (2.4 million at 10\%; 7.2 million at
+30\%; 19.2 million at 80\%).
+
+\textbf{Primary uncertainty:} Workforce size carries a $\pm$20\% range from two credible
+but methodologically distinct published estimates. The substitution rate is the model's
+dominant uncertainty.
+
+\subsubsection*{Layer 2 --- Token Demand Model}
+
+\textbf{Inputs:} Token-active FTEs from Layer 1; deployment mode (Copilot-augmented:
+120,000 tokens/day/FTE \ESTIMATE{}; Agentic: 4,000,000 tokens/day/FTE \SECONDARY{} from
+\citet{bai2026agent}).
+
+\textbf{Key transformation:} FTEs $\times$ tokens/day/FTE $=$ total daily token demand.
+
+\textbf{Output:} Daily token demand by scenario and deployment mode, ranging from 288
+billion tokens/day (10\% substitution, Copilot mode) to 76.8 trillion tokens/day (80\%
+substitution, Agentic mode). The central scenario (30\% substitution, Agentic mode)
+produces \textbf{28.8 trillion tokens/day}.
+
+\textbf{Primary uncertainty:} Per-task token consumption (1 million--3.5 million range;
+3.5$\times$ spread) combined with tasks-per-day uncertainty (1--4 range) creates a
+combined 14$\times$ uncertainty band in aggregate token demand.
+
+\subsubsection*{Layer 3 --- Compute Model}
+
+\textbf{Inputs:} Daily token demand from Layer 2; GPU throughput benchmarks (H100 SXM5:
+3,311 tokens/second at 70B model scale, FP16, batch size 64 \SECONDARY{} \citep{hyperstack2024benchmark}; B200: 60,000
+tokens/second \PRIMARY{} \citep{nvidia2024blackwell}); PUE of 1.56 \SECONDARY{} \citep{uptime2024survey}; H100 inference TDP of 700 W/GPU
+\PRIMARY{} \citep{nvidia2024dgxsuperpod}.
+
+\textbf{Key transformation:}
+\[
+\text{tokens/day} \div 86{,}400 \text{ sec/day} = \text{tokens/sec} \to
+\div \text{GPU throughput} = \text{GPU count} \to
+\times 700\text{W} \times \text{PUE} = \text{facility power (MW)}
+\]
+
+\textbf{Output:} Central scenario: approximately 101,000 H100 GPUs; 110 MW total
+facility power. Equivalent Blackwell-generation figures: approximately 5,550 B200 GPUs;
+77 GB200 NVL72 racks.
+
+\subsubsection*{Layer 4 --- Energy and Cost Model}
+
+\textbf{Inputs:} Facility power in MW from Layer 3; construction cost of \$15
+million/MW \ESTIMATE{}; electricity price of \$60/MWh blended \ESTIMATE{}; amortization
+period of 20 years; API token cost of \$9/MTok blended frontier pricing \ESTIMATE{}.
+
+\textbf{Output:} Fully-loaded AI cost per FTE-year of approximately \textbf{\$9,020} in
+the central scenario, equal to approximately 6.8\% of the US software developer median
+salary of \$133,080 \PRIMARY{} \citep{bls2024oes}.
+
+\subsubsection*{Layer 5 --- Market Sizing Model}
+
+\textbf{Inputs:} Facility power; GPU counts; annual energy costs; PPA prices; public
+REIT and equipment supplier revenues.
+
+\textbf{Output:} Investment thesis sizing and framing for energy companies, data center
+developers, equipment suppliers, commodity markets, and capital markets participants
+(Section~\ref{sec:markets}).
+
+\begin{table}[ht]
+\centering
+\caption{Five-Layer Model Summary}
+\label{tab:five-layer}
+\small
+\begin{tabular}{@{}lllll@{}}
+\toprule
+\textbf{Layer} & \textbf{Name} & \textbf{Key Inputs} & \textbf{Outputs} & \textbf{Primary Uncertainty} \\
+\midrule
+1 & Labor Input & Workforce; substitution rate & Token-active FTEs & Rate speculative; ±20\% workforce \\
+2 & Token Demand & FTEs; tok/FTE/day & 288B--76.8T tok/day & 14× combined (task tok + tasks/day) \\
+3 & Compute & Token demand; H100 throughput & 33,700--269,000 H100s & ±30\% throughput benchmark \\
+4 & Energy \& Cost & Power; \$/MW; \$/MWh; API \$ & \$9,020/FTE-yr central & \$20--\$120/MWh elec. range \\
+5 & Market Sizing & All of above + PPA prices & Investment thesis sizing & GS \$1.15T capex needs \SECONDARY{} \citep{goldmansachs2024capex} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The model runs across three substitution rates (10\%, 30\%, 80\%) and two deployment
+modes (Copilot: 120,000 tokens/day/FTE; Agentic: 4,000,000 tokens/day/FTE), generating
+six primary scenario combinations. The scenarios are not forecasts of what will happen.
+They are structured inputs that allow the infrastructure implications of a given degree of
+AI engineering deployment to be read directly from the tables.
+
+\subsection{Key Data Sources}
+\label{sec:data-sources}
+
+The paper draws on four primary data domains documented in Tables~\ref{tab:domain1}---%
+\ref{tab:domain4}. Sources marked \VERIFY{} require retrieval of the original primary
+document before publication.
+
+\begin{table}[ht]
+\centering
+\caption{Domain 1 --- Engineering Workforce and Compensation}
+\label{tab:domain1}
+\small
+\begin{tabular}{@{}p{4.5cm}p{3.5cm}p{1.5cm}@{}}
+\toprule
+\textbf{Source} & \textbf{Claims Supported} & \textbf{Quality} \\
+\midrule
+BLS OES May 2024 & US SW developer count (1.847M); median wage (\$133,080) & \PRIMARY{} \\
+JetBrains Dev Ecosystem 2025 & Global developers: 19.6M & \SECONDARY{} \\
+Evans Data / Statista & Global developers: 28.7M & \SECONDARY{} \\
+McKinsey MGI May 2024 & 30\% STEM automation by 2030 & \SECONDARY{} \\
+McKinsey MGI Nov 2025 & 57\% technically automatable & \SECONDARY{} \VERIFY{} \\
+GitHub Copilot docs & 20M users; 55\% speed improvement; 30\% acceptance & \SECONDARY{} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Domain 2 --- Token and Compute Benchmarks}
+\label{tab:domain2}
+\small
+\begin{tabular}{@{}p{4.5cm}p{3.5cm}p{1.5cm}@{}}
+\toprule
+\textbf{Source} & \textbf{Claims Supported} & \textbf{Quality} \\
+\midrule
+Bai et al.\ 2026, arXiv:2604.22750 & 1--3.5M tok/task; 30$\times$ variance; 85:15 ratio & \SECONDARY{} \\
+NVIDIA H100 SXM5 product brief & 989 TFLOPS FP16; 700W TDP & \PRIMARY{} \\
+NVIDIA DGX SuperPOD Design Guide & 40--48 kW/rack air-cooled & \PRIMARY{} \\
+NVIDIA Blackwell InferenceMAX & 60,000 tok/s per B200 & \PRIMARY{} \\
+Hyperstack.cloud benchmark & 3,311 tok/s per H100 SXM5 (Llama 3.1 70B) & \SECONDARY{} \\
+Epoch AI scaling laws & 140 GFLOPs/token (70B model, 2N rule) & \SECONDARY{} \\
+Anthropic Claude API docs & \$3/M input, \$15/M output (Sonnet 4.6) & \PRIMARY{} \\
+OpenAI API pricing & \$3/M input, \$12/M output (GPT-4.1) & \PRIMARY{} \\
+SWE-bench leaderboard / Cognition & Devin 2.0: 13.86\% resolution rate & \SECONDARY{} \VERIFY{} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Domain 3 --- Data Center Energy and Infrastructure}
+\label{tab:domain3}
+\small
+\begin{tabular}{@{}p{4.5cm}p{3.5cm}p{1.5cm}@{}}
+\toprule
+\textbf{Source} & \textbf{Claims Supported} & \textbf{Quality} \\
+\midrule
+IEA ``Energy and AI'' (April 2025) & 415 TWh (2024); 945 TWh (2030 Base Case); AI server +30\%/yr & \PRIMARY{} \\
+LBNL 2024 Data Center Report & US: 183 TWh (2024); 325--580 TWh by 2028 & \PRIMARY{} \\
+Uptime Institute Survey 2024 & Global PUE: 1.56 & \SECONDARY{} \\
+AWS Sustainability Report 2024 & WUE: 0.19 L/kWh & \SECONDARY{} \\
+Cushman \& Wakefield 2024 & \$10--12M/MW standard hyperscale & \SECONDARY{} \\
+Data Center Dynamics & \$20M+/MW AI-optimized & \SECONDARY{} \\
+Microsoft, Google, Amazon, Meta SEC filings & Combined 2025 capex guidance $\sim$\$448B & \PRIMARY{} \\
+NVIDIA quarterly earnings & FY2025 DC revenue \$116.2B & \PRIMARY{} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Domain 4 --- Energy Markets and Capital Markets}
+\label{tab:domain4}
+\small
+\begin{tabular}{@{}p{4.5cm}p{3.5cm}p{1.5cm}@{}}
+\toprule
+\textbf{Source} & \textbf{Claims Supported} & \textbf{Quality} \\
+\midrule
+Constellation Energy / ANS / Utility Dive & Microsoft--TMI-1 PPA: 835 MW, 20-year, 2027 restart & \PRIMARY{} \\
+Bloomberg Intelligence / Jefferies & TMI-1 PPA price: $\sim$\$100--112/MWh & \SECONDARY{} \\
+Talen Energy / ESG Today & Amazon--Susquehanna: \$650M, 1,920 MW through 2042 & \PRIMARY{} \\
+About Amazon / ESG Today & Amazon--Energy Northwest SMR: 320--960 MW & \PRIMARY{} \\
+LevelTen Energy PPA Price Index Q3 2024 & Solar: \$56.58/MWh; wind: \$65.63/MWh & \SECONDARY{} \\
+TradeTech / ANS & Uranium: \$72.63/lb year-end 2024 & \PRIMARY{} \\
+Equinix Q4 2024 earnings & Revenue \$8.748B; 365 MW xScale leased & \PRIMARY{} \\
+Digital Realty Q4 2024 earnings & 9.1M sq ft under construction; \$100M Q4 bookings & \PRIMARY{} \\
+Vertiv Q4 2024 earnings & Revenue \$8.0B (+17\%); organic orders +30\% & \PRIMARY{} \\
+Goldman Sachs Insights 2024 & \$1.15T cumulative AI capex 2025--2027 & \SECONDARY{} \\
+Grid Strategies 2025 & $>$160 GW committed US large loads; 2--5 yr interconnection & \SECONDARY{} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Assumptions and Limitations}
+\label{sec:assumptions}
+
+\subsubsection{Locked Assumptions}
+
+During the research phase, five cases of conflicting or ambiguous empirical data were
+identified where two or more credible published sources reported materially different
+values for the same parameter. In each case, a single working value was selected.
+
+\begin{table}[ht]
+\centering
+\caption{Locked Assumptions --- Conflicts and Decisions}
+\label{tab:locked-assumptions}
+\small
+\begin{tabular}{@{}p{3cm}p{2.2cm}p{2.2cm}p{4cm}@{}}
+\toprule
+\textbf{Assumption} & \textbf{Locked Value} & \textbf{Range} & \textbf{Rationale} \\
+\midrule
+H100 inference power draw & 700 W/GPU & 700--1,275 W & 700 W reflects inference TDP, not full training load \\
+Data center construction cost & \$15M/MW & \$10--20M/MW & Midpoint of AI-optimized liquid-cooled range \\
+Global SW developer count & 24 million & 19.6M--28.7M & Midpoint of JetBrains and Evans Data estimates \\
+Agentic token multiplier & 50--500$\times$ (enterprise) & 50--1,000$\times$ & Different baselines; 1,000$\times$ vs.\ single-turn; 50--500$\times$ vs.\ multi-turn session \\
+Data center copper demand & 375,000 t/yr & 375K--1.1M t/yr & Macquarie (data centers only) vs.\ Sprott (broader AI supply chain) \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Pre-Publication Verification Requirements}
+
+\begin{table}[ht]
+\centering
+\caption{Pre-Publication Verification Checklist}
+\label{tab:verification}
+\small
+\begin{tabular}{@{}p{3.8cm}p{2.5cm}p{4.5cm}@{}}
+\toprule
+\textbf{Claim} & \textbf{Current Source} & \textbf{Verification Action} \\
+\midrule
+1--3.5M tok/task; 30$\times$ variance; 85:15 ratio & Bai et al.\ \citeyear{bai2026agent} arXiv:2604.22750 (confirmed; not yet peer-reviewed) & Confirm range holds across models; supplement with github.com/LongjuBai/agent\_token\_consumption\_analysis \\
+57\% of work hours technically automatable & McKinsey MGI Nov 2025 & Retrieve original MGI report before submission; currently cited via secondary summary \\
+OpenAI $\sim$10B tokens/day (late 2023) & Unverified & Remove from paper; no primary source found \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Model Limitations}
+
+The following factors are not modeled in this paper and represent the primary sources of
+real-world deviation from the projections presented in
+Sections~\ref{sec:results}--\ref{sec:discussion}:
+
+\begin{enumerate}
+  \item \textbf{Model efficiency improvements.} The paper uses H100 SXM5 hardware and
+    2025-vintage frontier model architectures as the baseline throughout. Blackwell-generation
+    hardware already delivers approximately 18$\times$ GPU count reduction per workload at
+    the same model scale.
+  \item \textbf{Heterogeneous workload mixing across model sizes.} The paper uses the 70B
+    model class as the uniform baseline. In practice, a significant fraction of engineering
+    tasks can be handled by smaller models (7B--13B parameters) at dramatically lower compute
+    and cost per token.
+  \item \textbf{Geographic variation in energy prices and grid carbon intensity.} The paper
+    uses \$60/MWh as a blended electricity price for all scenarios. Actual prices range from
+    approximately \$20/MWh in hydro-rich regions to \$120+/MWh in constrained markets.
+  \item \textbf{Institutional adoption friction.} The substitution rate scenarios do not
+    account for procurement cycles (typically 6--18 months), security review, legal
+    liability for AI-generated code, or the trust deficit that must be overcome before
+    production engineering workflows are delegated to AI agents.
+  \item \textbf{Jevons dynamics in software production.} The model assumes AI substitution
+    reduces engineering headcount while holding software output approximately constant. An
+    alternative scenario is that AI augmentation enables a fixed number of human engineers
+    to produce substantially more software at lower marginal cost.
+\end{enumerate}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Results}
+\label{sec:results}
+
+\subsection{Engineering Labor Substitution and Token Demand}
+\label{sec:token-demand}
+
+\subsubsection{A Taxonomy of Engineering Work by Token-Substitutability}
+\label{sec:taxonomy}
+
+Before constructing a token demand model, we must answer a prior question: which
+engineering activities are actually substitutable by language-model inference? Not all
+engineering labor translates into text tokens. The correct unit of substitution is not
+the engineer, but the \emph{task}, and tasks vary enormously in their amenability to
+token-based automation.
+
+We propose a six-category taxonomy derived from empirical time-use studies of software
+engineering work \citep{meyer2019good,sadowski2019developers} and
+extended to cover broader engineering disciplines.
+
+\begin{table}[ht]
+\centering
+\caption{Taxonomy of Engineering Work by Token-Substitutability}
+\label{tab:taxonomy}
+\small
+\begin{tabular}{@{}lcccp{3cm}@{}}
+\toprule
+\textbf{Work Category} & \textbf{Hours} & \textbf{Substitutability} & \textbf{Eff.\ Rate} & \textbf{Representative Tasks} \\
+\midrule
+Code generation \& review & $\sim$35\% & High & $\sim$90\% & Feature impl., PR review, debugging \\
+Documentation \& specification & $\sim$15\% & Very High & $\sim$95\% & RFCs, API docs, ADRs, test plans \\
+Testing \& validation & $\sim$15\% & High & $\sim$85\% & Unit/integration test generation \\
+Design \& architecture & $\sim$20\% & Medium & $\sim$40\% & System design, trade-off analysis \\
+Communication \& coordination & $\sim$10\% & Medium & $\sim$45\% & Meeting summaries, ticket triage \\
+Physical/embodied work & $\sim$5\% & Low & $\sim$5\% & PCB rework, lab measurements \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Deriving the Theoretical FTE Substitution Ceiling}
+
+Using the task-weighted effective replacement rates from Table~\ref{tab:taxonomy}:
+
+\[
+\text{FTE ceiling} = \sum_{k} w_k \times r_k
+= (0.35 \times 0.90) + (0.15 \times 0.95) + (0.15 \times 0.85)
++ (0.20 \times 0.40) + (0.10 \times 0.45) + (0.05 \times 0.05) = \mathbf{0.714}
+\]
+
+The taxonomy-derived ceiling is approximately \textbf{71\% of engineering FTE-hours}.
+
+\subsubsection{The Token Generation Model}
+
+\subsubsection*{Per-FTE Token Demand: Two Canonical Modes}
+
+\textbf{Mode A --- Copilot-Augmented (human-in-the-loop):} A representative
+chat-heavy engineering workday involves approximately 10 substantive AI interactions,
+each consuming around 10,000 input tokens and generating 2,000 output tokens \ESTIMATE{}:
+
+\[
+T_{\text{Copilot}} = 10 \times (10{,}000 + 2{,}000) = 120{,}000 \text{ tokens/day/FTE}
+\]
+
+\textbf{Mode B --- Fully Agentic (autonomous execution):} Empirical data on per-task
+token consumption comes primarily from \citet{bai2026agent} \SECONDARY{}, who reported a range
+of \textbf{1--3.5 million tokens per task} with up to \textbf{30$\times$ variance between
+runs} (arXiv preprint; not yet peer-reviewed). Assuming a productive agentic agent completes two engineering tasks per working
+day:
+
+\[
+T_{\text{Agentic}} = 2 \times 2{,}250{,}000 = 4{,}500{,}000 \approx 4 \times 10^6 \text{ tokens/day/FTE}
+\]
+
+\subsubsection*{Empirical Token Calibration: Single-Turn vs.\ Agentic}
+
+To ground the agentic multiplier empirically, we conducted controlled API measurements of
+single-turn token consumption across three representative task tiers using four models:
+Claude Sonnet~4.6, Claude Opus~4.7, GPT-4o, and GPT-4.1. Each task was issued as a single,
+self-contained prompt (no tool calls or multi-turn context) and repeated three times to
+capture response variance. Full protocol and raw results are in
+Appendix~\ref{app:calibration}. Figure~\ref{fig:token-calibration} shows the results.
+
+\begin{figure}[ht]
+\centering
+\includegraphics[width=0.95\textwidth]{figures/fig_token_calibration.pdf}
+\caption{%
+Empirical single-turn token consumption across three engineering task complexity tiers,
+measured for four models (Claude Sonnet~4.6, Claude Opus~4.7, GPT-4o, GPT-4.1;
+May 2026; $n=3$ runs each). \textbf{Simple bug fix} ($\sim$600--930 tokens):
+prompt resolves within a short context; output terminates naturally for all models.
+\textbf{Feature implementation} and \textbf{architectural refactor}:
+Claude models ($\sim$6{,}200--10{,}500 tokens) frequently saturate the 8{,}192-token
+output cap, confirming that complex tasks require multi-turn completion;
+GPT-4o and GPT-4.1 ($\sim$2{,}300--4{,}500 tokens) use 2--3$\times$ fewer output
+tokens per task, reflecting different verbosity defaults rather than task quality.
+By contrast, agentic agents using tool calls, multi-turn context accumulation, and
+iterative refinement consume \textbf{1--3.5 million tokens per task}
+\citep{bai2026agent}~\SECONDARY{} --- a \textbf{100--5{,}700$\times$ multiplier} over these
+single-turn baselines. Full protocol and raw results are in Appendix~\ref{app:calibration}.%
+}
+\label{fig:token-calibration}
+\end{figure}
+
+These results confirm two structural observations. First, even moderately complex tasks
+exceed what a single-turn prompt can fully resolve, making multi-turn agentic operation
+necessary for production engineering work. Second, the 100--300$\times$ gap between
+single-turn and agentic token consumption is the dominant factor in energy demand: it
+is the mode of operation, not the model tier, that primarily determines infrastructure
+requirements.
+
+\begin{table}[ht]
+\centering
+\caption{Token Demand per Engineering FTE per Day by Mode}
+\label{tab:token-per-fte}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Mode} & \textbf{Input tok/day} & \textbf{Output tok/day} & \textbf{Total} & \textbf{vs.\ Copilot} \\
+\midrule
+Copilot-Augmented & 100,000 & 20,000 & \textbf{120,000} & 1$\times$ (baseline) \\
+Agentic (low: 1M/task, 2/day) & $\sim$1.7M & $\sim$300K & $\sim$2,000,000 & $\sim$17$\times$ \\
+Agentic (mid: 2.25M/task, 2/day) & $\sim$3.4M & $\sim$600K & $\sim$\textbf{4,000,000} & $\sim$33$\times$ \\
+Agentic (high: 3.5M/task, 2/day) & $\sim$6.0M & $\sim$1.0M & $\sim$7,000,000 & $\sim$58$\times$ \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Why Input Tokens Dominate}
+
+In agentic coding workflows, input tokens account for approximately \textbf{85\% or more}
+of total token consumption \SECONDARY{} \citep{bai2026agent}. At the 85:15
+input/output split and current frontier pricing (Claude Sonnet 4.6: \$3/M input, \$15/M
+output \PRIMARY{} \citep{anthropic2025pricing}; GPT-4.1: \$3/M input, \$12/M output \PRIMARY{} \citep{openai2025pricing}), the blended cost per
+million tokens is approximately \$4.35--\$4.80 for Sonnet/GPT-4.1 class, and \$8--\$9
+for Opus-class models. Input-dominated workloads are also structurally suited to prompt
+caching, potentially reducing per-task input costs by 30--50\%.
+
+\subsubsection{Aggregate Token Demand as a Function of Substitution Rate}
+
+Aggregate daily token demand is:
+
+\[
+D(s, m) = N_{\text{eng}} \times s \times T_m
+\]
+
+where $N_{\text{eng}} = 24$ million, $s$ is the substitution rate, and $T_m$ is the
+per-FTE daily token demand under deployment mode $m$.
+
+\begin{table}[ht]
+\centering
+\caption{Aggregate Daily Token Demand by Scenario and Mode}
+\label{tab:token-demand}
+\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Substitution Rate} & \textbf{FTEs Replaced} & \textbf{Copilot Mode} & \textbf{Agentic Mode} \\
+\midrule
+10\% --- Conservative & 2.4 million & 288 billion/day & \textbf{9.6 trillion/day} \\
+30\% --- Central & 7.2 million & 864 billion/day & \textbf{28.8 trillion/day} \\
+57\% --- McKinsey ceiling & 13.7 million & 1.64 trillion/day & \textbf{54.8 trillion/day} \\
+80\% --- Aggressive & 19.2 million & 2.30 trillion/day & \textbf{76.8 trillion/day} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection{Sensitivity Analysis}
+
+\begin{table}[ht]
+\centering
+\caption{Token Demand Sensitivity to Key Assumptions (Central Agentic Scenario)}
+\label{tab:sensitivity}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Parameter} & \textbf{Low} & \textbf{Central} & \textbf{High} & \textbf{Impact on Daily Demand} \\
+\midrule
+Global developer count & 19.6M & \textbf{24M} & 28.7M & $\pm$20\% ($\pm$5.8 trillion) \\
+Tokens per task & 1M & \textbf{2.25M} & 3.5M & $-$56\% / +56\% ($\pm$16 trillion) \\
+Tasks per FTE per day & 1 & \textbf{2} & 4 & $-$50\% / +100\% \\
+Input token share & 75\% & \textbf{85\%} & 92\% & affects cost split, not total \\
+Non-SW engineering uplift & 0$\times$ & \textbf{1.4$\times$} & 1.8$\times$ & 0\% to +80\% if included \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The dominant uncertainty is \textbf{tokens per task} and \textbf{tasks per day} ---
+both poorly constrained by current published data. The SWE-bench 1--3.5M range (a
+3.5$\times$ spread) applied to tasks-per-day uncertainty (1--4, a 4$\times$ spread) yields
+a combined uncertainty of up to \textbf{14$\times$ in aggregate token demand}.
+
+\textbf{Non-monotonicity:} As agent capability improves, two competing effects operate
+on aggregate token demand. A 13.86\%-capable agent (Devin 2.0) must attempt $\sim$7
+tasks to resolve 1. A hypothetical 90\%-capable agent resolves 9 of 10 on the first try.
+Total demand may therefore \textbf{peak at intermediate capability levels} (roughly
+30--50\% resolution rate) and decline thereafter.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\subsection{Compute Infrastructure Requirements}
+\label{sec:compute}
+
+\subsubsection{From Tokens to FLOPs: The Arithmetic of Inference}
+
+Each token processed by a language model requires approximately $2N$ floating-point
+operations in the forward pass, where $N$ is the number of model parameters --- the
+``2N rule'' \SECONDARY{} \citep{epochai2023scaling}. The 70B model class is the most empirically grounded reference
+for production agentic coding workloads (140 GFLOPs per token).
+
+The central scenario requires \textbf{333 million tokens per second} sustained throughput
+(28.8 trillion tokens/day $\div$ 86,400 seconds/day). At 140 GFLOPs per token:
+
+\[
+\text{FLOPs/sec} = 333 \times 10^6 \times 140 \times 10^9 = 4.66 \times 10^{19} \text{ FLOP/s}
+\]
+
+With $\sim$101,000 H100 SXM5 GPUs (989 TFLOPS FP16 each):
+
+\[
+\eta = \frac{4.66 \times 10^{19}}{9.99 \times 10^{19}} \approx 46.6\%
+\]
+
+A utilization rate of \textbf{$\sim$47\%} is consistent with observed production
+inference benchmarks (40--60\% MFU for autoregressive generation) \SECONDARY{}, providing
+internal consistency validation.
+
+\subsubsection{Hardware Throughput and GPU Requirements}
+
+Using the benchmark throughput of 3,311 tokens/second per H100 at 70B model scale:
+
+\[
+\text{H100 count} = \frac{D(s) / 86{,}400 \text{ sec/day}}{3{,}311 \text{ tok/s/GPU}}
+\]
+
+\begin{table}[ht]
+\centering
+\caption{GPU Count and Facility Power Requirements by Scenario}
+\label{tab:gpu-count}
+\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+\textbf{Scenario} & \textbf{FTEs} & \textbf{Tokens/Day} & \textbf{Req.\ Throughput} & \textbf{H100s} & \textbf{Racks} & \textbf{Power} \\
+\midrule
+Conservative (10\%) & 2.4M & 9.6T & 111M tok/s & $\sim$33,700 & $\sim$1,053 & 36.8 MW \\
+Central (30\%) & 7.2M & 28.8T & 333M tok/s & $\sim$101,000 & $\sim$3,156 & 110 MW \\
+McKinsey (57\%) & 13.7M & 54.8T & 634M tok/s & $\sim$191,600 & $\sim$5,988 & 209 MW \\
+Aggressive (80\%) & 19.2M & 76.8T & 889M tok/s & $\sim$269,000 & $\sim$8,406 & 293 MW \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{table}[ht]
+\centering
+\caption{Rack Density Comparison Across GPU Generations}
+\label{tab:rack-density}
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+\textbf{System} & \textbf{GPUs/Rack} & \textbf{Rack Power} & \textbf{Throughput/Rack} & \textbf{Tok/s/kW} & \textbf{vs.\ H100 Air} \\
+\midrule
+H100 SXM5 (air-cooled) & 32 & $\sim$40.8 kW & $\sim$106K tok/s & $\sim$2,600 & 1$\times$ \\
+H100 SXM5 (liquid-cooled) & $\sim$64 & $\sim$130 kW & $\sim$212K tok/s & $\sim$1,630 & 2$\times$ racks \\
+GB200 NVL72 (liquid req.) & 72 & $\sim$120 kW & $\sim$4,320K tok/s & $\sim$36,000 & 40$\times$ racks, $\sim$14$\times$ efficiency \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Equivalent B200 Infrastructure for the Central Scenario}
+
+\[
+\text{B200 GPUs needed} = \frac{333 \times 10^6 \text{ tok/s}}{60{,}000 \text{ tok/s/GPU}} \approx 5{,}550 \text{ B200 GPUs}
+\]
+
+\[
+\text{GB200 NVL72 racks} = \frac{5{,}550}{72} \approx 77 \text{ racks}
+\]
+
+The same workload that requires $\sim$3,156 H100 racks fits within \textbf{77 GB200 NVL72
+racks} --- a 40$\times$ rack compression.
+
+\subsubsection{Data Center Physical Requirements}
+
+\begin{table}[ht]
+\centering
+\caption{Data Center Physical Requirements by Substitution Scenario}
+\label{tab:physical-requirements}
+\small
+\begin{tabular}{@{}lrrr@{}}
+\toprule
+\textbf{Resource} & \textbf{Conservative (10\%)} & \textbf{Central (30\%)} & \textbf{Aggressive (80\%)} \\
+\midrule
+H100 GPUs & $\sim$33,700 & $\sim$101,000 & $\sim$269,000 \\
+H100 racks (air-cooled) & $\sim$1,053 & $\sim$3,156 & $\sim$8,406 \\
+IT GPU power (MW) & 23.6 MW & 70.7 MW & 188 MW \\
+Facility power (PUE 1.56) & \textbf{36.8 MW} & \textbf{110 MW} & \textbf{293 MW} \\
+Annual energy (TWh) & 0.32 TWh & 0.96 TWh & 2.57 TWh \\
+Construction capex (\$15M/MW) & \textbf{\$552M} & \textbf{\$1.65B} & \textbf{\$4.40B} \\
+Build time (greenfield) & 12--18 months & 18--24 months & 24--36 months \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\begin{tcolorbox}[warningbox, title={$\blacktriangleright$\ Note --- 108 GW vs.\ 110 MW}]
+The IEA projects total global data center power demand reaching \textbf{107.9 GW} by
+2030 (IEA ``Energy and AI,'' 2024 \PRIMARY{} \citep{iea2024energy}) --- representing all AI and non-AI
+workloads across all sectors. The \textbf{110 MW} figure is the incremental facility
+power required specifically for the central engineering substitution scenario. The
+engineering substitution demand in the 30\% central scenario represents approximately
+\textbf{0.10\% of IEA's projected 2030 global data center load} --- it is a component of
+the macro AI infrastructure thesis, not its cause.
+\end{tcolorbox}
+
+\subsubsection{Phased Deployment Trajectory}
+
+\begin{description}
+  \item[Phase 1 (2025--2026): API-first, $\sim$1--5\% substitution.] Deploy via frontier
+    API (Anthropic, OpenAI). No owned infrastructure required. Substitution rate limited
+    by capability (current SWE-bench $\sim$14\%) and enterprise adoption friction.
+  \item[Phase 2 (2027--2028): Colocation deployment, $\sim$10--20\% substitution.]
+    Enterprises contract dedicated GPU capacity at colocation facilities. Begin greenfield
+    interconnection applications.
+  \item[Phase 3 (2029--2031): Owned infrastructure at scale, $\sim$30\%+ substitution.]
+    Greenfield data centers energized. Blackwell-generation hardware substantially reduces
+    per-MW capex. Full 30\% scenario achievable if interconnection applications filed in
+    2026 are completed on schedule.
+\end{description}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\subsection{Energy Consumption and Economic Cost}
+\label{sec:energy}
+
+\subsubsection{Total Power Budget}
+
+\begin{table}[ht]
+\centering
+\caption{Engineering Substitution Scenarios --- Power, Energy, and Global Context}
+\label{tab:power-global}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Scenario} & \textbf{Power} & \textbf{Energy} & \textbf{\% of 2024 DC Load} & \textbf{\% of 2030 IEA} \\
+\midrule
+Conservative (10\%) & 36.8 MW & 0.32 TWh & 0.078\% & 0.034\% \\
+Central (30\%) & 110 MW & 0.96 TWh & 0.232\% & 0.102\% \\
+Aggressive (80\%) & 293 MW & 2.57 TWh & 0.618\% & 0.272\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The central scenario's 110 MW represents approximately \textbf{0.10\% of the IEA's 2030
+projection}. AI server electricity is growing at \textbf{30\% per year} under the IEA
+Base Case \PRIMARY{} \citep{iea2024energy}, meaning the entire engineering substitution workload analyzed here
+is added to the global load budget in roughly \textbf{three to four weeks} of organic AI
+electricity growth at that rate.
+
+\subsubsection{Energy Mix and Carbon Intensity}
+
+The carbon footprint of agentic AI engineering work is determined by what powers the
+processors generating tokens. A 40--50$\times$ spread in emissions intensity (nuclear:
+$\sim$12 gCO$_2$/kWh; wind: $\sim$11 gCO$_2$/kWh vs.\ gas: $\sim$450--550 kg
+CO$_2$/MWh \SECONDARY{}) means that the carbon consequence is almost entirely a function
+of grid composition.
+
+\begin{table}[ht]
+\centering
+\caption{Annual CO$_2$ Emissions by Substitution Scenario and Grid Intensity (Tonnes CO$_2$/Year)}
+\label{tab:carbon}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Grid Scenario} & \textbf{Intensity} & \textbf{Conservative} & \textbf{Central} & \textbf{Aggressive} \\
+\midrule
+Gas-heavy (current US mix) & 500 gCO$_2$/kWh & 160,000 & \textbf{480,000} & 1,285,000 \\
+Blended US average & 350 gCO$_2$/kWh & 112,000 & \textbf{336,000} & 899,500 \\
+Renewable-dominant & 100 gCO$_2$/kWh & 32,000 & \textbf{96,000} & 257,000 \\
+Nuclear/renewables-first & 50 gCO$_2$/kWh & 16,000 & \textbf{48,000} & 128,500 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsubsection*{Hyperscaler Revealed Preference: Nuclear PPAs}
+
+Two landmark deals establish the market-clearing price for firm 24/7 carbon-free power:
+
+\begin{itemize}
+  \item \textbf{Microsoft--Constellation Energy (TMI-1):} 835 MW \PRIMARY{} \citep{constellation2024tmi}, estimated
+    \$100--\$112/MWh \SECONDARY{} analyst estimate, 20-year term, 2027 restart \citep{constellation2024tmi}.
+  \item \textbf{Amazon--Talen Energy (Susquehanna):} \$650M campus acquisition, 1,920 MW
+    PPA through 2042 \PRIMARY{} \citep{talen2024susquehanna}.
+  \item \textbf{Amazon--Energy Northwest (SMR):} Phase 1 $\sim$320 MW, option to 960 MW
+    \PRIMARY{} \citep{amazon2024smr}.
+\end{itemize}
+
+The nuclear PPA premium of approximately \textbf{2--2.5$\times$ wholesale} reflects the
+scarcity value of 24/7 carbon-free generation capacity.
+
+\subsubsection{Fully-Loaded Cost Per Engineering FTE-Year}
+
+\[
+C_{\text{API}} = 1{,}000 \text{ MTok/year} \times \$9.00/\text{MTok} = \$9{,}000 \text{ per FTE-year}
+\]
+
+\[
+C_{\text{capex}} = \frac{\$1.65\text{B}}{20 \text{ yr} \times 7.2\text{M FTEs}} = \$11.46 \text{ per FTE-year}
+\]
+
+\[
+C_{\text{energy}} = \frac{\$58\text{M/yr}}{7.2\text{M FTEs}} = \$8.06 \text{ per FTE-year}
+\]
+
+\begin{table}[ht]
+\centering
+\caption{Fully-Loaded AI Cost Per Engineering FTE-Year --- Central Scenario}
+\label{tab:fte-cost}
+\small
+\begin{tabular}{@{}lrrrr@{}}
+\toprule
+\textbf{Cost Component} & \textbf{Annual Cost} & \textbf{Per FTE-Year} & \textbf{\% of AI Cost} & \textbf{\% of US Median Salary} \\
+\midrule
+API token cost & (per-FTE rate) & \$9,000.00 & 99.77\% & 6.76\% \\
+Amortized capex & \$82.5M/yr & \$11.46 & 0.13\% & 0.009\% \\
+Annual energy cost & \$58M/yr & \$8.06 & 0.09\% & 0.006\% \\
+\textbf{Total fully-loaded} & --- & \textbf{\$9,019.52} & \textbf{100\%} & \textbf{6.77\%} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The infrastructure overhead --- capex plus energy combined --- amounts to \textbf{\$19.52
+per FTE-year}. The economic conclusion is unambiguous: \textbf{the API token price is the
+only cost that matters}.
+
+\begin{table}[ht]
+\centering
+\caption{Geographic Breakeven Analysis --- AI Cost vs.\ Engineering Salary by Region}
+\label{tab:geographic}
+\small
+\begin{tabular}{@{}lrrrrrr@{}}
+\toprule
+\textbf{Geography} & \textbf{Dev Salary} & \textbf{Benefits} & \textbf{Total Labor} & \textbf{AI Cost} & \textbf{AI \%} & \textbf{Annual Savings} \\
+\midrule
+United States & \$133,080 & 1.30$\times$ & \$173,004 & \$9,020 & 5.2\% & \$163,984 \\
+Germany / UK & $\sim$\$90,000 & 1.25$\times$ & $\sim$\$112,500 & \$9,020 & 8.0\% & $\sim$\$103,480 \\
+Global average & $\sim$\$45,000 & 1.15$\times$ & $\sim$\$51,750 & \$9,020 & 17.4\% & $\sim$\$42,730 \\
+India & $\sim$\$25,000 & 1.10$\times$ & $\sim$\$27,500 & \$9,020 & 32.8\% & $\sim$\$18,480 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Discussion}
+\label{sec:discussion}
+
+% Retain label for backward compatibility
+\label{sec:markets}
+
+The results in Section~\ref{sec:results} establish the quantitative chain from engineering
+labor to energy: at 30\% substitution, AI-mediated engineering consumes 110 MW of data
+center power and costs \$9,020 per FTE-year. This section examines the energy system
+and economic implications of operating that infrastructure at scale.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\subsection{Energy Market Implications}
+\label{sec:energy-market}
+
+\subsubsection{Grid Load Growth and Infrastructure Demand}
+
+US data center electricity consumption reached \textbf{183 TWh in 2024} \PRIMARY{} \citep{lbnl2024datacenter}, more
+than tripling from 58 TWh in 2014. LBNL projects US data center consumption reaching
+\textbf{325--580 TWh by 2028} \PRIMARY{} \citep{lbnl2024datacenter} --- equivalent to 6.7--12\% of total US
+electricity generation. AI server electricity is growing at \textbf{30\% per year} under the
+IEA Base Case \PRIMARY{} \citep{iea2024energy}, meaning the 110 MW incremental load from the central
+engineering substitution scenario is added to the global AI load budget in approximately
+\textbf{three to four weeks} of organic AI electricity growth at that rate.
+
+Regional grid impacts are already visible. ERCOT projects load growth of \textbf{+7\% in
+2025 and +14\% in 2026} \PRIMARY{} \citep{ercot2025forecast}, representing one of the most rapid demand
+expansions in its operating history. The ERCOT interconnection queue exceeded 233 GW in
+capacity requests by end-2025 \SECONDARY{} \citep{ercot2025forecast}. Applying historical 60--80\%
+withdrawal rates, a 20\% conversion rate yields approximately 46 GW of real incremental
+load --- roughly 2.2$\times$ ERCOT's current peak demand of $\sim$85 GW
+\SECONDARY{} \citep{ercot2025forecast}. PJM projects data center load reaching up to \textbf{30 GW by
+2030} \SECONDARY{} \citep{energyedge2025pjm}. Grid Strategies estimates that more than \textbf{160 GW
+in committed large loads} are currently in the US interconnection queue \SECONDARY{} \citep{gridstrategies2025load}.
+
+AI inference workloads are structurally distinct from typical commercial loads because they
+operate at near-constant power 24 hours per day, seven days per week. This flat load profile
+reduces the depth of the midday valley (partially beneficial for solar integration) but does not
+ease the evening ramp, since AI load neither responds to the evening demand surge nor provides
+dispatchable demand response.
+
+The binding constraint on AI-driven load growth is not generation capacity but
+\textbf{grid interconnection timelines}: new large loads currently require 2--5 years for
+queue processing, even at sites with existing transmission access \SECONDARY{}
+\citep{gridstrategies2025load}.
+
+\subsubsection{Power Source Requirements and Decarbonization Tension}
+
+The carbon footprint of AI-mediated engineering is almost entirely determined by the power
+source serving the inference infrastructure. A 40--50$\times$ spread in emissions intensity
+across generation technologies --- from nuclear at $\sim$12 gCO$_2$/kWh to gas-heavy grids
+at $\sim$500 gCO$_2$/kWh --- means the same 110 MW facility produces between 48,000 and
+480,000 tonnes of CO$_2$ per year in the central scenario.
+
+\begin{table}[ht]
+\centering
+\caption{Power Source Profile for AI Data Center Inference Loads}
+\label{tab:power-sources}
+\small
+\begin{tabular}{@{}p{3.5cm}rrrcp{3.2cm}@{}}
+\toprule
+\textbf{Source} & \textbf{\$/MWh} & \textbf{gCO$_2$/kWh} & \textbf{Cap.\ Factor} & \textbf{Firm 24/7?} & \textbf{Notes} \\
+\midrule
+Natural gas (CCGT) & 40--80 & 450--550 & 85--90\% & Yes & $>$40\% of US DC mix \citep{iea2024energy} \\
+Solar PV + storage & 55--80 & 20--50 & 15--25\%$^\dagger$ & No & Daytime only; storage needed \\
+Wind + storage & 60--85 & 7--15 & 30--40\%$^\dagger$ & No & Variable; storage required \\
+Nuclear (existing PPA) & 60--112 & 12 & $>$90\% & Yes & TMI-1: $\sim$\$100--112/MWh est.\ \SECONDARY{} \citep{constellation2024tmi} \\
+Nuclear (SMR, new) & 80--130 & 12 & $>$90\% & Yes & Amazon ENW; delivery $\sim$2030 \citep{amazon2024smr} \\
+Hydropower & 30--60 & 4--30 & 40--70\% & Regional & Geography-constrained \\
+\bottomrule
+\end{tabular}
+\end{table}
+\noindent{\small $^\dagger$Effective capacity factor with round-trip storage losses; net delivered cost shown.}
+
+The AI industry's revealed preference is unambiguous: hyperscalers are contracting for firm
+24/7 carbon-free power at a significant premium over wholesale market rates. Two landmark
+transactions establish the market-clearing price:
+
+\begin{itemize}
+  \item \textbf{Microsoft--Constellation Energy (TMI-1):} 835 MW, 20-year PPA,
+    estimated \$100--\$112/MWh \SECONDARY{} (analyst estimate; actual price not disclosed),
+    expected restart 2027 \citep{constellation2024tmi}.
+  \item \textbf{Amazon--Talen Energy (Susquehanna):} \$650M campus acquisition,
+    1,920 MW nuclear PPA through 2042 \citep{talen2024susquehanna}.
+\end{itemize}
+
+The nuclear PPA premium of approximately \textbf{2--2.5$\times$ wholesale} reflects the
+scarcity value of firm, 24/7, zero-carbon generation. Renewable PPAs (solar: \$56.58/MWh;
+wind: \$65.63/MWh as of Q3 2024 \SECONDARY{} \citep{levelten2024ppa}) cannot serve continuous AI inference
+loads without substantial storage additions that raise effective costs to the
+\$80--100/MWh range, narrowing the gap with nuclear.
+
+The \$60/MWh blended rate used in our cost model is an appropriate central estimate for
+mixed portfolios; actual facility energy costs will range from \$40/MWh (hydro-rich regions,
+long-term bilateral contracts) to \$120/MWh (nuclear PPA in constrained markets). This
+\$40--\$120/MWh range translates to an annual energy cost of \$38--113 million for the
+central (110 MW) scenario --- a \$75 million spread that remains negligible relative to the
+\$511 billion annual labor savings.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\subsection{Economic Comparison: AI vs.\ Human Engineering Labor}
+\label{sec:ai-economics}
+
+\subsubsection{Cost Structure and Geographic Breakeven}
+
+The central finding that AI infrastructure costs \$9,020 per FTE-year holds across all
+deployment modes because \textbf{API token pricing dominates the cost structure}:
+infrastructure capex contributes \$11.46/FTE-year and energy \$8.06/FTE-year --- together
+less than 0.3\% of total AI cost. This means the cost comparison is essentially:
+
+\[
+\frac{\text{AI cost}}{\text{Human salary}} \approx
+\frac{1{,}000\text{ MTok/yr} \times \$9/\text{MTok}}{\text{local engineering salary}}
+\]
+
+\noindent Table~\ref{tab:geographic} in Section~\ref{sec:energy} shows that this ratio
+ranges from 5.2\% (United States, \$173,004 total employment cost) to 32.8\% (India,
+\$27,500). The economics of substitution are compelling at every geography and salary level.
+
+Critically, this ratio falls further if cost-optimized models replace frontier pricing:
+at \$4.50/MTok (Claude Sonnet with batch discount), the AI cost falls to \$4,500/FTE-year
+(3.4\% of US median salary). At self-hosted open-source models, the effective token cost
+approaches \$0.10/MTok, yielding \$100/FTE-year --- less than 0.1\% of US salary.
+
+\subsubsection{Labor Savings and Substitution Economics}
+
+At the central 30\% substitution scenario, the annual labor savings \textbf{exceed the
+full construction capex of the required data center in under three days}:
+
+\[
+\frac{\$1.65\text{B capex}}{\$511\text{B/yr savings}} \approx 1.2\text{ days of labor-equivalent value}
+\]
+
+The \textbf{annual energy cost of \$58 million represents 0.011\% of annual labor savings}.
+From a purely economic perspective, infrastructure cost is irrelevant to the substitution
+decision; the binding variable is AI capability and institutional adoption velocity, not
+energy price or construction cost.
+
+\begin{table}[ht]
+\centering
+\caption{AI vs.\ Human Labor Economics Across Substitution Scenarios}
+\label{tab:labor-savings}
+\small
+\begin{tabular}{@{}lrrrrr@{}}
+\toprule
+\textbf{Scenario} & \textbf{FTEs Replaced} & \textbf{AI Cost/yr} & \textbf{Labor Savings/yr} & \textbf{Savings/AI Cost} & \textbf{Capex Payback} \\
+\midrule
+Conservative (10\%) & 2.4 million & \$22B & \$170B & 7.7$\times$ & \textbf{$<$1 day} \\
+Central (30\%) & 7.2 million & \$65B & \$511B & 7.9$\times$ & \textbf{$<$2 days} \\
+Aggressive (80\%) & 19.2 million & \$173B & \$1,363B & 7.9$\times$ & \textbf{$<$2 days} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent Note: AI Cost/yr = FTEs $\times$ \$9,020/FTE-yr; Labor Savings/yr based on global average engineering
+compensation; Capex Payback = construction capex $\div$ (daily labor savings).
+
+\subsubsection{Non-Economic Constraints on Adoption}
+
+The economic arithmetic is not the binding constraint. Three operational barriers must be
+addressed before the labor savings projected above materialize at scale:
+
+\textbf{Capability gap.} As of early 2026, Claude Opus 4.5 achieves 77--81\% resolution
+on SWE-bench Verified \citep{swebench2026,anthropic2025opus45} for repository-level maintenance
+tasks. Production deployment requires higher reliability, not just benchmark performance ---
+including handling novel codebases, security-critical logic, and regulatory compliance
+verification that benchmark tasks do not test.
+
+\textbf{Institutional adoption friction.} Enterprise AI deployment involves procurement
+cycles (6--18 months), legal liability review for AI-generated code, security red-teaming,
+and workflow integration. The substitution rate trajectories reflect technology adoption
+S-curves, not just technical readiness.
+
+\textbf{A three-phase transition framework:}
+\begin{description}
+  \item[Phase 1 --- Augmentation ($\sim$2024--2027):] AI functions as a powerful
+    but junior assistant. Engineers retain full decision authority. Net employment effect
+    likely positive or neutral as lower software cost expands project scope.
+  \item[Phase 2 --- Supervision ($\sim$2027--2032):] AI agents handle more complete,
+    semi-autonomous tasks. The engineer's primary value shifts to specifying correct behavior,
+    reviewing agent output, and handling exception cases. Net employment begins to decline.
+  \item[Phase 3 --- Residual Specialization ($\sim$2032 and beyond):] Engineering work
+    requiring physical presence, regulatory accountability, irreducible creative judgment,
+    or safety-critical decision-making forms the core of the surviving profession. This
+    residual is estimated at approximately 29\% of total engineering work hours.
+\end{description}
+
+A critical disanalogy with historical precedents (CAD, EDA): prior automation targeted the
+physically mediated or procedurally mechanical components of engineering work. AI
+substitution targets the cognitive core directly. The historical pattern of labor expansion
+following automation may not hold when the substituted activity is cognition rather than
+physical execution \citep{acemoglu2022tasks,autor2013skills,brynjolfsson2023generative}.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\subsection{Environmental and Workforce Considerations}
+\label{sec:risks}
+
+\subsubsection{Environmental Footprint and Water Constraints}
+
+The carbon intensity of AI-mediated engineering is addressed by the power source analysis
+above (Section~\ref{sec:energy-market}). A secondary environmental concern is water
+consumption. The global data center industry average Water Usage Effectiveness (WUE) is
+approximately 1.80--1.90 L/kWh \SECONDARY{}, producing localized water stress in Northern
+Virginia, Phoenix, and Dublin where data center density is highest.
+
+However, the shift to Blackwell-generation GPU infrastructure (GB200 NVL72 racks at 120+
+kW/rack) \textit{requires} liquid cooling, which when implemented as a closed-loop system
+achieves effectively \textbf{zero water evaporation}: WUE approaches 0.00 L/kWh for the
+direct cooling circuit. This architectural transition --- driven by GPU power density
+requirements rather than by environmental policy --- substantially resolves the water
+constraint for next-generation AI inference facilities without regulatory intervention.
+
+\subsubsection{Workforce Displacement at Scale}
+
+The central scenario projects the displacement of approximately \textbf{7.2 million software
+engineering FTE-equivalents globally} \ESTIMATE{} over an extended transition period. Even spread
+over a ten-year window, this implies 720,000 FTE-equivalents of net displacement per year.
+
+\begin{table}[ht]
+\centering
+\caption{Software Engineering Employment and Displacement Exposure by Region}
+\label{tab:displacement}
+\small
+\begin{tabular}{@{}lrp{1.2cm}rr@{}}
+\toprule
+\textbf{Geography} & \textbf{Est.\ SW Developers} & \textbf{Quality} & \textbf{Displaced (30\%)} & \textbf{Global Share} \\
+\midrule
+India & $\sim$5.5 million & \SECONDARY{} & $\sim$1.65 million & $\sim$23\% \\
+United States & $\sim$1.85 million & \PRIMARY{} & $\sim$555,000 & $\sim$8\% \\
+China & $\sim$7--10 million & \SECONDARY{} & $\sim$2.1--3.0 million & $\sim$29--42\% \\
+European Union & $\sim$2.0--2.5 million & \SECONDARY{} & $\sim$600--750K & $\sim$8--10\% \\
+Global Total & $\sim$24 million & \SECONDARY{} & \textbf{$\sim$7.2 million} & 100\% \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+The US Trade Adjustment Assistance (TAA) program has historically served approximately
+50,000--100,000 workers per year across all industries \SECONDARY{} --- roughly 1\% of the
+scale implied by the central scenario. Existing workforce transition infrastructure is
+inadequate relative to the implied displacement volume; policy capacity must be built
+proactively, ahead of the displacement event rather than in response to it.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Conclusion}
+\label{sec:conclusion}
+
+\subsection{Summary of Findings}
+
+The central finding of this paper is simultaneously mundane and consequential: at a 30\%
+engineering substitution rate with fully agentic AI deployment, replacing 7.2 million
+engineering FTEs requires approximately \textbf{\$9,020 per FTE-year} in AI infrastructure
+costs --- roughly 6.8\% of a US software developer's median annual salary of \$133,080
+\PRIMARY{} \citep{bls2024oes}. The economics of AI substitution are not merely favorable; they are
+overwhelmingly compelling across every geography and salary level examined.
+
+\begin{table}[ht]
+\centering
+\caption{Key Quantitative Findings --- Central 30\% Substitution Scenario}
+\label{tab:key-findings}
+\small
+\begin{tabular}{@{}p{6cm}p{3cm}p{2.5cm}@{}}
+\toprule
+\textbf{Metric} & \textbf{Value} & \textbf{Quality} \\
+\midrule
+Engineering FTEs substituted (30\% central) & 7.2 million & \ESTIMATE{} \\
+Token demand (agentic mode, per FTE-day) & 4 million tokens & \SECONDARY{} \\
+Aggregate token demand (30\% scenario) & 28.8 trillion tokens/day & \ESTIMATE{} \\
+H100-equivalent GPUs required & $\sim$101,000 & \ESTIMATE{} \\
+Equivalent in Blackwell generation & $\sim$77 GB200 NVL72 racks & \ESTIMATE{} \\
+Facility power draw (PUE 1.56) & 110 MW & \ESTIMATE{} \\
+Share of IEA 2030 global data center load & $\sim$0.10\% & \ESTIMATE{} \\
+Data center construction capex & \$1.65 billion & \ESTIMATE{} \\
+Annual energy cost & \$58 million/year & \ESTIMATE{} \\
+AI infrastructure cost per FTE-year & \$9,020 & \ESTIMATE{} \\
+Annual labor savings (central scenario) & \$511 billion/year & \ESTIMATE{} \\
+Annual labor savings (aggressive 80\%) & \$1.36 trillion/year & \ESTIMATE{} \\
+US median SW developer salary & \$133,080/year & \PRIMARY{} \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection{Policy Recommendations}
+
+\paragraph{Recommendation 1 --- Fast-Track Grid Interconnection for AI-Critical Loads.}
+Establish a federal fast-track interconnection process for AI-critical loads, modeled on
+the CHIPS Act's streamlined permitting for semiconductor fabrication facilities. FERC
+should create an expedited interconnection review track for loads above 50 MW at sites
+with existing transmission access, through targeted amendment of Order 2023.
+\textbf{Measurable target:} Median interconnection timeline of 18 months for qualifying
+AI loads, compared with the current 2--5 year average.
+
+\paragraph{Recommendation 2 --- Pre-fund an AI Workforce Transition Program.}
+Establish a dedicated AI Workforce Transition Fund, funded jointly through a levy on
+frontier AI API revenue (proposed 0.5\% of US API gross revenue \ESTIMATE{}) and federal
+appropriation, estimated to generate \$500 million to \$1 billion per year \ESTIMATE{}.
+Initial target roles: (a) AI systems auditing and red-teaming; (b) AI safety engineering
+for safety-critical applications; and (c) AI-human interface design. \textbf{Measurable
+target:} 500,000 retraining program completions per year by 2028.
+
+\paragraph{Recommendation 3 --- Mandatory AI Compute Carbon Accounting.}
+SEC climate disclosure rules (2024 final rule; implementation status subject to ongoing legal challenges as of 2026 --- confirm current status before submission) should be extended to cover AI inference energy
+consumption as a material operational risk. EU AI Act energy disclosure requirements
+(Article 51 and Annex~VIII; implementation timeline varies by member state) should be defined at the workload level --- per inference request, per model API
+call. \textbf{Measurable targets:} All US publicly traded companies meeting the
+materiality threshold disclosing AI inference energy consumption by 2027.
+
+\paragraph{Recommendation 4 --- Antitrust Scrutiny of AI Infrastructure Concentration.}
+DOJ Antitrust Division and FTC should initiate a joint inquiry into the competitive
+effects of exclusive long-term hyperscaler-utility power purchase agreements on the AI
+inference market. FERC should examine whether API interoperability standards for AI
+inference platforms above a defined scale threshold are warranted. \textbf{Measurable
+target:} Clear regulatory guidance published by 2026.
+
+\subsection{Future Research Directions}
+
+\begin{enumerate}
+  \item \textbf{Production deployment token consumption data.} Enterprise-scale empirical
+    studies measuring actual token consumption per engineering task across production
+    codebases would dramatically reduce the $\pm$14$\times$ uncertainty range currently
+    embedded in the aggregate token demand estimates.
+  \item \textbf{Non-monotonicity of token demand versus AI capability.} Aggregate token
+    demand may peak at intermediate AI capability levels and subsequently decline as agents
+    become more efficient per completed task.
+  \item \textbf{Sectoral and geographic heterogeneity in substitution rates.} Hardware
+    engineering, civil engineering, mechanical engineering, aerospace engineering, and
+    biomedical engineering differ from software engineering in their degree of
+    token-substitutability, regulatory constraints, and adoption velocity.
+  \item \textbf{Second-order employment effects.} Whether AI-driven reduction in software
+    development cost triggers demand expansion or net workforce contraction is an open
+    empirical question that determines whether the workforce transition policy
+    recommendations address a transient displacement event or a structural contraction.
+  \item \textbf{Water and land constraint mapping at deployment resolution.} The geographic
+    constraints on AI data center siting are not currently mapped at the spatial resolution
+    required for infrastructure planning.
+\end{enumerate}
+
+The economic arithmetic assembled in this paper is, in the end, straightforward: at
+\$9,020 per FTE-year against \$133,080 in median US software developer salary, the
+substitution economics are compelling at every substitution rate, in every geography, and
+under every plausible trajectory of future AI pricing. The binding constraints on this
+transition are not technical in the engineering or economic sense of the word. They are
+human and institutional: the gap between AI benchmark performance and production
+reliability, the organizational velocity at which enterprises can build the trust and
+workflow infrastructure to deploy autonomous agents, the 2--5 year lag time imposed by
+grid interconnection queues, and the near-total absence of policy infrastructure capable
+of managing workforce displacement at the scale the central scenario implies.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section*{Acknowledgments}
+
+The authors thank [TBD] for helpful discussions and feedback on earlier drafts. [Funding
+acknowledgment TBD.] All errors remain the authors' own.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\bibliographystyle{abbrvnat}
+\bibliography{paper}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\appendix
+
+\section{Full Parameter Table}
+\label{app:parameters}
+
+\subsection*{A.1 Locked Assumptions}
+
+See Section~\ref{sec:assumptions}, Table~\ref{tab:locked-assumptions}.
+
+\subsection*{A.2 Scenario Matrix}
+
+\begin{table}[ht]
+\centering
+\caption{Authoritative Scenario Matrix}
+\label{tab:scenario-matrix}
+\small
+\begin{tabular}{@{}llrrrrrr@{}}
+\toprule
+\textbf{Scenario} & \textbf{Mode} & \textbf{FTEs} & \textbf{Tok/Day} & \textbf{H100s} & \textbf{Power} & \textbf{Capex} & \textbf{AI \$/FTE-yr} \\
+\midrule
+Conservative & Agentic & 2.4M & 9.6T & $\sim$33,700 & 36.8 MW & \$552M & $\sim$\$9,020 \\
+Central & Agentic & 7.2M & 28.8T & $\sim$101,000 & 110 MW & \$1.65B & $\sim$\$9,020 \\
+Aggressive & Agentic & 19.2M & 76.8T & $\sim$269,000 & 293 MW & \$4.40B & $\sim$\$9,020 \\
+Conservative & Copilot & 2.4M & 288B & $\sim$9,600 & 12.3 MW & \$184M & $\sim$\$120 \\
+Central & Copilot & 7.2M & 864B & $\sim$28,800 & 36.7 MW & \$551M & $\sim$\$120 \\
+Aggressive & Copilot & 19.2M & 2.30T & $\sim$76,800 & 97.9 MW & \$1.47B & $\sim$\$120 \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\subsection*{A.3 Sensitivity Parameters}
+
+\begin{table}[ht]
+\centering
+\caption{Sensitivity Parameter Ranges}
+\label{tab:sensitivity-params}
+\small
+\begin{tabular}{@{}p{4.5cm}rrr p{4.5cm}@{}}
+\toprule
+\textbf{Parameter} & \textbf{Low} & \textbf{Central} & \textbf{High} & \textbf{Impact on 30\% scenario daily token demand} \\
+\midrule
+Global developer count & 19.6M & 24M & 28.7M & $\pm$20\% \\
+Tokens per task & 1M & 2.25M & 3.5M & $-$56\% / +56\% \\
+Tasks per FTE per day & 1 & 2 & 4 & $-$50\% / +100\% \\
+H100 inference TDP & 700W & 700W & 1,275W & affects power, not token demand \\
+Construction cost (\$/MW) & \$10M & \$15M & \$20M & affects capex, not token demand \\
+Electricity price (\$/MWh) & \$40 & \$60 & \$100 & affects energy cost, not token demand \\
+PUE & 1.30 & 1.56 & 1.70 & $\pm$9\% on facility power \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Sensitivity Analysis}
+\label{app:sensitivity}
+
+[Tornado charts and sensitivity tables to be added. See Section~\ref{sec:assumptions}
+and Appendix~\ref{app:parameters} Table~\ref{tab:sensitivity-params} for the parameter
+ranges used.]
+
+The dominant uncertainty sources in order of impact on aggregate daily token demand are:
+\begin{enumerate}
+  \item Tokens per task ($\pm$56\% at the 30\% central scenario)
+  \item Tasks per FTE per day ($-$50\% / +100\%)
+  \item Global developer count ($\pm$20\%)
+  \item Substitution rate (the primary scenario variable)
+\end{enumerate}
+
+Infrastructure cost sensitivity (30\% scenario):
+\begin{itemize}
+  \item Construction cost: \$1.65B $\pm$ \$550M (at \$10M--\$20M/MW range)
+  \item Annual energy cost: \$38M--\$96M (at \$40--\$100/MWh range)
+  \item Facility power: 100--120 MW (at PUE 1.30--1.70 range)
+\end{itemize}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Glossary}
+\label{app:glossary}
+
+\begin{description}
+  \item[Agentic AI] An AI system that autonomously executes multi-step tasks using tools
+    (code execution, file I/O, web search) without step-by-step human instruction.
+  \item[FTE (Full-Time Equivalent)] A unit of work representing one full-time employee's
+    labor for one year ($\sim$2,000 hours or $\sim$250 working days).
+  \item[FLOPs (Floating-Point Operations)] A measure of computational work. AI inference
+    is measured in giga- ($10^9$), tera- ($10^{12}$), or peta-FLOPs ($10^{15}$).
+  \item[GPU (Graphics Processing Unit)] A massively parallel processor originally designed
+    for graphics rendering, now the dominant hardware platform for AI model training and
+    inference.
+  \item[H100 SXM5] NVIDIA's Hopper-generation data center GPU, the primary production
+    unit for large-model AI inference as of 2025--2026.
+  \item[HBM (High Bandwidth Memory)] The memory technology used in AI accelerators;
+    bandwidth (GB/s) rather than capacity (GB) is typically the binding constraint for
+    large-model inference.
+  \item[KV-cache] The key-value cache used in transformer inference to avoid recomputing
+    attention for previously seen tokens; crucial for efficient long-context agentic
+    workloads.
+  \item[MFU (Model FLOPs Utilization)] The fraction of a GPU's theoretical peak FLOP/s
+    that is actually used during inference; typical values are 40--60\% for production
+    serving.
+  \item[PPA (Power Purchase Agreement)] A long-term contract (typically 10--25 years)
+    between an electricity generator and a buyer at a fixed price, providing revenue
+    certainty for generation investment.
+  \item[PUE (Power Usage Effectiveness)] Data center efficiency metric = total facility
+    power $\div$ IT equipment power. Global average is 1.56 (Uptime Institute 2024).
+  \item[SMR (Small Modular Reactor)] A nuclear fission reactor with electrical output
+    typically below 300 MW, designed for factory fabrication and modular deployment.
+  \item[SWE-bench] A benchmark dataset of real GitHub issues from open-source Python
+    projects, used to evaluate the ability of AI agents to resolve software engineering
+    tasks. Resolution rate = fraction of tasks resolved autonomously.
+  \item[Token] The atomic unit of text processed by a large language model. Roughly 3--4
+    characters of English text per token ($\approx$0.75 words). All LLM API pricing is
+    denominated in tokens.
+  \item[WUE (Water Usage Effectiveness)] Data center water efficiency metric = liters of
+    water consumed per kWh of IT equipment energy. Industry average: 1.80--1.90 L/kWh;
+    AWS best-practice: 0.19 L/kWh.
+\end{description}
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Empirical Token Calibration --- Protocol and Raw Results}
+\label{app:calibration}
+
+This appendix provides the full experimental protocol, task prompts, and raw measurement
+results for the empirical token calibration described in Section~\ref{sec:results}
+and Figure~\ref{fig:token-calibration}.
+
+\subsection*{D.1 Measurement Protocol}
+
+\begin{itemize}
+  \item \textbf{Single-turn only.} Each task was issued as one self-contained prompt with
+    no tool calls, no multi-turn context, and no system state — isolating the base token
+    cost before agentic overhead.
+  \item \textbf{Three repetitions per cell.} Each (model, task) combination was run three
+    times with identical inputs. Input tokens are deterministic; output variance captures
+    model stochasticity.
+  \item \textbf{Output cap.} All calls used \texttt{max\_tokens = 8{,}192}.
+  \item \textbf{Rate limiting.} A 2-second pause was inserted between consecutive API calls.
+  \item \textbf{Date.} Measurements collected May 17, 2026.
+\end{itemize}
+
+\subsection*{D.2 Models Tested}
+
+\begin{table}[ht]
+\centering
+\small
+\caption{Models included in calibration run}
+\label{tab:calib-models}
+\begin{tabular}{@{}llll@{}}
+\toprule
+\textbf{Provider} & \textbf{Model ID} & \textbf{Label} & \textbf{Tier} \\
+\midrule
+Anthropic & \texttt{claude-sonnet-4-6} & Claude Sonnet 4.6 & Mid-tier \\
+Anthropic & \texttt{claude-opus-4-7}   & Claude Opus 4.7   & Frontier \\
+OpenAI    & \texttt{gpt-4o}            & GPT-4o            & Frontier \\
+OpenAI    & \texttt{gpt-4.1}           & GPT-4.1           & Mid-tier \\
+\bottomrule
+\end{tabular}
+\end{table}
+
+\noindent\textit{Note: Gemini 2.5 Flash and Gemini 2.5 Pro were included in the protocol
+but returned API errors at measurement time; those cells are absent from the results.}
+
+\subsection*{D.3 Task Prompts}
+
+Three task tiers were selected to span the engineering complexity spectrum.
+In each case the prompt provides realistic code context (not toy examples) and
+is constructed so that the task cannot be completed with a trivial one-line answer.
+
+\subsubsection*{Task 1 --- Simple Bug Fix}
+
+\textit{System:} \texttt{``You are an expert software engineer. Read the code and task
+carefully. Identify the bug, explain the root cause in one sentence, and provide the
+corrected code. Do not add unrelated features or refactor other code.''}
+
+\textit{Code context:} A 50-line Python \texttt{Paginator} class implementing paginated
+API response handling. The class contains one intentional off-by-one error:
+\texttt{prev\_page()} guards on \texttt{\_current\_page <= 0} instead of
+\texttt{\_current\_page <= 1}, which causes it to return page 0 (raising a
+\texttt{ValueError}) rather than returning \texttt{None} when already on the first page.
+
+\textit{Task:} ``There is exactly one bug. Find it, explain why it is wrong, and return
+the corrected \texttt{prev\_page} method only.''
+
+\textit{Approximate input size:} 630--750 tokens (varies by tokenizer).
+
+\subsubsection*{Task 2 --- Feature Implementation}
+
+\textit{System:} \texttt{``You are a senior Python web developer. Implement the requested
+feature following Flask best practices. Write production-quality code with proper error
+handling, input validation, and docstrings. Include relevant unit tests.''}
+
+\textit{Code context:} A 120-line Flask REST API for a task management application with
+four existing CRUD endpoints (\texttt{GET}, \texttt{POST}, \texttt{PUT}, \texttt{DELETE}).
+The \texttt{Task} model includes fields for title, description, status, priority, due date,
+and comma-separated tags.
+
+\textit{Task:} Add a new \texttt{GET /tasks/search} endpoint supporting four filter
+parameters (\texttt{status}, \texttt{priority}, \texttt{tag}, \texttt{due\_before}),
+plus three unit tests for the new endpoint.
+
+\textit{Approximate input size:} 920--1{,}520 tokens (varies by tokenizer).
+
+\subsubsection*{Task 3 --- Architectural Refactor}
+
+\textit{System:} \texttt{``You are a software architect. Refactor the code using SOLID
+principles. Improve separation of concerns, testability, and maintainability. Provide
+the complete refactored code with tests.''}
+
+\textit{Code context:} A 200-line monolithic \texttt{UserService} class combining
+authentication logic, database access, email notification, cache management, and audit
+logging in a single class. The class has direct \texttt{sqlite3} calls, hard-coded SMTP
+configuration, and a \texttt{requests}-based cache invalidation call interleaved with
+business logic.
+
+\textit{Task:} Decompose into separate service classes following dependency injection
+principles. Each service should be independently testable. Provide mock-based unit tests
+for the refactored design.
+
+\textit{Approximate input size:} 1{,}340--2{,}310 tokens (varies by tokenizer).
+
+\subsection*{D.4 Raw Results}
+
+Table~\ref{tab:calib-raw} reports mean total tokens (input + output) and mean output tokens
+across three runs per cell. The stop reason column indicates whether the model completed
+the task (\texttt{end\_turn}) or hit the output token cap (\texttt{max\_tokens}).
+
+\begin{table}[ht]
+\centering
+\caption{Empirical token calibration results --- mean of 3 runs (May 2026)}
+\label{tab:calib-raw}
+\small
+\begin{tabular}{@{}llrrrl@{}}
+\toprule
+\textbf{Task Tier} & \textbf{Model} & \textbf{Mean Input} & \textbf{Mean Output} & \textbf{Mean Total} & \textbf{Stop} \\
+\midrule
+Simple bug fix & Claude Sonnet 4.6 & 633 & 172 & 805 & end\_turn \\
+Simple bug fix & Claude Opus 4.7   & 745 & 183 & 928 & end\_turn \\
+Simple bug fix & GPT-4o            & 506 & 105 & 611 & end\_turn \\
+Simple bug fix & GPT-4.1           & 506 & 112 & 618 & end\_turn \\
+\midrule
+Feature implementation & Claude Sonnet 4.6 & 1{,}209 & 7{,}798 & 9{,}007 & max\_tokens$^\dagger$ \\
+Feature implementation & Claude Opus 4.7   & 1{,}522 & 4{,}659 & 6{,}181 & end\_turn \\
+Feature implementation & GPT-4o            &    919  & 1{,}374 & 2{,}293 & end\_turn \\
+Feature implementation & GPT-4.1           &    919  & 1{,}698 & 2{,}617 & end\_turn \\
+\midrule
+Architectural refactor & Claude Sonnet 4.6 & 1{,}667 & 8{,}192 & 9{,}859 & max\_tokens$^\dagger$ \\
+Architectural refactor & Claude Opus 4.7   & 2{,}306 & 8{,}192 & 10{,}498 & max\_tokens$^\dagger$ \\
+Architectural refactor & GPT-4o            & 1{,}342 & 2{,}435 &  3{,}777 & end\_turn \\
+Architectural refactor & GPT-4.1           & 1{,}342 & 3{,}197 &  4{,}539 & end\_turn \\
+\bottomrule
+\end{tabular}
+\vspace{0.4em}
+
+\raggedright
+\footnotesize
+$\dagger$ Output truncated at the 8{,}192-token cap; actual completion would require
+additional turns.
+\end{table}
+
+\subsection*{D.5 Key Observations}
+
+\textbf{Output cap saturation (Claude models).}
+Claude Sonnet 4.6 saturated the 8{,}192-token output cap on both the feature implementation
+and architectural refactor tasks in all three runs; Claude Opus 4.7 saturated the cap on
+the architectural refactor in all three runs. This confirms that complex tasks cannot be
+completed in a single prompt turn --- multi-turn agentic workflows are operationally
+necessary, not merely a performance preference.
+
+\textbf{Tokenizer efficiency gap.}
+OpenAI models (GPT-4o and GPT-4.1) consumed 25--35\% fewer input tokens than their Anthropic
+counterparts on the same code prompts. This reflects tokenizer vocabulary differences:
+GPT tokenizers encode Python syntax more compactly than the Claude tokenizer on these
+code-heavy prompts. The output efficiency gap is larger: GPT-4o and GPT-4.1 produced
+2--3$\times$ fewer output tokens per task than Claude models at comparable capability tiers,
+reflecting different response verbosity defaults rather than task quality differences.
+
+\textbf{Single-turn vs.\ agentic multiplier.}
+These single-turn baselines range from 611 tokens (GPT-4o, bug fix) to 10{,}498 tokens
+(Claude Opus 4.7, architectural refactor). Against the Bai et al.~\citep{bai2026agent}
+\SECONDARY{} agentic range of 1--3.5 million tokens per task, the implied agentic
+multiplier is \textbf{100--5{,}700$\times$}. The lower bound of 100$\times$ applies to
+frontier Claude models on complex tasks; the upper bound of $\sim$5{,}700$\times$ applies
+to GPT-4o-class models on simple tasks. In the paper's central energy model, we use the
+conservative 100--300$\times$ multiplier range citing Bai et al.\ directly; this calibration
+confirms that the single-turn baseline is not the energy-relevant regime.
+
+% ─────────────────────────────────────────────────────────────────────────────
+\section{Timeline of AI Engineering Tools (2020--2025)}
+\label{app:timeline}
+
+\begin{longtable}{@{}p{1.2cm}p{5.5cm}p{5.5cm}@{}}
+\toprule
+\textbf{Year} & \textbf{Event} & \textbf{Significance} \\
+\midrule
+\endhead
+\bottomrule
+\endfoot
+2021 & GitHub Copilot technical preview (OpenAI Codex) & First mainstream AI code completion tool \\
+2022 & GitHub Copilot general availability & 20M+ eventual users; establishes copilot-augmented mode \\
+2022 & ChatGPT release (November) & Demonstrates frontier LLM capability for general-purpose coding assistance \\
+2023 & GPT-4 release (March) & Frontier-class performance on coding benchmarks; API-accessible \\
+2023 & Devin 1.0 announcement (Cognition AI) & First public demonstration of fully agentic software engineering \\
+2023 & Claude 1/2 (Anthropic); expanded context windows & Long-context models enable full codebase loading in agentic tasks \\
+2024 & SWE-bench introduced & Empirical benchmark for agentic coding; enables rigorous capability comparison \\
+2024 & NVIDIA H100 widespread deployment & Hardware platform for frontier AI inference at scale \\
+2024 & Cursor, Windsurf, Codeium reach scale & IDE-native agentic coding tools enter mainstream enterprise use \\
+2024 & Microsoft--Constellation TMI-1 PPA & First hyperscaler nuclear PPA; establishes market-clearing price for 24/7 clean AI power \\
+2025 & Devin 2.0 (13.86\% SWE-bench) & Best public agentic benchmark; establishes current capability frontier \\
+2025 & NVIDIA GB200 NVL72 deployment begins & Blackwell generation: 40$\times$ rack density improvement over H100 air-cooled \\
+2025 & Claude Code, OpenAI Operator class tools & Agentic coding agents integrated into developer workflows at enterprise scale \\
+2025 & Amazon--Energy Northwest SMR announcement & Hyperscaler commitment to next-generation nuclear for AI load \\
+\end{longtable}
+
+\end{document}

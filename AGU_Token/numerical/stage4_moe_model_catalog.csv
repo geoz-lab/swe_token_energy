@@ -1,0 +1,5 @@
+model,architecture,total_parameters_b,active_parameters_b,checkpoint_size_gib,source_url,note
+gpt-oss-120b,MoE,116.8,5.1,60.8,https://cdn.openai.com/pdf/419b6906-9da6-406c-a19d-1bb078ac7637/oai_gpt-oss_model_card.pdf,Quantized MXFP4 checkpoint; active parameters affect per-token matmul but entire checkpoint must fit in memory
+Qwen3-Coder-480B-A35B-Instruct,MoE,480,35,,https://huggingface.co/Qwen/Qwen3-Coder-480B-A35B-Instruct,Long context and KV cache increase memory beyond weights
+DeepSeek-V3,MoE,671,37,,https://github.com/deepseek-ai/DeepSeek-V3,MoE routing plus expert parallel communication matter for throughput
+Kimi-K2-Instruct,MoE,1000,32,,https://huggingface.co/moonshotai/Kimi-K2-Instruct,Large total weights usually require a multi-accelerator deployment despite 32B active per token

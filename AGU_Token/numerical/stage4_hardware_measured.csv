@@ -1,0 +1,7 @@
+gpu,model,concurrency,total_tokens_per_second,generated_tokens_per_second,mean_board_w,measured_input_output_ratio,source_file,applicability
+A100,Qwen3-Coder-30B-A3B,1,1094,122,242,8,Experiment/final_results/exp2_supply_all_cells.csv,interactive proxy
+H100,Qwen3-Coder-30B-A3B,1,1642,182,326,8,Experiment/final_results/exp2_supply_all_cells.csv,interactive proxy
+H200,Qwen3-Coder-30B-A3B,1,2020,224,349,8,Experiment/final_results/exp2_supply_all_cells.csv,interactive proxy
+A100,Qwen3-Coder-30B-A3B,64,7147,794,419,8,Experiment/final_results/exp2_supply_all_cells.csv,saturated reference
+H100,Qwen3-Coder-30B-A3B,64,13352,1484,545,8,Experiment/final_results/exp2_supply_all_cells.csv,saturated reference
+H200,Qwen3-Coder-30B-A3B,64,23879,2653,577,8,Experiment/final_results/exp2_supply_all_cells.csv,saturated reference

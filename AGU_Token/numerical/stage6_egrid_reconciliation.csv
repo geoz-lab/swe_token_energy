@@ -1,0 +1,8 @@
+source,geography,metric,source_value_lb_per_mwh,converted_kgco2e_per_kwh,sheet,field_code,source_url,note
+EPA_eGRID2023_rev2,US,total_output_CO2e,770.884,0.349667101,US23,USC2ERTA,https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx,Official national operational generation factor
+EPA_eGRID2023_rev2,US,gas_output_CO2e,900.028,0.408245834,US23,USGC2ERT,https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx,National fuel-specific operational factor
+EPA_eGRID2023_rev2,US,coal_output_CO2e,2244.545,1.018108486,US23,USCC2ERT,https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx,National fuel-specific operational factor
+EPA_eGRID2023_rev2,US,oil_output_CO2e,1560.637,0.707893036,US23,USOC2ERT,https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx,National fuel-specific operational factor
+EPA_eGRID2023_rev2,PJM,total_output_CO2e,719.405,0.326316619,BA23,BAC2ERTA,https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx,PJM balancing-authority total; differs materially from Guidi-reported 0.535 kg CO2 per kWh
+EPA_eGRID2023_rev2,PJM,gas_output_CO2e,867.973,0.393705930,BA23,BAGC2ERT,https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx,PJM fuel-specific operational factor
+EPA_eGRID2023_rev2,PJM,coal_output_CO2e,2232.587,1.012684429,BA23,BACC2ERT,https://www.epa.gov/system/files/documents/2025-06/egrid2023_data_rev2.xlsx,PJM fuel-specific operational factor

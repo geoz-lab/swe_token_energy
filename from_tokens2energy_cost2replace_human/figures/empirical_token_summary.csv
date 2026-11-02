@@ -1,0 +1,13 @@
+task_tier,task_description,provider,model_id,model_label,n_runs,mean_total_tokens,min_total_tokens,max_total_tokens,mean_M_tokens,min_M_tokens,max_M_tokens
+architectural_refactor,Decompose a monolithic class into services with dependency injection,anthropic,claude-opus-4-7,Claude Opus 4.7 (frontier),3,10498,10497,10498,0.0105,0.0105,0.0105
+architectural_refactor,Decompose a monolithic class into services with dependency injection,anthropic,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),3,9859,9859,9859,0.0099,0.0099,0.0099
+architectural_refactor,Decompose a monolithic class into services with dependency injection,openai,gpt-4.1,GPT-4.1 (mid-tier),3,4539,4217,4793,0.0045,0.0042,0.0048
+architectural_refactor,Decompose a monolithic class into services with dependency injection,openai,gpt-4o,GPT-4o (frontier),3,3777,3653,3898,0.0038,0.0037,0.0039
+feature_implementation,Add a new REST endpoint to an existing Flask application,anthropic,claude-opus-4-7,Claude Opus 4.7 (frontier),3,6181,5725,6604,0.0062,0.0057,0.0066
+feature_implementation,Add a new REST endpoint to an existing Flask application,anthropic,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),3,9007,8736,9401,0.009,0.0087,0.0094
+feature_implementation,Add a new REST endpoint to an existing Flask application,openai,gpt-4.1,GPT-4.1 (mid-tier),3,2617,2471,2904,0.0026,0.0025,0.0029
+feature_implementation,Add a new REST endpoint to an existing Flask application,openai,gpt-4o,GPT-4o (frontier),3,2293,1854,2561,0.0023,0.0019,0.0026
+simple_bug_fix,Fix a simple off-by-one error in a Python function,anthropic,claude-opus-4-7,Claude Opus 4.7 (frontier),3,928,922,932,0.0009,0.0009,0.0009
+simple_bug_fix,Fix a simple off-by-one error in a Python function,anthropic,claude-sonnet-4-6,Claude Sonnet 4.6 (mid-tier),3,805,792,822,0.0008,0.0008,0.0008
+simple_bug_fix,Fix a simple off-by-one error in a Python function,openai,gpt-4.1,GPT-4.1 (mid-tier),3,618,610,627,0.0006,0.0006,0.0006
+simple_bug_fix,Fix a simple off-by-one error in a Python function,openai,gpt-4o,GPT-4o (frontier),3,611,604,620,0.0006,0.0006,0.0006

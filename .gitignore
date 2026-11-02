@@ -1,11 +1,26 @@
-# secrets — never commit live credentials (use .env.example as the template)
-.env
-*.key
+# Credentials and local environments
+**/.env
+**/.env.*
+!**/.env.example
+**/.venv/
+**/__pycache__/
+**/*.py[cod]
+**/.claude/
 
-# environments / caches / OS junk (regenerable, large)
-.venv/
-__pycache__/
-*.pyc
+# Local presentation and analysis build outputs
+.codex-finalizer/
+AGU_Token/numerical/.pptx_build/
+AGU_Token/numerical/model_outputs/*_draws.csv
+*.png.ndjson
+
+# OS and document application files
 .DS_Store
-.tiktoken_cache/
-.apptainer*/
+~$*
+*.tmp
+*.bak
+*.aux
+*.fdb_latexmk
+*.fls
+Overleaf/**/*.log
+*.out
+*.synctex.gz

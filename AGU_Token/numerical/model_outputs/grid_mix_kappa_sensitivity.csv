@@ -1,0 +1,19 @@
+renewable_proxy_year,kappa,factor_scenario,n_draws,central_share_factor_kgco2e_per_kwh,p10_kgco2e_per_kwh,p50_kgco2e_per_kwh,p90_kgco2e_per_kwh,interpretation
+2024,20.0,IPCC_low,10000,0.275008676,0.199116037,0.273596119,0.349972813,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2024,20.0,IPCC_median,10000,0.324738492,0.23936164,0.323479403,0.408217138,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2024,20.0,IPCC_high,10000,0.572841367,0.498769038,0.577878173,0.640699609,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2024,100.0,IPCC_low,10000,0.275008676,0.241297272,0.275584723,0.310226546,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2024,100.0,IPCC_median,10000,0.324738492,0.287241693,0.325443486,0.363803681,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2024,100.0,IPCC_high,10000,0.572841367,0.540867208,0.574376557,0.605016347,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2024,500.0,IPCC_low,10000,0.275008676,0.259435228,0.275014254,0.290514147,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2024,500.0,IPCC_median,10000,0.324738492,0.307349553,0.32474125,0.341793152,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2024,500.0,IPCC_high,10000,0.572841367,0.557788025,0.57282565,0.587322758,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2025,20.0,IPCC_low,10000,0.275046285,0.199181868,0.273632476,0.350000414,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2025,20.0,IPCC_median,10000,0.324917267,0.239547227,0.323647403,0.408342437,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2025,20.0,IPCC_high,10000,0.562242239,0.489516684,0.567143871,0.629902992,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2025,100.0,IPCC_low,10000,0.275046285,0.241341846,0.27562684,0.310264113,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2025,100.0,IPCC_median,10000,0.324917267,0.287453917,0.32562612,0.363976842,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2025,100.0,IPCC_high,10000,0.562242239,0.530357399,0.563762454,0.594280064,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2025,500.0,IPCC_low,10000,0.275046285,0.259471315,0.275051974,0.290549037,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2025,500.0,IPCC_median,10000,0.324917267,0.307535246,0.324933502,0.341956037,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic
+2025,500.0,IPCC_high,10000,0.562242239,0.547395475,0.562182825,0.576613453,2024 is main; 2025 is temporal proxy sensitivity; Dirichlet kappa is analyst assumption; IPCC factor bounds are not probabilistic

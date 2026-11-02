@@ -1,0 +1,3 @@
+parameter,distribution,low,mode,high,unit,evidence_status,source_url,context_reference_url,note
+host_to_board_energy_factor,triangular,1.0,1.2,1.4,dimensionless,analyst_scenario,,,Includes CPU memory network and server overhead beyond measured GPU board; no matched site measurement
+pue,triangular,1.2,1.4,1.6,dimensionless,analyst_scenario,https://www.energy.gov/sites/default/files/2024-07/best-practice-guide-data-center-design.pdf,https://www.energy.gov/documents/united-states-data-center-energy-usage-report-2025-update,DOE defines PUE; LBNL 2025 update estimates 2024 U.S. data-center average PUE 1.45; triangular model range remains an analyst scenario rather than a fitted site distribution

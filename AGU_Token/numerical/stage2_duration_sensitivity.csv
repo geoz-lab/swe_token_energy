@@ -1,0 +1,5 @@
+activity,assumed_hours_per_day,short_task_hours,central_task_hours,long_task_hours,tasks_per_day_if_short,tasks_per_day_if_central,tasks_per_day_if_long,status,calibration_note
+debugging,0.72,0.5,2,8,1.44,0.36,0.09,exploratory_analyst_scenario,Two-hour central duration is a cross-category METR plausibility check and not an observed debugging median
+coding_new_features,0.88,2,8,40,0.44,0.11,0.022,exploratory_analyst_scenario,Spans small fixes through multi-day features; no source-calibrated quantiles
+architecting_and_design,0.48,8,20,80,0.06,0.024,0.006,exploratory_analyst_scenario,Multi-day work is represented by fractional tasks per day; no source-calibrated quantiles
+PR_and_code_review,0.40,0.25,2,8,1.60,0.20,0.05,exploratory_analyst_scenario,Review episodes and large PR reviews have different boundaries; no source-calibrated quantiles

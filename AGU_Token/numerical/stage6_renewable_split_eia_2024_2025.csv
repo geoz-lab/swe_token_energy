@@ -1,0 +1,11 @@
+year,source,utility_scale_thousand_mwh,eia_category,reference_url,note
+2024,wind,451904,wind,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,US all-sector utility-scale generation; central proxy aligned with the 2024-05 to 2025-04 HDC sample
+2024,solar,219833,solar_PV_plus_solar_thermal,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,216715 PV plus 3118 solar thermal; excludes small-scale PV
+2024,hydropower,242896,conventional_hydroelectric,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,Conventional hydro; pumped storage excluded
+2024,biomass,46422,wood_landfill_biogenic_municipal_other_biomass,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,31564 wood plus 7341 landfill gas plus 5402 biogenic municipal waste plus 2115 other waste biomass
+2024,geothermal,15407,geothermal,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,US all-sector utility-scale generation
+2025,wind,461577,wind,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,Final 2025 annual data released 2026-10-21; alternative renewable proxy only
+2025,solar,300303,solar_PV_plus_solar_thermal,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,297448 PV plus 2855 solar thermal; excludes small-scale PV; alternative proxy only
+2025,hydropower,241303,conventional_hydroelectric,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,Conventional hydro; pumped storage excluded; alternative proxy only
+2025,biomass,45292,wood_landfill_biogenic_municipal_other_biomass,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,31179 wood plus 6787 landfill gas plus 5274 biogenic municipal waste plus 2052 other waste biomass; alternative proxy only
+2025,geothermal,15628,geothermal,https://www.eia.gov/electricity/annual/table.php?t=epa_03_01_b.html,Final 2025 annual data; alternative proxy only

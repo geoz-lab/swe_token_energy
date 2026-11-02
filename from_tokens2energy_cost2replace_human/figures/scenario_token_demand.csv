@@ -1,0 +1,5 @@
+scenario,label,substitution_rate_pct,ftes_replaced_M,copilot_tokens_per_day_T,agentic_tokens_per_day_T,copilot_tokens_per_day_B,agentic_tokens_per_day_B
+conservative,Conservative (10%),10,2.4,0.000288,0.0096,288,9600
+central,Central (30%),30,7.2,0.000864,0.0288,864,28800
+mckinsey,McKinsey Ceiling (57%),57,13.7,0.001644,0.0548,1644,54800
+aggressive,Aggressive (80%),80,19.2,0.002304,0.0768,2304,76800

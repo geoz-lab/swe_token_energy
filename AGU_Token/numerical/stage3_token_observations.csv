@@ -1,0 +1,7 @@
+benchmark,model,n,median_raw_total_tokens,median_raw_output_tokens,token_method,quality_status,source_file,reference_url
+SWE-bench,claude-opus-4-8,70,51090,240,reconstructed trajectory,ungraded,Experiment/exp1_results/exp1_raw.csv,https://arxiv.org/abs/2604.22750
+SWE-bench,gpt-5.4,70,44407,402,reconstructed trajectory,ungraded,Experiment/exp1_results/exp1_raw.csv,https://arxiv.org/abs/2604.22750
+SWE-bench,gemini-3.1-pro-preview,70,428426,50,reconstructed trajectory,ungraded,Experiment/exp1_results/exp1_raw.csv,https://arxiv.org/abs/2604.22750
+SWE-Lancer,claude-opus-4-8,20,524152,2994,reconstructed trajectory,ungraded,Experiment/exp1_results/exp1_raw.csv,https://openai.com/index/swe-lancer/
+SWE-Lancer,gpt-5.4,20,189944,608,reconstructed trajectory,ungraded,Experiment/exp1_results/exp1_raw.csv,https://openai.com/index/swe-lancer/
+SWE-Lancer,gemini-3.1-pro-preview,20,1490306,80,reconstructed trajectory,ungraded,Experiment/exp1_results/exp1_raw.csv,https://openai.com/index/swe-lancer/

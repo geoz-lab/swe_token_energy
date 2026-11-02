@@ -1,0 +1,10 @@
+parameter,low_value,central_value,high_value,low_impact_pct,high_impact_pct,impact_description,source_quality
+Global developer count (M),19.6,24.0,28.7,-18.3,+19.6,±~20% on daily token demand,SECONDARY
+Tokens per task (M tokens),1.0,2.25,3.5,-55.6,+55.6,±56% on daily token demand,SECONDARY
+Tasks per FTE per day,1,2,4,-50.0,+100.0,-50%/+100% on daily token demand,ESTIMATE
+Input token share (%),75,85,92,no change,no change,Affects cost split not total volume,SECONDARY
+Non-SW engineering uplift (×),0,1.4,1.8,0.0,+80.0,0 to +80% if included in model scope,ESTIMATE
+H100 inference TDP (W/GPU),700,700,1275,0.0,+82.1,Affects power not token demand,PRIMARY
+Construction cost ($M/MW),10,15,20,,, Affects capex not token demand,SECONDARY
+Electricity price ($/MWh),40,60,100,,, Affects energy cost not token demand,ESTIMATE
+PUE,1.30,1.56,1.70,-16.7,+9.0,±9-17% on facility power MW,SECONDARY

@@ -1,0 +1,86 @@
+[
+  {
+    "task_tier": "architectural_refactor",
+    "provider": "anthropic",
+    "model_label": "Claude Opus 4.7 (frontier)",
+    "mean_M": 0.0105,
+    "range": "0.010-0.010M"
+  },
+  {
+    "task_tier": "architectural_refactor",
+    "provider": "anthropic",
+    "model_label": "Claude Sonnet 4.6 (mid-tier)",
+    "mean_M": 0.0099,
+    "range": "0.010-0.010M"
+  },
+  {
+    "task_tier": "architectural_refactor",
+    "provider": "openai",
+    "model_label": "GPT-4.1 (mid-tier)",
+    "mean_M": 0.0045,
+    "range": "0.004-0.005M"
+  },
+  {
+    "task_tier": "architectural_refactor",
+    "provider": "openai",
+    "model_label": "GPT-4o (frontier)",
+    "mean_M": 0.0038,
+    "range": "0.004-0.004M"
+  },
+  {
+    "task_tier": "feature_implementation",
+    "provider": "anthropic",
+    "model_label": "Claude Opus 4.7 (frontier)",
+    "mean_M": 0.0062,
+    "range": "0.006-0.007M"
+  },
+  {
+    "task_tier": "feature_implementation",
+    "provider": "anthropic",
+    "model_label": "Claude Sonnet 4.6 (mid-tier)",
+    "mean_M": 0.009,
+    "range": "0.009-0.009M"
+  },
+  {
+    "task_tier": "feature_implementation",
+    "provider": "openai",
+    "model_label": "GPT-4.1 (mid-tier)",
+    "mean_M": 0.0026,
+    "range": "0.002-0.003M"
+  },
+  {
+    "task_tier": "feature_implementation",
+    "provider": "openai",
+    "model_label": "GPT-4o (frontier)",
+    "mean_M": 0.0023,
+    "range": "0.002-0.003M"
+  },
+  {
+    "task_tier": "simple_bug_fix",
+    "provider": "anthropic",
+    "model_label": "Claude Opus 4.7 (frontier)",
+    "mean_M": 0.0009,
+    "range": "0.001-0.001M"
+  },
+  {
+    "task_tier": "simple_bug_fix",
+    "provider": "anthropic",
+    "model_label": "Claude Sonnet 4.6 (mid-tier)",
+    "mean_M": 0.0008,
+    "range": "0.001-0.001M"
+  },
+  {
+    "task_tier": "simple_bug_fix",
+    "provider": "openai",
+    "model_label": "GPT-4.1 (mid-tier)",
+    "mean_M": 0.0006,
+    "range": "0.001-0.001M"
+  },
+  {
+    "task_tier": "simple_bug_fix",
+    "provider": "openai",
+    "model_label": "GPT-4o (frontier)",
+    "mean_M": 0.0006,
+    "range": "0.001-0.001M"
+  }
+]

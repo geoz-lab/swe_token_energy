@@ -1,0 +1,4 @@
+scenario,ai_work_share,interpretation,evidence_status,source_url,note
+conservative,0.30,share of 2.48 tracked technical task hours attempted by AI,analyst scenario,,Equals 0.744 attempted hours and 9.3 percent of an assumed eight-hour paid day; not net replacement
+central,0.50,share of 2.48 tracked technical task hours attempted by AI,analyst scenario,,Equals 1.24 attempted hours and 15.5 percent of an assumed eight-hour paid day; not net replacement
+ambitious,0.70,share of 2.48 tracked technical task hours attempted by AI,analyst scenario,,Equals 1.736 attempted hours and 21.7 percent of an assumed eight-hour paid day; not net replacement

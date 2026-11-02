@@ -1,0 +1,12 @@
+source,low_kgco2e_per_kwh,median_kgco2e_per_kwh,high_kgco2e_per_kwh,boundary,reference_url,note
+coal,0.740,0.820,0.910,lifecycle,https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf,Coal pulverized combustion
+natural_gas,0.410,0.490,0.650,lifecycle,https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf,Combined cycle
+biomass,0.130,0.230,0.420,lifecycle,https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf,Table A.III.2 dedicated biomass proxy for EIA mixed biomass categories
+geothermal,0.006,0.038,0.079,lifecycle,https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf,
+hydropower,0.001,0.024,2.200,lifecycle,https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf,Table A.III.2 maximum includes reservoir-specific extreme and is not a percentile
+nuclear,0.0037,0.012,0.110,lifecycle,https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf,
+solar,0.018,0.048,0.180,lifecycle,https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf,Table A.III.2 utility PV proxy for EIA PV plus small solar-thermal component
+wind,0.007,0.011,0.056,lifecycle,https://www.ipcc.ch/site/assets/uploads/2018/02/ipcc_wg3_ar5_annex-iii.pdf,Table A.III.2 onshore proxy
+US_eGRID,0.349667,0.349667,0.349667,operational generation,https://www.epa.gov/egrid/summary-data,770.884 lb CO2e per MWh converted to kg per kWh
+CAMX_eGRID,0.195037,0.195037,0.195037,operational generation,https://www.epa.gov/egrid/summary-data,429.983 lb CO2e per MWh converted to kg per kWh
+ERCT_eGRID,0.334129,0.334129,0.334129,operational generation,https://www.epa.gov/egrid/summary-data,736.629 lb CO2e per MWh converted to kg per kWh

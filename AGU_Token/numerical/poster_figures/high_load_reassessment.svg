@@ -1,0 +1,98 @@
+<svg xmlns="http://www.w3.org/2000/svg" width="1500" height="900" viewBox="0 0 1500 900">
+<rect x="0" y="0" width="1500" height="900" rx="0" fill="#f7fafc" stroke="none"/>
+<text x="70" y="72" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#0b2d46" text-anchor="start">High-load reassessment | coding agents</text>
+<text x="70" y="108" font-family="Arial, Helvetica, sans-serif" font-size="20" font-weight="400" fill="#426178" text-anchor="start">Different denominators must stay separate</text>
+<rect x="70" y="140" width="261" height="140" rx="13" fill="#e4eef8" stroke="none"/>
+<text x="85" y="174" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#33546a" text-anchor="start">Human distinct tasks</text>
+<text x="85" y="221" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#0b2d46" text-anchor="start">4.8 / 4 h</text>
+<text x="85" y="253" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#426178" text-anchor="start">11-person field observation</text>
+<rect x="347" y="140" width="261" height="140" rx="13" fill="#e4eef8" stroke="none"/>
+<text x="362" y="174" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#33546a" text-anchor="start">Task switches</text>
+<text x="362" y="221" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#0b2d46" text-anchor="start">13.3 / h</text>
+<text x="362" y="253" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#426178" text-anchor="start">Repeated visits included</text>
+<rect x="624" y="140" width="261" height="140" rx="13" fill="#e7f2ef" stroke="none"/>
+<text x="639" y="174" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#33546a" text-anchor="start">Copilot user turn</text>
+<text x="639" y="221" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#0b2d46" text-anchor="start">227.6K</text>
+<text x="639" y="253" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#426178" text-anchor="start">Median prompt; P90 1.50M</text>
+<rect x="901" y="140" width="261" height="140" rx="13" fill="#e7f2ef" stroke="none"/>
+<text x="916" y="174" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#33546a" text-anchor="start">Gateway session</text>
+<text x="916" y="221" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#0b2d46" text-anchor="start">1.4M</text>
+<text x="916" y="253" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#426178" text-anchor="start">Median total tokens</text>
+<rect x="1178" y="140" width="261" height="140" rx="13" fill="#fff1df" stroke="none"/>
+<text x="1193" y="174" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#33546a" text-anchor="start">Gateway active day</text>
+<text x="1193" y="221" font-family="Arial, Helvetica, sans-serif" font-size="36" font-weight="700" fill="#0b2d46" text-anchor="start">8.6M</text>
+<text x="1193" y="253" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#426178" text-anchor="start">Median; P90 87M</text>
+<text x="70" y="325" font-family="Arial, Helvetica, sans-serif" font-size="25" font-weight="700" fill="#0b2d46" text-anchor="start">Seven-stage stress case: 40 candidate micro-interactions × 50% delegated</text>
+<text x="70" y="353" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="400" fill="#6b4d20" text-anchor="start">Assumption: each delegated interaction triggers one full gateway session; not an observed task-to-session mapping</text>
+<rect x="70" y="390" width="185" height="145" rx="13" fill="#e1edfa" stroke="none"/>
+<text x="82" y="420" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#35566a" text-anchor="start">1  Work</text>
+<text x="82" y="466" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0b2d46" text-anchor="start">40 candidate</text>
+<text x="82" y="500" font-family="Arial, Helvetica, sans-serif" font-size="12.7" font-weight="400" fill="#426178" text-anchor="start">micro-interactions/day</text>
+<text x="260" y="467" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#7c96a8" text-anchor="middle">›</text>
+<rect x="269" y="390" width="185" height="145" rx="13" fill="#e1edfa" stroke="none"/>
+<text x="281" y="420" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#35566a" text-anchor="start">2  Delegation</text>
+<text x="281" y="466" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0b2d46" text-anchor="start">20 median</text>
+<text x="281" y="500" font-family="Arial, Helvetica, sans-serif" font-size="12.7" font-weight="400" fill="#426178" text-anchor="start">agent sessions/day</text>
+<text x="459" y="467" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#7c96a8" text-anchor="middle">›</text>
+<rect x="468" y="390" width="185" height="145" rx="13" fill="#dcf0e6" stroke="none"/>
+<text x="480" y="420" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#35566a" text-anchor="start">3  Tokens</text>
+<text x="480" y="466" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0b2d46" text-anchor="start">35.1M</text>
+<text x="480" y="500" font-family="Arial, Helvetica, sans-serif" font-size="12.7" font-weight="400" fill="#426178" text-anchor="start">median raw tokens/day</text>
+<text x="658" y="467" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#7c96a8" text-anchor="middle">›</text>
+<rect x="667" y="390" width="185" height="145" rx="13" fill="#eee7fb" stroke="none"/>
+<text x="679" y="420" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#35566a" text-anchor="start">4  GPU</text>
+<text x="679" y="466" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0b2d46" text-anchor="start">H100 c1</text>
+<text x="679" y="500" font-family="Arial, Helvetica, sans-serif" font-size="12.7" font-weight="400" fill="#426178" text-anchor="start">30B MoE benchmark</text>
+<text x="857" y="467" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#7c96a8" text-anchor="middle">›</text>
+<rect x="866" y="390" width="185" height="145" rx="13" fill="#fff0d7" stroke="none"/>
+<text x="878" y="420" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#35566a" text-anchor="start">5  Electricity</text>
+<text x="878" y="466" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0b2d46" text-anchor="start">3.25 kWh</text>
+<text x="878" y="500" font-family="Arial, Helvetica, sans-serif" font-size="12.7" font-weight="400" fill="#426178" text-anchor="start">facility-equivalent/day</text>
+<text x="1056" y="467" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#7c96a8" text-anchor="middle">›</text>
+<rect x="1065" y="390" width="185" height="145" rx="13" fill="#fff0d7" stroke="none"/>
+<text x="1077" y="420" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#35566a" text-anchor="start">6  DC mix</text>
+<text x="1077" y="466" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0b2d46" text-anchor="start">0.325</text>
+<text x="1077" y="500" font-family="Arial, Helvetica, sans-serif" font-size="12.7" font-weight="400" fill="#426178" text-anchor="start">LCA kg CO₂e/kWh</text>
+<text x="1255" y="467" font-family="Arial, Helvetica, sans-serif" font-size="28" font-weight="700" fill="#7c96a8" text-anchor="middle">›</text>
+<rect x="1264" y="390" width="185" height="145" rx="13" fill="#fbe4dd" stroke="none"/>
+<text x="1276" y="420" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="700" fill="#35566a" text-anchor="start">7  Carbon</text>
+<text x="1276" y="466" font-family="Arial, Helvetica, sans-serif" font-size="26" font-weight="700" fill="#0b2d46" text-anchor="start">1.05 kg</text>
+<text x="1276" y="500" font-family="Arial, Helvetica, sans-serif" font-size="12.7" font-weight="400" fill="#426178" text-anchor="start">LCA CO₂e/day</text>
+<text x="70" y="584" font-family="Arial, Helvetica, sans-serif" font-size="24" font-weight="700" fill="#0b2d46" text-anchor="start">Daily raw-token ranges</text>
+<text x="1370" y="584" font-family="Arial, Helvetica, sans-serif" font-size="17" font-weight="400" fill="#426178" text-anchor="end">P10 ━ P50 ━ P90</text>
+<text x="70" y="621" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#29485c" text-anchor="start">20 Copilot user turns (assumed/day)</text>
+<line x1="841.6" y1="615" x2="1029.6" y2="615" stroke="#449883" stroke-width="8" stroke-linecap="round"/>
+<circle cx="928.6" cy="615" r="7" fill="#ffffff" stroke="#449883" stroke-width="4"/>
+<text x="1380" y="621" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#29485c" text-anchor="end">11.6M</text>
+<text x="70" y="655" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#29485c" text-anchor="start">Gateway active account-day median (observed)</text>
+<line x1="881.1" y1="649" x2="881.1" y2="649" stroke="#ba8c40" stroke-width="8" stroke-linecap="round"/>
+<circle cx="881.1" cy="649" r="7" fill="#ffffff" stroke="#ba8c40" stroke-width="4"/>
+<text x="1380" y="655" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#29485c" text-anchor="end">8.6M</text>
+<text x="70" y="689" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#29485c" text-anchor="start">20 micro-interactions × 30% → sessions</text>
+<line x1="790.0" y1="683" x2="990.4" y2="683" stroke="#427eae" stroke-width="8" stroke-linecap="round"/>
+<circle cx="905.8" cy="683" r="7" fill="#ffffff" stroke="#427eae" stroke-width="4"/>
+<text x="1380" y="689" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#29485c" text-anchor="end">10.0M</text>
+<text x="70" y="723" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#29485c" text-anchor="start">40 micro-interactions × 50% → sessions</text>
+<line x1="1052.2" y1="717" x2="1149.9" y2="717" stroke="#427eae" stroke-width="8" stroke-linecap="round"/>
+<circle cx="1104.1" cy="717" r="7" fill="#ffffff" stroke="#427eae" stroke-width="4"/>
+<text x="1380" y="723" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#29485c" text-anchor="end">35.1M</text>
+<text x="70" y="757" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#29485c" text-anchor="start">60 micro-interactions × 70% → sessions</text>
+<line x1="1192.0" y1="751" x2="1252.7" y2="751" stroke="#427eae" stroke-width="8" stroke-linecap="round"/>
+<circle cx="1223.0" cy="751" r="7" fill="#ffffff" stroke="#427eae" stroke-width="4"/>
+<text x="1380" y="757" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#29485c" text-anchor="end">74.4M</text>
+<text x="70" y="791" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#29485c" text-anchor="start">Gateway active account-day P90 (observed)</text>
+<line x1="1247.9" y1="785" x2="1247.9" y2="785" stroke="#ba8c40" stroke-width="8" stroke-linecap="round"/>
+<circle cx="1247.9" cy="785" r="7" fill="#ffffff" stroke="#ba8c40" stroke-width="4"/>
+<text x="1380" y="791" font-family="Arial, Helvetica, sans-serif" font-size="16" font-weight="700" fill="#29485c" text-anchor="end">87.0M</text>
+<line x1="540.0" y1="807" x2="540.0" y2="816" stroke="#829aaa"/>
+<text x="540.0" y="836" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#557082" text-anchor="middle">1M</text>
+<line x1="714.1" y1="807" x2="714.1" y2="816" stroke="#829aaa"/>
+<text x="714.1492579726769" y="836" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#557082" text-anchor="middle">3M</text>
+<line x1="905.0" y1="807" x2="905.0" y2="816" stroke="#829aaa"/>
+<text x="905.0" y="836" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#557082" text-anchor="middle">10M</text>
+<line x1="1079.1" y1="807" x2="1079.1" y2="816" stroke="#829aaa"/>
+<text x="1079.1492579726769" y="836" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#557082" text-anchor="middle">30M</text>
+<line x1="1270.0" y1="807" x2="1270.0" y2="816" stroke="#829aaa"/>
+<text x="1270.0" y="836" font-family="Arial, Helvetica, sans-serif" font-size="14" font-weight="400" fill="#557082" text-anchor="middle">100M</text>
+<text x="70" y="874" font-family="Arial, Helvetica, sans-serif" font-size="15" font-weight="400" fill="#6b4d20" text-anchor="start">Life-cycle mix uses Guidi/EIA/IPCC proxies; EPA operational comparison = 1.14 kg CO₂e/day. H100/30B energy remains a proxy.</text>
+</svg>

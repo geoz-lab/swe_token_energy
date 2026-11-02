@@ -1,0 +1,7 @@
+work_category,pct_time,tasks_per_day_low,tasks_per_day_high,substitutability_pct,frontier_tokens_per_task_M_low,frontier_tokens_per_task_M_high,small_model_tokens_per_task_M_low,small_model_tokens_per_task_M_high,effective_fte_weight,source
+Code generation & review,35,2,6,90,1.0,4.0,0.3,1.0,0.315,Meyer et al. 2019 + Bai et al. 2026
+Documentation & specification,15,1,3,95,0.2,1.0,0.1,0.3,0.143,Meyer et al. 2019
+Testing & validation,15,2,5,85,0.5,2.0,0.2,0.8,0.128,Meyer et al. 2019 + Bai et al. 2026
+Design & architecture,20,0.1,1,40,2.0,7.0,1.0,3.0,0.080,Meyer et al. 2019
+Communication & coordination,10,2,8,45,0.1,0.5,0.05,0.2,0.045,Estimate
+Physical/embodied work,5,variable,variable,5,0,0,0,0,0.003,BLS OES 2024

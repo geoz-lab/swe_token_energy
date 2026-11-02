@@ -1,0 +1,5 @@
+cost_component,annual_cost_total_M,per_fte_year_USD,pct_of_ai_total_cost,pct_of_us_median_salary_133080
+API token cost (frontier $9/MTok),64800,9000.00,99.77,6.76
+Amortized capex (20yr life),82.5,11.46,0.13,0.009
+Annual energy cost ($60/MWh),58.0,8.06,0.09,0.006
+Total fully-loaded AI cost,,9019.52,100.00,6.77
