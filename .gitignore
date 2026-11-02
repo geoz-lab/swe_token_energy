@@ -6,6 +6,7 @@
 **/__pycache__/
 **/*.py[cod]
 **/.claude/
+**/.git_backup/
 
 # Local presentation and analysis build outputs
 .codex-finalizer/

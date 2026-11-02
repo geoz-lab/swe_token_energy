@@ -1,4 +1,4 @@
-*.csv text eol=lf
+*.csv -text
 *.md text eol=lf
 *.py text eol=lf
 *.tex text eol=lf
